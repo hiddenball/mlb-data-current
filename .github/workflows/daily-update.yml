@@ -1,0 +1,91 @@
+name: Daily incremental update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    env:
+      BRANCH: ${{ github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Catch up on every finished day (through yesterday), stop after 2030
+        timeout-minutes: 340
+        run: |
+          git config user.name "mlb-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          commit_and_push() {
+            git add data
+            if git diff --cached --quiet; then return 0; fi
+            git commit -q -m "Daily update through $(cat data/last_updated.txt 2>/dev/null || echo partial)"
+            for i in 1 2 3 4 5; do
+              if git pull -q --rebase origin "$BRANCH" && git push -q origin "$BRANCH"; then return 0; fi
+              echo "push failed, retry $i..."
+              sleep $((RANDOM % 15 + 5))
+            done
+            return 1
+          }
+
+          # Yesterday, not today: today's games haven't been played at 08:00 UTC.
+          through=$(date -u -d "yesterday" +%F)
+
+          if [ "${through:0:4}" -gt "2030" ]; then
+            echo "Past 2030 - nothing to do, this repo's job is done."
+            exit 0
+          fi
+
+          if [ -f data/last_updated.txt ]; then
+            last=$(cat data/last_updated.txt)
+          else
+            last=$(date -u -d "2026-01-01 - 1 day" +%F)
+          fi
+          echo "Last updated: $last  |  Fetching through: $through"
+
+          if [ "$(date -u -d "$last" +%s)" -ge "$(date -u -d "$through" +%s)" ]; then
+            echo "Already up to date."
+            exit 0
+          fi
+
+          cursor=$(date -u -d "$last + 1 day" +%F)
+          n=0
+          failed=0
+          while [ "$(date -u -d "$cursor" +%s)" -le "$(date -u -d "$through" +%s)" ]; do
+            echo "--- fetching $cursor ---"
+            if [ "$cursor" = "$through" ]; then
+              # last day: also refresh standings / rosters / transactions / draft
+              python3 mlb_historical_fetch.py --date "$cursor" --output-dir data && ok=1 || ok=0
+            else
+              python3 mlb_historical_fetch.py --date "$cursor" --games-only --output-dir data && ok=1 || ok=0
+            fi
+            if [ "$ok" -ne 1 ]; then
+              echo "Requests failed on $cursor - not marking it done; it will be retried next run."
+              failed=1
+              break
+            fi
+            echo "$cursor" > data/last_updated.txt
+            cursor=$(date -u -d "$cursor + 1 day" +%F)
+            n=$((n + 1))
+            if [ $((n % 7)) -eq 0 ]; then commit_and_push || exit 1; fi
+          done
+
+          commit_and_push || exit 1
+          exit $failed
