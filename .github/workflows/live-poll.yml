@@ -1,0 +1,34 @@
+name: Live game poll
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Poll for live games
+        run: python3 mlb_historical_fetch.py --live-poll --output-dir data
+
+      - name: Commit and push (with retry)
+        run: |
+          git config user.name "mlb-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git commit -m "Live poll $(date -u +%F_%H:%M)" || echo "nothing to commit"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && break
+            echo "push failed, retry $i..."
+            sleep $((RANDOM % 15 + 5))
+          done
