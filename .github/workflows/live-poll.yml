@@ -8,6 +8,14 @@ on:
 permissions:
   contents: write
 
+# Shared with live-poll-b.yml and live-poll-c.yml (same group name) so that if
+# two of the three ever get queued close enough to overlap, GitHub runs them
+# one after another instead of at the same time - no two pollers touch the
+# repo at once, so the push-retry loop below is a fallback, not a necessity.
+concurrency:
+  group: live-poll
+  cancel-in-progress: false
+
 jobs:
   poll:
     runs-on: ubuntu-latest
