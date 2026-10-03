@@ -1,0 +1,70 @@
+name: Live game poll C
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "4,9,14,19,24,29,34,39,44,49,54,59 * * * *"
+
+permissions:
+  contents: write
+
+# Shared with live-poll-b.yml and live-poll-c.yml (same group name) so that if
+# two of the three ever get queued close enough to overlap, GitHub runs them
+# one after another instead of at the same time - no two pollers touch the
+# repo at once, so the push-retry loop below is a fallback, not a necessity.
+concurrency:
+  group: live-poll
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Poll for live games
+        run: python3 mlb_historical_fetch.py --live-poll --output-dir data
+
+      - name: Capture which files changed (must run before commit clears git status)
+        run: |
+          git status --porcelain data | awk '{print $2}' > /tmp/changed_files.txt
+          echo "Changed files this run:"
+          cat /tmp/changed_files.txt
+
+      - name: Commit and push (with retry)
+        run: |
+          git config user.name "mlb-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git commit -m "Live poll $(date -u +%F_%H:%M)" || echo "nothing to commit"
+          success=false
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then
+              success=true
+              break
+            fi
+            echo "push failed, retry $i..."
+            sleep $((RANDOM % 15 + 5))
+          done
+          if [ "$success" != "true" ]; then
+            echo "ERROR: all push retries failed — not purging jsDelivr for unpushed files."
+            exit 1
+          fi
+
+      - name: Purge jsDelivr cache for the files that were actually pushed
+        if: success()
+        run: |
+          if [ ! -s /tmp/changed_files.txt ]; then
+            echo "No files changed — nothing to purge."
+            exit 0
+          fi
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            url="https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/${f}"
+            echo "purging: $url"
+            curl -s -o /dev/null -w "  status: %{http_code}\n" "$url" || echo "  purge request failed for $f"
+          done < /tmp/changed_files.txt
