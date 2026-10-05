@@ -24755,30 +24755,31 @@
     {
       "result": {
         "type": "atBat",
-        "event": "Mound Visit",
-        "eventType": "mound_visit",
-        "description": "Mound Visit.",
+        "event": "Groundout",
+        "eventType": "field_out",
+        "description": "Munetaka Murakami grounds out, second baseman Travis Bazzana to first baseman Nathaniel Lowe. Miguel Vargas to 2nd.",
         "rbi": 0,
         "awayScore": 1,
         "homeScore": 2,
-        "isOut": false
+        "isOut": true
       },
       "about": {
         "atBatIndex": 42,
         "halfInning": "top",
         "isTopInning": true,
         "inning": 6,
-        "startTime": "2026-10-05T22:59:18.267Z",
-        "endTime": "2026-10-05T22:59:18.267Z",
-        "isComplete": false,
+        "startTime": "2026-10-05T23:02:00.852Z",
+        "endTime": "2026-10-05T23:02:13.697Z",
+        "isComplete": true,
         "isScoringPlay": false,
-        "hasOut": false,
+        "hasReview": false,
+        "hasOut": true,
         "captivatingIndex": 0
       },
       "count": {
         "balls": 0,
         "strikes": 0,
-        "outs": 0
+        "outs": 1
       },
       "matchup": {
         "batter": {
@@ -24791,15 +24792,331 @@
           "description": "Left"
         },
         "pitcher": {
-          "id": 668909,
-          "fullName": "Gavin Williams",
-          "link": "/api/v1/people/668909"
+          "id": 681870,
+          "fullName": "Erik Sabrowski",
+          "link": "/api/v1/people/681870"
         },
         "pitchHand": {
+          "code": "L",
+          "description": "Left"
+        },
+        "postOnSecond": {
+          "id": 678246,
+          "fullName": "Miguel Vargas",
+          "link": "/api/v1/people/678246"
+        },
+        "batterHotColdZones": [],
+        "pitcherHotColdZones": [],
+        "splits": {
+          "batter": "vs_LHP",
+          "pitcher": "vs_LHB",
+          "menOnBase": "RISP"
+        }
+      },
+      "pitchIndex": [
+        2
+      ],
+      "actionIndex": [
+        1
+      ],
+      "runnerIndex": [
+        0,
+        1
+      ],
+      "runners": [
+        {
+          "movement": {
+            "originBase": null,
+            "start": null,
+            "end": null,
+            "outBase": "1B",
+            "isOut": true,
+            "outNumber": 1
+          },
+          "details": {
+            "event": "Groundout",
+            "eventType": "field_out",
+            "movementReason": null,
+            "runner": {
+              "id": 808959,
+              "fullName": "Munetaka Murakami",
+              "link": "/api/v1/people/808959"
+            },
+            "responsiblePitcher": null,
+            "isScoringEvent": false,
+            "rbi": false,
+            "earned": false,
+            "teamUnearned": false,
+            "playIndex": 2
+          },
+          "credits": [
+            {
+              "player": {
+                "id": 683953,
+                "link": "/api/v1/people/683953"
+              },
+              "position": {
+                "code": "4",
+                "name": "Second Base",
+                "type": "Infielder",
+                "abbreviation": "2B"
+              },
+              "credit": "f_assist"
+            },
+            {
+              "player": {
+                "id": 663993,
+                "link": "/api/v1/people/663993"
+              },
+              "position": {
+                "code": "3",
+                "name": "First Base",
+                "type": "Infielder",
+                "abbreviation": "1B"
+              },
+              "credit": "f_putout"
+            }
+          ]
+        },
+        {
+          "movement": {
+            "originBase": "1B",
+            "start": "1B",
+            "end": "2B",
+            "outBase": null,
+            "isOut": false,
+            "outNumber": null
+          },
+          "details": {
+            "event": "Groundout",
+            "eventType": "field_out",
+            "movementReason": "r_adv_force",
+            "runner": {
+              "id": 678246,
+              "fullName": "Miguel Vargas",
+              "link": "/api/v1/people/678246"
+            },
+            "responsiblePitcher": null,
+            "isScoringEvent": false,
+            "rbi": false,
+            "earned": false,
+            "teamUnearned": false,
+            "playIndex": 2
+          },
+          "credits": []
+        }
+      ],
+      "playEvents": [
+        {
+          "details": {
+            "description": "Mound Visit.",
+            "event": "Mound Visit",
+            "eventType": "mound_visit",
+            "awayScore": 1,
+            "homeScore": 2,
+            "isScoringPlay": false,
+            "isOut": false,
+            "hasReview": false
+          },
+          "count": {
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
+          },
+          "index": 0,
+          "startTime": "2026-10-05T22:59:18.267Z",
+          "endTime": "2026-10-05T22:59:51.748Z",
+          "isPitch": false,
+          "type": "action"
+        },
+        {
+          "details": {
+            "description": "Pitching Change: Erik Sabrowski replaces Gavin Williams.",
+            "event": "Pitching Substitution",
+            "eventType": "pitching_substitution",
+            "awayScore": 1,
+            "homeScore": 2,
+            "isScoringPlay": false,
+            "isOut": false,
+            "hasReview": false
+          },
+          "count": {
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
+          },
+          "index": 1,
+          "startTime": "2026-10-05T22:59:51.748Z",
+          "endTime": "2026-10-05T23:02:03.136Z",
+          "isPitch": false,
+          "isSubstitution": true,
+          "type": "action",
+          "player": {
+            "id": 681870,
+            "link": "/api/v1/people/681870"
+          },
+          "position": {
+            "code": "1",
+            "name": "Pitcher",
+            "type": "Pitcher",
+            "abbreviation": "P"
+          }
+        },
+        {
+          "details": {
+            "call": {
+              "code": "X",
+              "description": "In play, out(s)"
+            },
+            "description": "In play, out(s)",
+            "code": "X",
+            "ballColor": "rgba(26, 86, 190, 1.0)",
+            "trailColor": "rgba(0, 0, 254, 1.0)",
+            "isInPlay": true,
+            "isStrike": false,
+            "isBall": false,
+            "type": {
+              "code": "SL",
+              "description": "Slider"
+            },
+            "isOut": true,
+            "hasReview": false
+          },
+          "count": {
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
+          },
+          "pitchData": {
+            "startSpeed": 87.6,
+            "endSpeed": 80.7,
+            "strikeZoneTop": 3.296,
+            "strikeZoneBottom": 1.664,
+            "strikeZoneWidth": 17.0,
+            "strikeZoneDepth": 8.5,
+            "coordinates": {
+              "aY": 25.247382345938927,
+              "aZ": -23.446451060572308,
+              "pfxX": 1.7252786782358656,
+              "pfxZ": 5.2848439410798935,
+              "pX": -0.6696420288809746,
+              "pZ": 1.8379376058790484,
+              "vX0": -4.73895944088905,
+              "vY0": -127.44045839750375,
+              "vZ0": -5.588872049931863,
+              "x": 142.53,
+              "y": 189.16,
+              "x0": 0.9866786923426917,
+              "y0": 50.003509183946605,
+              "z0": 5.902091428997007,
+              "aX": 2.8498227455151603
+            },
+            "breaks": {
+              "breakAngle": 21.6,
+              "breakVertical": -27.0,
+              "breakVerticalInduced": 8.5,
+              "breakHorizontal": -2.0,
+              "spinRate": 2393,
+              "spinDirection": 154
+            },
+            "zone": 7,
+            "plateTime": 0.42916183655468654,
+            "extension": 6.58226177624414,
+            "strikeZoneInfo": {
+              "depthInches": 8.5,
+              "strikeZoneTop": 3.296,
+              "baseballDiameterInches": 2.9,
+              "edgeDistance": 0.13786510041826283,
+              "widthInches": 17.0,
+              "edgePositionZone": {
+                "x": -0.7083333333333334,
+                "y": 0.7083333333333334,
+                "z": 1.7475019612689087
+              },
+              "plateZ": 1.7475019612689087,
+              "plateX": -0.6913015662484039,
+              "plateY": 0.7083333333333334,
+              "strikeZoneBottom": 1.664,
+              "isStrike": true,
+              "edgePositionBall": {
+                "x": -0.5704682329150705,
+                "y": 0.7083333333333334,
+                "z": 1.7475019612689087
+              }
+            }
+          },
+          "hitData": {
+            "launchSpeed": 85.2,
+            "launchAngle": -34.0,
+            "totalDistance": 4.0,
+            "trajectory": "ground_ball",
+            "hardness": "medium",
+            "location": "4",
+            "coordinates": {
+              "coordX": 151.81,
+              "coordY": 163.84
+            }
+          },
+          "index": 2,
+          "playId": "cce0e7f9-9d25-30ea-8f3c-fba44174a887",
+          "pitchNumber": 1,
+          "startTime": "2026-10-05T23:02:03.136Z",
+          "endTime": "2026-10-05T23:02:13.697Z",
+          "isPitch": true,
+          "type": "pitch"
+        }
+      ],
+      "playEndTime": "2026-10-05T23:02:13.697Z",
+      "atBatIndex": 42
+    },
+    {
+      "result": {
+        "type": "atBat",
+        "event": "Offensive Substitution",
+        "eventType": "offensive_substitution",
+        "description": "Offensive Substitution: Pinch-hitter Randal Grichuk replaces Andrew Benintendi.",
+        "rbi": 0,
+        "awayScore": 1,
+        "homeScore": 2,
+        "isOut": false
+      },
+      "about": {
+        "atBatIndex": 43,
+        "halfInning": "top",
+        "isTopInning": true,
+        "inning": 6,
+        "startTime": "2026-10-05T23:02:22.348Z",
+        "endTime": "2026-10-05T23:02:22.348Z",
+        "isComplete": false,
+        "isScoringPlay": false,
+        "hasOut": false,
+        "captivatingIndex": 0
+      },
+      "count": {
+        "balls": 0,
+        "strikes": 0,
+        "outs": 1
+      },
+      "matchup": {
+        "batter": {
+          "id": 545341,
+          "fullName": "Randal Grichuk",
+          "link": "/api/v1/people/545341"
+        },
+        "batSide": {
           "code": "R",
           "description": "Right"
         },
-        "postOnFirst": {
+        "pitcher": {
+          "id": 681870,
+          "fullName": "Erik Sabrowski",
+          "link": "/api/v1/people/681870"
+        },
+        "pitchHand": {
+          "code": "L",
+          "description": "Left"
+        },
+        "postOnSecond": {
           "id": 678246,
           "fullName": "Miguel Vargas",
           "link": "/api/v1/people/678246"
@@ -24833,9 +25150,9 @@
                       },
                       {
                         "zone": "03",
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": "5.000"
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
                       },
                       {
                         "zone": "04",
@@ -24851,27 +25168,27 @@
                       },
                       {
                         "zone": "06",
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": "2.000"
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
                       },
                       {
                         "zone": "07",
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": "1.000"
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
                       },
                       {
                         "zone": "08",
-                        "color": "rgba(6, 90, 238, .55)",
-                        "temp": "cold",
-                        "value": ".000"
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
                       },
                       {
                         "zone": "09",
-                        "color": "rgba(6, 90, 238, .55)",
-                        "temp": "cold",
-                        "value": ".000"
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
                       },
                       {
                         "zone": "11",
@@ -24881,9 +25198,9 @@
                       },
                       {
                         "zone": "12",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
+                        "color": "rgba(6, 90, 238, .55)",
+                        "temp": "cold",
+                        "value": ".000"
                       },
                       {
                         "zone": "13",
@@ -24893,94 +25210,9 @@
                       },
                       {
                         "zone": "14",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "stat": {
-                    "name": "battingAverage",
-                    "zones": [
-                      {
-                        "zone": "01",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
-                      },
-                      {
-                        "zone": "02",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
-                      },
-                      {
-                        "zone": "03",
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": "1.000"
-                      },
-                      {
-                        "zone": "04",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
-                      },
-                      {
-                        "zone": "05",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
-                      },
-                      {
-                        "zone": "06",
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": "1.000"
-                      },
-                      {
-                        "zone": "07",
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": ".500"
-                      },
-                      {
-                        "zone": "08",
                         "color": "rgba(6, 90, 238, .55)",
                         "temp": "cold",
                         "value": ".000"
-                      },
-                      {
-                        "zone": "09",
-                        "color": "rgba(6, 90, 238, .55)",
-                        "temp": "cold",
-                        "value": ".000"
-                      },
-                      {
-                        "zone": "11",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
-                      },
-                      {
-                        "zone": "12",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
-                      },
-                      {
-                        "zone": "13",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
-                      },
-                      {
-                        "zone": "14",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
                       }
                     ]
                   }
@@ -25003,9 +25235,9 @@
                       },
                       {
                         "zone": "03",
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": "112.19"
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
                       },
                       {
                         "zone": "04",
@@ -25021,15 +25253,15 @@
                       },
                       {
                         "zone": "06",
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": "106.37"
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
                       },
                       {
                         "zone": "07",
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": "111.46"
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
                       },
                       {
                         "zone": "08",
@@ -25063,9 +25295,94 @@
                       },
                       {
                         "zone": "14",
+                        "color": "rgba(214, 41, 52, .55)",
+                        "temp": "hot",
+                        "value": "103.10"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "stat": {
+                    "name": "battingAverage",
+                    "zones": [
+                      {
+                        "zone": "01",
                         "color": "rgba(255, 255, 255, 0.55)",
                         "temp": "lukewarm",
                         "value": "-"
+                      },
+                      {
+                        "zone": "02",
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
+                      },
+                      {
+                        "zone": "03",
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
+                      },
+                      {
+                        "zone": "04",
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
+                      },
+                      {
+                        "zone": "05",
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
+                      },
+                      {
+                        "zone": "06",
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
+                      },
+                      {
+                        "zone": "07",
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
+                      },
+                      {
+                        "zone": "08",
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
+                      },
+                      {
+                        "zone": "09",
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
+                      },
+                      {
+                        "zone": "11",
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
+                      },
+                      {
+                        "zone": "12",
+                        "color": "rgba(6, 90, 238, .55)",
+                        "temp": "cold",
+                        "value": ".000"
+                      },
+                      {
+                        "zone": "13",
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": "-"
+                      },
+                      {
+                        "zone": "14",
+                        "color": "rgba(6, 90, 238, .55)",
+                        "temp": "cold",
+                        "value": ".000"
                       }
                     ]
                   }
@@ -25089,9 +25406,9 @@
           },
           {
             "zone": "03",
-            "color": "rgba(214, 41, 52, .55)",
-            "temp": "hot",
-            "value": "5.000"
+            "color": "rgba(255, 255, 255, 0.55)",
+            "temp": "lukewarm",
+            "value": "-"
           },
           {
             "zone": "04",
@@ -25107,27 +25424,27 @@
           },
           {
             "zone": "06",
-            "color": "rgba(214, 41, 52, .55)",
-            "temp": "hot",
-            "value": "2.000"
+            "color": "rgba(255, 255, 255, 0.55)",
+            "temp": "lukewarm",
+            "value": "-"
           },
           {
             "zone": "07",
-            "color": "rgba(214, 41, 52, .55)",
-            "temp": "hot",
-            "value": "1.000"
+            "color": "rgba(255, 255, 255, 0.55)",
+            "temp": "lukewarm",
+            "value": "-"
           },
           {
             "zone": "08",
-            "color": "rgba(6, 90, 238, .55)",
-            "temp": "cold",
-            "value": ".000"
+            "color": "rgba(255, 255, 255, 0.55)",
+            "temp": "lukewarm",
+            "value": "-"
           },
           {
             "zone": "09",
-            "color": "rgba(6, 90, 238, .55)",
-            "temp": "cold",
-            "value": ".000"
+            "color": "rgba(255, 255, 255, 0.55)",
+            "temp": "lukewarm",
+            "value": "-"
           },
           {
             "zone": "11",
@@ -25137,9 +25454,9 @@
           },
           {
             "zone": "12",
-            "color": "rgba(255, 255, 255, 0.55)",
-            "temp": "lukewarm",
-            "value": "-"
+            "color": "rgba(6, 90, 238, .55)",
+            "temp": "cold",
+            "value": ".000"
           },
           {
             "zone": "13",
@@ -25149,28 +25466,30 @@
           },
           {
             "zone": "14",
-            "color": "rgba(255, 255, 255, 0.55)",
-            "temp": "lukewarm",
-            "value": "-"
+            "color": "rgba(6, 90, 238, .55)",
+            "temp": "cold",
+            "value": ".000"
           }
         ],
         "pitcherHotColdZones": [],
         "splits": {
-          "batter": "vs_RHP",
+          "batter": "vs_LHP",
           "pitcher": "vs_LHB",
-          "menOnBase": "Men_On"
+          "menOnBase": "RISP"
         }
       },
       "pitchIndex": [],
-      "actionIndex": [],
+      "actionIndex": [
+        0
+      ],
       "runnerIndex": [],
       "runners": [],
       "playEvents": [
         {
           "details": {
-            "description": "Mound Visit.",
-            "event": "Mound Visit",
-            "eventType": "mound_visit",
+            "description": "Offensive Substitution: Pinch-hitter Randal Grichuk replaces Andrew Benintendi.",
+            "event": "Offensive Substitution",
+            "eventType": "offensive_substitution",
             "awayScore": 1,
             "homeScore": 2,
             "isScoringPlay": false,
@@ -25180,37 +25499,53 @@
           "count": {
             "balls": 0,
             "strikes": 0,
-            "outs": 0
+            "outs": 1
           },
           "index": 0,
-          "startTime": "2026-10-05T22:59:18.267Z",
-          "endTime": "2026-10-05T22:59:18.267Z",
+          "startTime": "2026-10-05T23:02:22.348Z",
+          "endTime": "2026-10-05T23:02:22.348Z",
           "isPitch": false,
-          "type": "action"
+          "isSubstitution": true,
+          "type": "action",
+          "player": {
+            "id": 545341,
+            "link": "/api/v1/people/545341"
+          },
+          "position": {
+            "code": "11",
+            "name": "Pinch Hitter",
+            "type": "Hitter",
+            "abbreviation": "PH"
+          },
+          "battingOrder": "501",
+          "replacedPlayer": {
+            "id": 643217,
+            "link": "/api/v1/people/643217"
+          }
         }
       ],
-      "playEndTime": "2026-10-05T22:59:18.267Z",
-      "atBatIndex": 42
+      "playEndTime": "2026-10-05T23:02:22.348Z",
+      "atBatIndex": 43
     }
   ],
   "currentPlay": {
     "result": {
       "type": "atBat",
-      "event": "Mound Visit",
-      "eventType": "mound_visit",
-      "description": "Mound Visit.",
+      "event": "Offensive Substitution",
+      "eventType": "offensive_substitution",
+      "description": "Offensive Substitution: Pinch-hitter Randal Grichuk replaces Andrew Benintendi.",
       "rbi": 0,
       "awayScore": 1,
       "homeScore": 2,
       "isOut": false
     },
     "about": {
-      "atBatIndex": 42,
+      "atBatIndex": 43,
       "halfInning": "top",
       "isTopInning": true,
       "inning": 6,
-      "startTime": "2026-10-05T22:59:18.267Z",
-      "endTime": "2026-10-05T22:59:18.267Z",
+      "startTime": "2026-10-05T23:02:22.348Z",
+      "endTime": "2026-10-05T23:02:22.348Z",
       "isComplete": false,
       "isScoringPlay": false,
       "hasOut": false,
@@ -25219,28 +25554,28 @@
     "count": {
       "balls": 0,
       "strikes": 0,
-      "outs": 0
+      "outs": 1
     },
     "matchup": {
       "batter": {
-        "id": 808959,
-        "fullName": "Munetaka Murakami",
-        "link": "/api/v1/people/808959"
+        "id": 545341,
+        "fullName": "Randal Grichuk",
+        "link": "/api/v1/people/545341"
       },
       "batSide": {
-        "code": "L",
-        "description": "Left"
-      },
-      "pitcher": {
-        "id": 668909,
-        "fullName": "Gavin Williams",
-        "link": "/api/v1/people/668909"
-      },
-      "pitchHand": {
         "code": "R",
         "description": "Right"
       },
-      "postOnFirst": {
+      "pitcher": {
+        "id": 681870,
+        "fullName": "Erik Sabrowski",
+        "link": "/api/v1/people/681870"
+      },
+      "pitchHand": {
+        "code": "L",
+        "description": "Left"
+      },
+      "postOnSecond": {
         "id": 678246,
         "fullName": "Miguel Vargas",
         "link": "/api/v1/people/678246"
@@ -25274,9 +25609,9 @@
                     },
                     {
                       "zone": "03",
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": "5.000"
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
                     },
                     {
                       "zone": "04",
@@ -25292,27 +25627,27 @@
                     },
                     {
                       "zone": "06",
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": "2.000"
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
                     },
                     {
                       "zone": "07",
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": "1.000"
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
                     },
                     {
                       "zone": "08",
-                      "color": "rgba(6, 90, 238, .55)",
-                      "temp": "cold",
-                      "value": ".000"
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
                     },
                     {
                       "zone": "09",
-                      "color": "rgba(6, 90, 238, .55)",
-                      "temp": "cold",
-                      "value": ".000"
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
                     },
                     {
                       "zone": "11",
@@ -25322,9 +25657,9 @@
                     },
                     {
                       "zone": "12",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
+                      "color": "rgba(6, 90, 238, .55)",
+                      "temp": "cold",
+                      "value": ".000"
                     },
                     {
                       "zone": "13",
@@ -25334,94 +25669,9 @@
                     },
                     {
                       "zone": "14",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
-                    }
-                  ]
-                }
-              },
-              {
-                "stat": {
-                  "name": "battingAverage",
-                  "zones": [
-                    {
-                      "zone": "01",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
-                    },
-                    {
-                      "zone": "02",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
-                    },
-                    {
-                      "zone": "03",
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": "1.000"
-                    },
-                    {
-                      "zone": "04",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
-                    },
-                    {
-                      "zone": "05",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
-                    },
-                    {
-                      "zone": "06",
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": "1.000"
-                    },
-                    {
-                      "zone": "07",
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": ".500"
-                    },
-                    {
-                      "zone": "08",
                       "color": "rgba(6, 90, 238, .55)",
                       "temp": "cold",
                       "value": ".000"
-                    },
-                    {
-                      "zone": "09",
-                      "color": "rgba(6, 90, 238, .55)",
-                      "temp": "cold",
-                      "value": ".000"
-                    },
-                    {
-                      "zone": "11",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
-                    },
-                    {
-                      "zone": "12",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
-                    },
-                    {
-                      "zone": "13",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
-                    },
-                    {
-                      "zone": "14",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
                     }
                   ]
                 }
@@ -25444,9 +25694,9 @@
                     },
                     {
                       "zone": "03",
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": "112.19"
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
                     },
                     {
                       "zone": "04",
@@ -25462,15 +25712,15 @@
                     },
                     {
                       "zone": "06",
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": "106.37"
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
                     },
                     {
                       "zone": "07",
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": "111.46"
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
                     },
                     {
                       "zone": "08",
@@ -25504,9 +25754,94 @@
                     },
                     {
                       "zone": "14",
+                      "color": "rgba(214, 41, 52, .55)",
+                      "temp": "hot",
+                      "value": "103.10"
+                    }
+                  ]
+                }
+              },
+              {
+                "stat": {
+                  "name": "battingAverage",
+                  "zones": [
+                    {
+                      "zone": "01",
                       "color": "rgba(255, 255, 255, 0.55)",
                       "temp": "lukewarm",
                       "value": "-"
+                    },
+                    {
+                      "zone": "02",
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
+                    },
+                    {
+                      "zone": "03",
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
+                    },
+                    {
+                      "zone": "04",
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
+                    },
+                    {
+                      "zone": "05",
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
+                    },
+                    {
+                      "zone": "06",
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
+                    },
+                    {
+                      "zone": "07",
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
+                    },
+                    {
+                      "zone": "08",
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
+                    },
+                    {
+                      "zone": "09",
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
+                    },
+                    {
+                      "zone": "11",
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
+                    },
+                    {
+                      "zone": "12",
+                      "color": "rgba(6, 90, 238, .55)",
+                      "temp": "cold",
+                      "value": ".000"
+                    },
+                    {
+                      "zone": "13",
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": "-"
+                    },
+                    {
+                      "zone": "14",
+                      "color": "rgba(6, 90, 238, .55)",
+                      "temp": "cold",
+                      "value": ".000"
                     }
                   ]
                 }
@@ -25530,9 +25865,9 @@
         },
         {
           "zone": "03",
-          "color": "rgba(214, 41, 52, .55)",
-          "temp": "hot",
-          "value": "5.000"
+          "color": "rgba(255, 255, 255, 0.55)",
+          "temp": "lukewarm",
+          "value": "-"
         },
         {
           "zone": "04",
@@ -25548,27 +25883,27 @@
         },
         {
           "zone": "06",
-          "color": "rgba(214, 41, 52, .55)",
-          "temp": "hot",
-          "value": "2.000"
+          "color": "rgba(255, 255, 255, 0.55)",
+          "temp": "lukewarm",
+          "value": "-"
         },
         {
           "zone": "07",
-          "color": "rgba(214, 41, 52, .55)",
-          "temp": "hot",
-          "value": "1.000"
+          "color": "rgba(255, 255, 255, 0.55)",
+          "temp": "lukewarm",
+          "value": "-"
         },
         {
           "zone": "08",
-          "color": "rgba(6, 90, 238, .55)",
-          "temp": "cold",
-          "value": ".000"
+          "color": "rgba(255, 255, 255, 0.55)",
+          "temp": "lukewarm",
+          "value": "-"
         },
         {
           "zone": "09",
-          "color": "rgba(6, 90, 238, .55)",
-          "temp": "cold",
-          "value": ".000"
+          "color": "rgba(255, 255, 255, 0.55)",
+          "temp": "lukewarm",
+          "value": "-"
         },
         {
           "zone": "11",
@@ -25578,9 +25913,9 @@
         },
         {
           "zone": "12",
-          "color": "rgba(255, 255, 255, 0.55)",
-          "temp": "lukewarm",
-          "value": "-"
+          "color": "rgba(6, 90, 238, .55)",
+          "temp": "cold",
+          "value": ".000"
         },
         {
           "zone": "13",
@@ -25590,28 +25925,30 @@
         },
         {
           "zone": "14",
-          "color": "rgba(255, 255, 255, 0.55)",
-          "temp": "lukewarm",
-          "value": "-"
+          "color": "rgba(6, 90, 238, .55)",
+          "temp": "cold",
+          "value": ".000"
         }
       ],
       "pitcherHotColdZones": [],
       "splits": {
-        "batter": "vs_RHP",
+        "batter": "vs_LHP",
         "pitcher": "vs_LHB",
-        "menOnBase": "Men_On"
+        "menOnBase": "RISP"
       }
     },
     "pitchIndex": [],
-    "actionIndex": [],
+    "actionIndex": [
+      0
+    ],
     "runnerIndex": [],
     "runners": [],
     "playEvents": [
       {
         "details": {
-          "description": "Mound Visit.",
-          "event": "Mound Visit",
-          "eventType": "mound_visit",
+          "description": "Offensive Substitution: Pinch-hitter Randal Grichuk replaces Andrew Benintendi.",
+          "event": "Offensive Substitution",
+          "eventType": "offensive_substitution",
           "awayScore": 1,
           "homeScore": 2,
           "isScoringPlay": false,
@@ -25621,17 +25958,33 @@
         "count": {
           "balls": 0,
           "strikes": 0,
-          "outs": 0
+          "outs": 1
         },
         "index": 0,
-        "startTime": "2026-10-05T22:59:18.267Z",
-        "endTime": "2026-10-05T22:59:18.267Z",
+        "startTime": "2026-10-05T23:02:22.348Z",
+        "endTime": "2026-10-05T23:02:22.348Z",
         "isPitch": false,
-        "type": "action"
+        "isSubstitution": true,
+        "type": "action",
+        "player": {
+          "id": 545341,
+          "link": "/api/v1/people/545341"
+        },
+        "position": {
+          "code": "11",
+          "name": "Pinch Hitter",
+          "type": "Hitter",
+          "abbreviation": "PH"
+        },
+        "battingOrder": "501",
+        "replacedPlayer": {
+          "id": 643217,
+          "link": "/api/v1/people/643217"
+        }
       }
     ],
-    "playEndTime": "2026-10-05T22:59:18.267Z",
-    "atBatIndex": 42
+    "playEndTime": "2026-10-05T23:02:22.348Z",
+    "atBatIndex": 43
   },
   "scoringPlays": [
     8,
@@ -26308,10 +26661,11 @@
     },
     {
       "startIndex": 41,
-      "endIndex": 42,
+      "endIndex": 43,
       "top": [
         41,
-        42
+        42,
+        43
       ],
       "bottom": [],
       "hits": {
@@ -26346,6 +26700,37 @@
             },
             "type": "H",
             "description": "Single"
+          },
+          {
+            "team": {
+              "springLeague": {
+                "id": 114,
+                "name": "Cactus League",
+                "link": "/api/v1/league/114",
+                "abbreviation": "CL"
+              },
+              "allStarStatus": "N",
+              "id": 145,
+              "name": "Chicago White Sox",
+              "link": "/api/v1/teams/145"
+            },
+            "inning": 6,
+            "pitcher": {
+              "id": 681870,
+              "fullName": "Erik Sabrowski",
+              "link": "/api/v1/people/681870"
+            },
+            "batter": {
+              "id": 808959,
+              "fullName": "Munetaka Murakami",
+              "link": "/api/v1/people/808959"
+            },
+            "coordinates": {
+              "x": 151.81,
+              "y": 163.84
+            },
+            "type": "O",
+            "description": "Groundout"
           }
         ],
         "home": []
