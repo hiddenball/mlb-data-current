@@ -4,12 +4,14 @@
   "link": "/api/v1.1/game/849819/feed/live",
   "metaData": {
     "wait": 10,
-    "timeStamp": "20261006_235402",
+    "timeStamp": "20261006_235531",
     "gameEvents": [
-      "pitching_substitution"
+      "swinging_strike"
     ],
     "logicalEvents": [
-      "pitcherChange"
+      "countChange",
+      "count01",
+      "pitcherChangeComplete"
     ]
   },
   "gameData": {
@@ -21075,9 +21077,6 @@
         {
           "result": {
             "type": "atBat",
-            "event": "Pitching Substitution",
-            "eventType": "pitching_substitution",
-            "description": "Pitching Change: Dylan Dodd replaces Chris Sale.",
             "rbi": 0,
             "awayScore": 3,
             "homeScore": 1,
@@ -21088,8 +21087,8 @@
             "halfInning": "top",
             "isTopInning": true,
             "inning": 6,
-            "startTime": "2026-10-06T23:54:02.881Z",
-            "endTime": "2026-10-06T23:54:02.894Z",
+            "startTime": "2026-10-06T23:55:29.020Z",
+            "endTime": "2026-10-06T23:55:32.020Z",
             "isComplete": false,
             "isScoringPlay": false,
             "hasOut": false,
@@ -21097,7 +21096,7 @@
           },
           "count": {
             "balls": 0,
-            "strikes": 0,
+            "strikes": 1,
             "outs": 0
           },
           "matchup": {
@@ -21476,7 +21475,9 @@
               "menOnBase": "Empty"
             }
           },
-          "pitchIndex": [],
+          "pitchIndex": [
+            3
+          ],
           "actionIndex": [
             0,
             1,
@@ -21575,7 +21576,7 @@
               },
               "index": 2,
               "startTime": "2026-10-06T23:54:02.894Z",
-              "endTime": "2026-10-06T23:54:02.894Z",
+              "endTime": "2026-10-06T23:55:31.324Z",
               "isPitch": false,
               "isSubstitution": true,
               "type": "action",
@@ -21589,18 +21590,81 @@
                 "type": "Pitcher",
                 "abbreviation": "P"
               }
+            },
+            {
+              "details": {
+                "call": {
+                  "code": "S",
+                  "description": "Swinging Strike"
+                },
+                "description": "Swinging Strike",
+                "code": "S",
+                "ballColor": "rgba(170, 21, 11, 1.0)",
+                "trailColor": "rgba(152, 0, 101, 1.0)",
+                "isInPlay": false,
+                "isStrike": true,
+                "isBall": false,
+                "type": {
+                  "code": "FC",
+                  "description": "Cutter"
+                },
+                "isOut": false,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 0,
+                "strikes": 1,
+                "outs": 0
+              },
+              "pitchData": {
+                "startSpeed": 86.6,
+                "endSpeed": 79.8,
+                "strikeZoneTop": 3.237,
+                "strikeZoneBottom": 1.633,
+                "strikeZoneWidth": 17.0,
+                "strikeZoneDepth": 8.5,
+                "coordinates": {
+                  "aY": 25.621601910980964,
+                  "aZ": -27.503405111536424,
+                  "pfxX": 0.8387622764981946,
+                  "pfxZ": 2.916771006531454,
+                  "pX": -0.16028988170992398,
+                  "pZ": 0.732221887784042,
+                  "vX0": -5.107063658332013,
+                  "vY0": -125.83179284390741,
+                  "vZ0": -7.4260098252637095,
+                  "x": 123.11,
+                  "y": 219.01,
+                  "x0": 1.7870441709424527,
+                  "y0": 50.00539705098014,
+                  "z0": 5.9512748503170725,
+                  "aX": 1.3449852906433404
+                },
+                "breaks": {
+                  "breakAngle": 27.6,
+                  "breakVertical": -32.8,
+                  "breakVerticalInduced": 3.8,
+                  "breakHorizontal": -0.4
+                },
+                "zone": 13,
+                "plateTime": 0.4353458105936019
+              },
+              "index": 3,
+              "playId": "82e2cfb8-4b9a-380e-8c05-94008bded250",
+              "pitchNumber": 1,
+              "startTime": "2026-10-06T23:55:31.324Z",
+              "endTime": "2026-10-06T23:55:32.020Z",
+              "isPitch": true,
+              "type": "pitch"
             }
           ],
-          "playEndTime": "2026-10-06T23:54:02.894Z",
+          "playEndTime": "2026-10-06T23:55:32.020Z",
           "atBatIndex": 44
         }
       ],
       "currentPlay": {
         "result": {
           "type": "atBat",
-          "event": "Pitching Substitution",
-          "eventType": "pitching_substitution",
-          "description": "Pitching Change: Dylan Dodd replaces Chris Sale.",
           "rbi": 0,
           "awayScore": 3,
           "homeScore": 1,
@@ -21611,8 +21675,8 @@
           "halfInning": "top",
           "isTopInning": true,
           "inning": 6,
-          "startTime": "2026-10-06T23:54:02.881Z",
-          "endTime": "2026-10-06T23:54:02.894Z",
+          "startTime": "2026-10-06T23:55:29.020Z",
+          "endTime": "2026-10-06T23:55:32.020Z",
           "isComplete": false,
           "isScoringPlay": false,
           "hasOut": false,
@@ -21620,7 +21684,7 @@
         },
         "count": {
           "balls": 0,
-          "strikes": 0,
+          "strikes": 1,
           "outs": 0
         },
         "matchup": {
@@ -21999,7 +22063,9 @@
             "menOnBase": "Empty"
           }
         },
-        "pitchIndex": [],
+        "pitchIndex": [
+          3
+        ],
         "actionIndex": [
           0,
           1,
@@ -22098,7 +22164,7 @@
             },
             "index": 2,
             "startTime": "2026-10-06T23:54:02.894Z",
-            "endTime": "2026-10-06T23:54:02.894Z",
+            "endTime": "2026-10-06T23:55:31.324Z",
             "isPitch": false,
             "isSubstitution": true,
             "type": "action",
@@ -22112,9 +22178,75 @@
               "type": "Pitcher",
               "abbreviation": "P"
             }
+          },
+          {
+            "details": {
+              "call": {
+                "code": "S",
+                "description": "Swinging Strike"
+              },
+              "description": "Swinging Strike",
+              "code": "S",
+              "ballColor": "rgba(170, 21, 11, 1.0)",
+              "trailColor": "rgba(152, 0, 101, 1.0)",
+              "isInPlay": false,
+              "isStrike": true,
+              "isBall": false,
+              "type": {
+                "code": "FC",
+                "description": "Cutter"
+              },
+              "isOut": false,
+              "hasReview": false
+            },
+            "count": {
+              "balls": 0,
+              "strikes": 1,
+              "outs": 0
+            },
+            "pitchData": {
+              "startSpeed": 86.6,
+              "endSpeed": 79.8,
+              "strikeZoneTop": 3.237,
+              "strikeZoneBottom": 1.633,
+              "strikeZoneWidth": 17.0,
+              "strikeZoneDepth": 8.5,
+              "coordinates": {
+                "aY": 25.621601910980964,
+                "aZ": -27.503405111536424,
+                "pfxX": 0.8387622764981946,
+                "pfxZ": 2.916771006531454,
+                "pX": -0.16028988170992398,
+                "pZ": 0.732221887784042,
+                "vX0": -5.107063658332013,
+                "vY0": -125.83179284390741,
+                "vZ0": -7.4260098252637095,
+                "x": 123.11,
+                "y": 219.01,
+                "x0": 1.7870441709424527,
+                "y0": 50.00539705098014,
+                "z0": 5.9512748503170725,
+                "aX": 1.3449852906433404
+              },
+              "breaks": {
+                "breakAngle": 27.6,
+                "breakVertical": -32.8,
+                "breakVerticalInduced": 3.8,
+                "breakHorizontal": -0.4
+              },
+              "zone": 13,
+              "plateTime": 0.4353458105936019
+            },
+            "index": 3,
+            "playId": "82e2cfb8-4b9a-380e-8c05-94008bded250",
+            "pitchNumber": 1,
+            "startTime": "2026-10-06T23:55:31.324Z",
+            "endTime": "2026-10-06T23:55:32.020Z",
+            "isPitch": true,
+            "type": "pitch"
           }
         ],
-        "playEndTime": "2026-10-06T23:54:02.894Z",
+        "playEndTime": "2026-10-06T23:55:32.020Z",
         "atBatIndex": 44
       },
       "scoringPlays": [
@@ -23333,7 +23465,7 @@
         }
       },
       "balls": 0,
-      "strikes": 0,
+      "strikes": 1,
       "outs": 0
     },
     "boxscore": {
@@ -28041,7 +28173,7 @@
               "stolenBases": 1,
               "stolenBasePercentage": "1.000",
               "caughtStealingPercentage": ".000",
-              "numberOfPitches": 95,
+              "numberOfPitches": 96,
               "era": "4.09",
               "inningsPitched": "5.0",
               "saveOpportunities": 0,
@@ -28051,17 +28183,17 @@
               "outs": 15,
               "completeGames": 0,
               "shutouts": 0,
-              "pitchesThrown": 95,
+              "pitchesThrown": 96,
               "balls": 33,
-              "strikes": 62,
-              "strikePercentage": ".650",
+              "strikes": 63,
+              "strikePercentage": ".660",
               "hitBatsmen": 0,
               "balks": 0,
               "wildPitches": 0,
               "pickoffs": 0,
               "groundOutsToAirouts": "0.50",
               "rbi": 3,
-              "pitchesPerInning": "19.00",
+              "pitchesPerInning": "19.20",
               "runsScoredPer9": "5.40",
               "homeRunsPer9": "3.60",
               "inheritedRunners": 0,
@@ -28106,42 +28238,10 @@
               },
               "parentTeamId": 144,
               "stats": {
-                "batting": {
-                  "summary": "0-0",
-                  "gamesPlayed": 1,
-                  "flyOuts": 0,
-                  "groundOuts": 0,
-                  "airOuts": 0,
-                  "runs": 0,
-                  "doubles": 0,
-                  "triples": 0,
-                  "homeRuns": 0,
-                  "strikeOuts": 0,
-                  "baseOnBalls": 0,
-                  "intentionalWalks": 0,
-                  "hits": 0,
-                  "hitByPitch": 0,
-                  "atBats": 0,
-                  "caughtStealing": 0,
-                  "stolenBases": 0,
-                  "stolenBasePercentage": ".---",
-                  "groundIntoDoublePlay": 0,
-                  "groundIntoTriplePlay": 0,
-                  "plateAppearances": 0,
-                  "totalBases": 0,
-                  "rbi": 0,
-                  "leftOnBase": 0,
-                  "sacBunts": 0,
-                  "sacFlies": 0,
-                  "catchersInterference": 0,
-                  "pickoffs": 0,
-                  "atBatsPerHomeRun": "-.--",
-                  "popOuts": 0,
-                  "lineOuts": 0
-                },
+                "batting": {},
                 "pitching": {
                   "summary": "0.0 IP, 0 ER, 0 K, 0 BB",
-                  "gamesPlayed": 0,
+                  "gamesPlayed": 1,
                   "gamesStarted": 0,
                   "flyOuts": 0,
                   "groundOuts": 0,
@@ -28159,7 +28259,7 @@
                   "caughtStealing": 0,
                   "stolenBases": 0,
                   "stolenBasePercentage": ".---",
-                  "numberOfPitches": 0,
+                  "numberOfPitches": 1,
                   "inningsPitched": "0.0",
                   "wins": 0,
                   "losses": 0,
@@ -28170,12 +28270,13 @@
                   "earnedRuns": 0,
                   "battersFaced": 0,
                   "outs": 0,
-                  "gamesPitched": 0,
+                  "gamesPitched": 1,
                   "completeGames": 0,
                   "shutouts": 0,
+                  "pitchesThrown": 1,
                   "balls": 0,
-                  "strikes": 0,
-                  "strikePercentage": "-.--",
+                  "strikes": 1,
+                  "strikePercentage": "1.000",
                   "hitBatsmen": 0,
                   "balks": 0,
                   "wildPitches": 0,
@@ -28209,7 +28310,7 @@
               },
               "seasonStats": {
                 "batting": {
-                  "gamesPlayed": 1,
+                  "gamesPlayed": 0,
                   "flyOuts": 0,
                   "groundOuts": 0,
                   "airOuts": 0,
@@ -28248,7 +28349,7 @@
                   "lineOuts": 0
                 },
                 "pitching": {
-                  "gamesPlayed": 2,
+                  "gamesPlayed": 3,
                   "gamesStarted": 1,
                   "flyOuts": 2,
                   "groundOuts": 3,
@@ -28268,7 +28369,7 @@
                   "stolenBases": 0,
                   "stolenBasePercentage": ".---",
                   "caughtStealingPercentage": ".---",
-                  "numberOfPitches": 61,
+                  "numberOfPitches": 62,
                   "era": "2.45",
                   "inningsPitched": "3.2",
                   "wins": 0,
@@ -28281,13 +28382,13 @@
                   "whip": "0.82",
                   "battersFaced": 14,
                   "outs": 11,
-                  "gamesPitched": 2,
+                  "gamesPitched": 3,
                   "completeGames": 0,
                   "shutouts": 0,
-                  "pitchesThrown": 61,
+                  "pitchesThrown": 62,
                   "balls": 23,
-                  "strikes": 38,
-                  "strikePercentage": ".620",
+                  "strikes": 39,
+                  "strikePercentage": ".630",
                   "hitBatsmen": 0,
                   "balks": 0,
                   "wildPitches": 0,
@@ -28295,7 +28396,7 @@
                   "groundOutsToAirouts": "0.75",
                   "rbi": 0,
                   "winPercentage": ".---",
-                  "pitchesPerInning": "16.64",
+                  "pitchesPerInning": "16.91",
                   "gamesFinished": 0,
                   "strikeoutWalkRatio": "-.--",
                   "strikeoutsPer9Inn": "9.82",
@@ -32894,7 +32995,7 @@
         },
         {
           "label": "Pitches-strikes",
-          "value": "Yamamoto 75-45; Sale 95-62; Dodd 0-0."
+          "value": "Yamamoto 75-45; Sale 95-62; Dodd 1-1."
         },
         {
           "label": "Groundouts-flyouts",
@@ -32902,7 +33003,7 @@
         },
         {
           "label": "Batters faced",
-          "value": "Yamamoto 20; Sale 24."
+          "value": "Yamamoto 20; Sale 24; Dodd 0."
         },
         {
           "label": "Umpires",
