@@ -23101,6 +23101,9 @@
   {
     "result": {
       "type": "atBat",
+      "event": "Catcher Interference",
+      "eventType": "catcher_interf",
+      "description": "Shohei Ohtani reaches on catcher interference by Drake Baldwin. Will Smith to 2nd. Shohei Ohtani to 1st.",
       "rbi": 0,
       "awayScore": 0,
       "homeScore": 0,
@@ -23112,15 +23115,16 @@
       "isTopInning": true,
       "inning": 3,
       "startTime": "2026-10-06T23:02:31.548Z",
-      "endTime": "2026-10-06T23:02:41.066Z",
-      "isComplete": false,
+      "endTime": "2026-10-06T23:03:51.587Z",
+      "isComplete": true,
       "isScoringPlay": false,
+      "hasReview": false,
       "hasOut": false,
       "captivatingIndex": 0
     },
     "count": {
-      "balls": 0,
-      "strikes": 1,
+      "balls": 1,
+      "strikes": 2,
       "outs": 2
     },
     "matchup": {
@@ -23143,6 +23147,11 @@
         "description": "Left"
       },
       "postOnFirst": {
+        "id": 660271,
+        "fullName": "Shohei Ohtani",
+        "link": "/api/v1/people/660271"
+      },
+      "postOnSecond": {
         "id": 669257,
         "fullName": "Will Smith",
         "link": "/api/v1/people/669257"
@@ -23506,15 +23515,89 @@
       "splits": {
         "batter": "vs_LHP",
         "pitcher": "vs_LHB",
-        "menOnBase": "RISP"
+        "menOnBase": "Loaded"
       }
     },
     "pitchIndex": [
-      0
+      0,
+      1,
+      2
     ],
     "actionIndex": [],
-    "runnerIndex": [],
-    "runners": [],
+    "runnerIndex": [
+      0,
+      1
+    ],
+    "runners": [
+      {
+        "movement": {
+          "originBase": "1B",
+          "start": "1B",
+          "end": "2B",
+          "outBase": null,
+          "isOut": false,
+          "outNumber": null
+        },
+        "details": {
+          "event": "Catcher Interference",
+          "eventType": "catcher_interf",
+          "movementReason": "r_adv_play",
+          "runner": {
+            "id": 669257,
+            "fullName": "Will Smith",
+            "link": "/api/v1/people/669257"
+          },
+          "responsiblePitcher": null,
+          "isScoringEvent": false,
+          "rbi": false,
+          "earned": false,
+          "teamUnearned": false,
+          "playIndex": 2
+        },
+        "credits": []
+      },
+      {
+        "movement": {
+          "originBase": null,
+          "start": null,
+          "end": "1B",
+          "outBase": null,
+          "isOut": false,
+          "outNumber": null
+        },
+        "details": {
+          "event": "Catcher Interference",
+          "eventType": "catcher_interf",
+          "movementReason": null,
+          "runner": {
+            "id": 660271,
+            "fullName": "Shohei Ohtani",
+            "link": "/api/v1/people/660271"
+          },
+          "responsiblePitcher": null,
+          "isScoringEvent": false,
+          "rbi": false,
+          "earned": false,
+          "teamUnearned": false,
+          "playIndex": 2
+        },
+        "credits": [
+          {
+            "player": {
+              "id": 686948,
+              "link": "/api/v1/people/686948"
+            },
+            "position": {
+              "code": "2",
+              "name": "Catcher",
+              "type": "Catcher",
+              "abbreviation": "C"
+            },
+            "credit": "c_catcher_interf"
+          }
+        ]
+      }
+    ],
     "playEvents": [
       {
         "details": {
@@ -23580,6 +23663,7 @@
           },
           "zone": 5,
           "plateTime": 0.38427091210201114,
+          "extension": 7.148506395414529,
           "strikeZoneInfo": {
             "depthInches": 8.5,
             "strikeZoneTop": 3.369,
@@ -23607,7 +23691,421 @@
         "playId": "987c5e8e-a315-3d3e-89c8-0f96d61b37b3",
         "pitchNumber": 1,
         "startTime": "2026-10-06T23:02:40.416Z",
-        "endTime": "2026-10-06T23:02:41.066Z",
+        "endTime": "2026-10-06T23:03:02.280Z",
+        "isPitch": true,
+        "type": "pitch",
+        "defense": {
+          "pitcher": {
+            "id": 519242,
+            "link": "/api/v1/people/519242",
+            "pitchHand": {
+              "code": "L",
+              "description": "Left"
+            }
+          },
+          "catcher": {
+            "id": 686948,
+            "link": "/api/v1/people/686948"
+          },
+          "first": {
+            "id": 621566,
+            "link": "/api/v1/people/621566"
+          },
+          "second": {
+            "id": 645277,
+            "link": "/api/v1/people/645277"
+          },
+          "third": {
+            "id": 663586,
+            "link": "/api/v1/people/663586"
+          },
+          "shortstop": {
+            "id": 673490,
+            "link": "/api/v1/people/673490"
+          },
+          "left": {
+            "id": 643289,
+            "link": "/api/v1/people/643289"
+          },
+          "center": {
+            "id": 671739,
+            "link": "/api/v1/people/671739"
+          },
+          "right": {
+            "id": 657041,
+            "link": "/api/v1/people/657041"
+          }
+        },
+        "offense": {
+          "batter": {
+            "id": 660271,
+            "link": "/api/v1/people/660271",
+            "batSide": {
+              "code": "L",
+              "description": "Left"
+            }
+          },
+          "first": {
+            "id": 669257,
+            "link": "/api/v1/people/669257"
+          },
+          "third": {
+            "id": 605141,
+            "link": "/api/v1/people/605141"
+          },
+          "batterPosition": {
+            "code": "10",
+            "name": "Designated Hitter",
+            "type": "Hitter",
+            "abbreviation": "DH"
+          }
+        },
+        "officials": [
+          {
+            "official": {
+              "id": 428442,
+              "link": "/api/v1/people/428442"
+            },
+            "officialType": "Home Plate"
+          },
+          {
+            "official": {
+              "id": 503586,
+              "link": "/api/v1/people/503586"
+            },
+            "officialType": "First Base"
+          },
+          {
+            "official": {
+              "id": 427554,
+              "link": "/api/v1/people/427554"
+            },
+            "officialType": "Second Base"
+          },
+          {
+            "official": {
+              "id": 482631,
+              "link": "/api/v1/people/482631"
+            },
+            "officialType": "Third Base"
+          },
+          {
+            "official": {
+              "id": 577468,
+              "link": "/api/v1/people/577468"
+            },
+            "officialType": "Left Field"
+          },
+          {
+            "official": {
+              "id": 427197,
+              "link": "/api/v1/people/427197"
+            },
+            "officialType": "Right Field"
+          }
+        ],
+        "contextMetrics": {}
+      },
+      {
+        "details": {
+          "call": {
+            "code": "B",
+            "description": "Ball"
+          },
+          "description": "Ball",
+          "code": "B",
+          "ballColor": "rgba(39, 161, 39, 1.0)",
+          "trailColor": "rgba(188, 0, 33, 1.0)",
+          "isInPlay": false,
+          "isStrike": false,
+          "isBall": true,
+          "type": {
+            "code": "FF",
+            "description": "Four-Seam Fastball"
+          },
+          "isOut": false,
+          "hasReview": false
+        },
+        "count": {
+          "balls": 1,
+          "strikes": 1,
+          "outs": 2
+        },
+        "preCount": {
+          "balls": 0,
+          "strikes": 1,
+          "outs": 2
+        },
+        "pitchData": {
+          "startSpeed": 100.3,
+          "endSpeed": 91.8,
+          "strikeZoneTop": 3.369,
+          "strikeZoneBottom": 1.7,
+          "strikeZoneWidth": 17.0,
+          "strikeZoneDepth": 8.5,
+          "coordinates": {
+            "aY": 33.05384606286949,
+            "aZ": -22.408531051967504,
+            "pfxX": 8.605953937510549,
+            "pfxZ": 4.531788072196003,
+            "pX": -0.796882799048884,
+            "pZ": 3.2688187005066056,
+            "vX0": -12.739166270202194,
+            "vY0": -145.6411991891405,
+            "vZ0": -0.9581519885490861,
+            "x": 147.38,
+            "y": 150.52,
+            "x0": 2.5085463182895023,
+            "y0": 50.00657295114575,
+            "z0": 4.952854227297723,
+            "aX": 18.55974063351627
+          },
+          "breaks": {
+            "breakAngle": 32.4,
+            "breakVertical": -19.1,
+            "breakVerticalInduced": 8.2,
+            "breakHorizontal": -13.2,
+            "spinRate": 2309,
+            "spinDirection": 109
+          },
+          "zone": 11,
+          "plateTime": 0.37557201719075817,
+          "extension": 6.63191321103369,
+          "strikeZoneInfo": {
+            "depthInches": 8.5,
+            "strikeZoneTop": 3.369,
+            "baseballDiameterInches": 2.9,
+            "edgeDistance": 0.0003758191577091369,
+            "widthInches": 17.0,
+            "edgePositionZone": {
+              "x": -0.7083333333333334,
+              "y": 0.7083333333333334,
+              "z": 3.222026974208221
+            },
+            "plateZ": 3.222026974208221,
+            "plateX": -0.8295424858243758,
+            "plateY": 0.7083333333333334,
+            "strikeZoneBottom": 1.7,
+            "isStrike": false,
+            "edgePositionBall": {
+              "x": -0.7087091524910425,
+              "y": 0.7083333333333334,
+              "z": 3.222026974208221
+            }
+          }
+        },
+        "index": 1,
+        "playId": "48eef71a-7050-3576-8247-2ebebbd6f66f",
+        "pitchNumber": 2,
+        "startTime": "2026-10-06T23:03:02.280Z",
+        "endTime": "2026-10-06T23:03:23.281Z",
+        "isPitch": true,
+        "type": "pitch",
+        "defense": {
+          "pitcher": {
+            "id": 519242,
+            "link": "/api/v1/people/519242",
+            "pitchHand": {
+              "code": "L",
+              "description": "Left"
+            }
+          },
+          "catcher": {
+            "id": 686948,
+            "link": "/api/v1/people/686948"
+          },
+          "first": {
+            "id": 621566,
+            "link": "/api/v1/people/621566"
+          },
+          "second": {
+            "id": 645277,
+            "link": "/api/v1/people/645277"
+          },
+          "third": {
+            "id": 663586,
+            "link": "/api/v1/people/663586"
+          },
+          "shortstop": {
+            "id": 673490,
+            "link": "/api/v1/people/673490"
+          },
+          "left": {
+            "id": 643289,
+            "link": "/api/v1/people/643289"
+          },
+          "center": {
+            "id": 671739,
+            "link": "/api/v1/people/671739"
+          },
+          "right": {
+            "id": 657041,
+            "link": "/api/v1/people/657041"
+          }
+        },
+        "offense": {
+          "batter": {
+            "id": 660271,
+            "link": "/api/v1/people/660271",
+            "batSide": {
+              "code": "L",
+              "description": "Left"
+            }
+          },
+          "first": {
+            "id": 669257,
+            "link": "/api/v1/people/669257"
+          },
+          "third": {
+            "id": 605141,
+            "link": "/api/v1/people/605141"
+          },
+          "batterPosition": {
+            "code": "10",
+            "name": "Designated Hitter",
+            "type": "Hitter",
+            "abbreviation": "DH"
+          }
+        },
+        "officials": [
+          {
+            "official": {
+              "id": 428442,
+              "link": "/api/v1/people/428442"
+            },
+            "officialType": "Home Plate"
+          },
+          {
+            "official": {
+              "id": 503586,
+              "link": "/api/v1/people/503586"
+            },
+            "officialType": "First Base"
+          },
+          {
+            "official": {
+              "id": 427554,
+              "link": "/api/v1/people/427554"
+            },
+            "officialType": "Second Base"
+          },
+          {
+            "official": {
+              "id": 482631,
+              "link": "/api/v1/people/482631"
+            },
+            "officialType": "Third Base"
+          },
+          {
+            "official": {
+              "id": 577468,
+              "link": "/api/v1/people/577468"
+            },
+            "officialType": "Left Field"
+          },
+          {
+            "official": {
+              "id": 427197,
+              "link": "/api/v1/people/427197"
+            },
+            "officialType": "Right Field"
+          }
+        ],
+        "contextMetrics": {}
+      },
+      {
+        "details": {
+          "call": {
+            "code": "F",
+            "description": "Foul"
+          },
+          "description": "Foul",
+          "code": "F",
+          "ballColor": "rgba(170, 21, 11, 1.0)",
+          "trailColor": "rgba(50, 0, 221, 1.0)",
+          "isInPlay": false,
+          "isStrike": true,
+          "isBall": false,
+          "type": {
+            "code": "SI",
+            "description": "Sinker"
+          },
+          "isOut": false,
+          "hasReview": false
+        },
+        "count": {
+          "balls": 1,
+          "strikes": 2,
+          "outs": 2
+        },
+        "preCount": {
+          "balls": 1,
+          "strikes": 1,
+          "outs": 2
+        },
+        "pitchData": {
+          "startSpeed": 98.6,
+          "endSpeed": 90.2,
+          "strikeZoneTop": 3.369,
+          "strikeZoneBottom": 1.7,
+          "strikeZoneWidth": 17.0,
+          "strikeZoneDepth": 8.5,
+          "coordinates": {
+            "aY": 31.580573521339073,
+            "aZ": -30.413544418031417,
+            "pfxX": 11.653243572176196,
+            "pfxZ": 0.843794078617849,
+            "pX": -0.15641912047572415,
+            "pZ": 2.959377097424826,
+            "vX0": -12.576578810988142,
+            "vY0": -143.0356880284033,
+            "vZ0": 0.5501995832746065,
+            "x": 122.96,
+            "y": 158.88,
+            "x0": 2.7738399139192835,
+            "y0": 50.00008511527124,
+            "z0": 4.664638547722372,
+            "aX": 24.2531942501157
+          },
+          "breaks": {
+            "breakAngle": 20.4,
+            "breakVertical": -26.4,
+            "breakVerticalInduced": 1.8,
+            "breakHorizontal": -18.7,
+            "spinRate": 2223,
+            "spinDirection": 111
+          },
+          "zone": 2,
+          "plateTime": 0.38225009222469897,
+          "extension": 6.965244612515873,
+          "strikeZoneInfo": {
+            "depthInches": 8.5,
+            "strikeZoneTop": 3.369,
+            "baseballDiameterInches": 2.9,
+            "edgeDistance": 0.5857275236374972,
+            "widthInches": 17.0,
+            "edgePositionZone": {
+              "x": -0.17758797915209512,
+              "y": 0.7083333333333334,
+              "z": 3.369
+            },
+            "plateZ": 2.904105809695836,
+            "plateX": -0.17758797915209512,
+            "plateY": 0.7083333333333334,
+            "strikeZoneBottom": 1.7,
+            "isStrike": true,
+            "edgePositionBall": {
+              "x": -0.17758797915209512,
+              "y": 0.7083333333333334,
+              "z": 2.783272476362503
+            }
+          }
+        },
+        "index": 2,
+        "playId": "72791fdc-ab27-3455-97fc-7bcf955e7ced",
+        "pitchNumber": 3,
+        "startTime": "2026-10-06T23:03:23.281Z",
+        "endTime": "2026-10-06T23:03:51.587Z",
         "isPitch": true,
         "type": "pitch",
         "defense": {
@@ -23723,13 +24221,30 @@
         "contextMetrics": {}
       }
     ],
+    "credits": [
+      {
+        "player": {
+          "id": 660271,
+          "link": "/api/v1/people/660271"
+        },
+        "credit": "b_pa"
+      },
+      {
+        "player": {
+          "id": 519242,
+          "link": "/api/v1/people/519242"
+        },
+        "credit": "p_pa"
+      }
+    ],
+    "flags": [],
     "homeTeamWinProbability": 50.0,
     "awayTeamWinProbability": 50.0,
     "homeTeamWinProbabilityAdded": 0.0,
     "leverageIndex": 2.11,
     "dramaIndex": 58.0,
     "contextMetrics": {},
-    "playEndTime": "2026-10-06T23:02:41.066Z",
+    "playEndTime": "2026-10-06T23:03:51.587Z",
     "atBatIndex": 20
   }
 ]
