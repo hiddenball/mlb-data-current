@@ -14107,8 +14107,11 @@
     {
       "result": {
         "type": "atBat",
-        "rbi": 0,
-        "awayScore": 0,
+        "event": "Home Run",
+        "eventType": "home_run",
+        "description": "Enrique Hernández homers (1) on a fly ball to left field. Andy Pages scores.",
+        "rbi": 2,
+        "awayScore": 2,
         "homeScore": 0,
         "isOut": false
       },
@@ -14118,11 +14121,12 @@
         "isTopInning": true,
         "inning": 4,
         "startTime": "2026-10-06T23:17:21.835Z",
-        "endTime": "2026-10-06T23:17:29.619Z",
-        "isComplete": false,
-        "isScoringPlay": false,
+        "endTime": "2026-10-06T23:18:02.568Z",
+        "isComplete": true,
+        "isScoringPlay": true,
+        "hasReview": false,
         "hasOut": false,
-        "captivatingIndex": 0
+        "captivatingIndex": 75
       },
       "count": {
         "balls": 1,
@@ -14147,11 +14151,6 @@
         "pitchHand": {
           "code": "L",
           "description": "Left"
-        },
-        "postOnFirst": {
-          "id": 681624,
-          "fullName": "Andy Pages",
-          "link": "/api/v1/people/681624"
         },
         "batterHotColdZoneStats": {
           "stats": [
@@ -14206,9 +14205,9 @@
                       },
                       {
                         "zone": "07",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
+                        "color": "rgba(214, 41, 52, .55)",
+                        "temp": "hot",
+                        "value": "106.76"
                       },
                       {
                         "zone": "08",
@@ -14291,9 +14290,9 @@
                       },
                       {
                         "zone": "07",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
+                        "color": "rgba(214, 41, 52, .55)",
+                        "temp": "hot",
+                        "value": "1.000"
                       },
                       {
                         "zone": "08",
@@ -14376,9 +14375,9 @@
                       },
                       {
                         "zone": "07",
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": "-"
+                        "color": "rgba(214, 41, 52, .55)",
+                        "temp": "hot",
+                        "value": "5.000"
                       },
                       {
                         "zone": "08",
@@ -14462,9 +14461,9 @@
           },
           {
             "zone": "07",
-            "color": "rgba(255, 255, 255, 0.55)",
-            "temp": "lukewarm",
-            "value": "-"
+            "color": "rgba(214, 41, 52, .55)",
+            "temp": "hot",
+            "value": "5.000"
           },
           {
             "zone": "08",
@@ -14507,15 +14506,80 @@
         "splits": {
           "batter": "vs_LHP",
           "pitcher": "vs_RHB",
-          "menOnBase": "Men_On"
+          "menOnBase": "Empty"
         }
       },
       "pitchIndex": [
-        0
+        0,
+        1
       ],
       "actionIndex": [],
-      "runnerIndex": [],
-      "runners": [],
+      "runnerIndex": [
+        0,
+        1
+      ],
+      "runners": [
+        {
+          "movement": {
+            "originBase": null,
+            "start": null,
+            "end": "score",
+            "outBase": null,
+            "isOut": false,
+            "outNumber": null
+          },
+          "details": {
+            "event": "Home Run",
+            "eventType": "home_run",
+            "movementReason": null,
+            "runner": {
+              "id": 571771,
+              "fullName": "Enrique Hernández",
+              "link": "/api/v1/people/571771"
+            },
+            "responsiblePitcher": {
+              "id": 519242,
+              "link": "/api/v1/people/519242"
+            },
+            "isScoringEvent": true,
+            "rbi": true,
+            "earned": true,
+            "teamUnearned": false,
+            "playIndex": 1
+          },
+          "credits": []
+        },
+        {
+          "movement": {
+            "originBase": "1B",
+            "start": "1B",
+            "end": "score",
+            "outBase": null,
+            "isOut": false,
+            "outNumber": null
+          },
+          "details": {
+            "event": "Home Run",
+            "eventType": "home_run",
+            "movementReason": "r_adv_force",
+            "runner": {
+              "id": 681624,
+              "fullName": "Andy Pages",
+              "link": "/api/v1/people/681624"
+            },
+            "responsiblePitcher": {
+              "id": 519242,
+              "link": "/api/v1/people/519242"
+            },
+            "isScoringEvent": true,
+            "rbi": true,
+            "earned": true,
+            "teamUnearned": false,
+            "playIndex": 1
+          },
+          "credits": []
+        }
+      ],
       "playEvents": [
         {
           "details": {
@@ -14576,6 +14640,7 @@
             },
             "zone": 13,
             "plateTime": 0.4096174784018678,
+            "extension": 7.045285195530014,
             "strikeZoneInfo": {
               "depthInches": 8.5,
               "strikeZoneTop": 3.131,
@@ -14603,20 +14668,125 @@
           "playId": "3371658e-713c-3cd1-b637-58cfcfff1f8d",
           "pitchNumber": 1,
           "startTime": "2026-10-06T23:17:28.908Z",
-          "endTime": "2026-10-06T23:17:29.619Z",
+          "endTime": "2026-10-06T23:17:48.642Z",
+          "isPitch": true,
+          "type": "pitch"
+        },
+        {
+          "details": {
+            "call": {
+              "code": "E",
+              "description": "In play, run(s)"
+            },
+            "description": "In play, run(s)",
+            "code": "E",
+            "ballColor": "rgba(26, 86, 190, 1.0)",
+            "trailColor": "rgba(0, 85, 254, 1.0)",
+            "isInPlay": true,
+            "isStrike": false,
+            "isBall": false,
+            "type": {
+              "code": "CH",
+              "description": "Changeup"
+            },
+            "isOut": false,
+            "hasReview": false
+          },
+          "count": {
+            "balls": 1,
+            "strikes": 0,
+            "outs": 1
+          },
+          "pitchData": {
+            "startSpeed": 88.9,
+            "endSpeed": 81.7,
+            "strikeZoneTop": 3.131,
+            "strikeZoneBottom": 1.58,
+            "strikeZoneWidth": 17.0,
+            "strikeZoneDepth": 8.5,
+            "coordinates": {
+              "aY": 25.803256910251424,
+              "aZ": -32.15200183540877,
+              "pfxX": 9.424430807118416,
+              "pfxZ": 0.012579259947351318,
+              "pX": -0.4511335423209453,
+              "pZ": 1.7735955260271579,
+              "vX0": -11.150663358385103,
+              "vY0": -129.08007520995847,
+              "vZ0": -0.8552684656539887,
+              "x": 134.2,
+              "y": 190.89,
+              "x0": 2.6916917427016087,
+              "y0": 50.00363407847245,
+              "z0": 4.575580367833776,
+              "aX": 15.972997476917413
+            },
+            "breaks": {
+              "breakAngle": 28.8,
+              "breakVertical": -34.6,
+              "breakVerticalInduced": 0.1,
+              "breakHorizontal": -14.8,
+              "spinRate": 1934,
+              "spinDirection": 92
+            },
+            "zone": 7,
+            "plateTime": 0.42366006066961504,
+            "strikeZoneInfo": {
+              "depthInches": 8.5,
+              "strikeZoneTop": 3.131,
+              "baseballDiameterInches": 2.9,
+              "edgeDistance": 0.23352258852405527,
+              "widthInches": 17.0,
+              "edgePositionZone": {
+                "x": -0.4797702562005828,
+                "y": 0.7083333333333334,
+                "z": 1.58
+              },
+              "plateZ": 1.692689255190722,
+              "plateX": -0.4797702562005828,
+              "plateY": 0.7083333333333334,
+              "strikeZoneBottom": 1.58,
+              "isStrike": true,
+              "edgePositionBall": {
+                "x": -0.4797702562005828,
+                "y": 0.7083333333333334,
+                "z": 1.8135225885240553
+              }
+            }
+          },
+          "hitData": {
+            "launchSpeed": 106.8,
+            "launchAngle": 33.0,
+            "totalDistance": 406.0,
+            "trajectory": "fly_ball",
+            "hardness": "medium",
+            "location": "7",
+            "coordinates": {
+              "coordX": 30.57,
+              "coordY": 64.56
+            }
+          },
+          "index": 1,
+          "playId": "693641cb-47b7-37c3-afb9-7ac1868950f1",
+          "pitchNumber": 2,
+          "startTime": "2026-10-06T23:17:48.642Z",
+          "endTime": "2026-10-06T23:18:02.568Z",
           "isPitch": true,
           "type": "pitch"
         }
       ],
-      "playEndTime": "2026-10-06T23:17:29.619Z",
+      "playEndTime": "2026-10-06T23:18:02.568Z",
       "atBatIndex": 27
     }
   ],
   "currentPlay": {
     "result": {
       "type": "atBat",
-      "rbi": 0,
-      "awayScore": 0,
+      "event": "Home Run",
+      "eventType": "home_run",
+      "description": "Enrique Hernández homers (1) on a fly ball to left field. Andy Pages scores.",
+      "rbi": 2,
+      "awayScore": 2,
       "homeScore": 0,
       "isOut": false
     },
@@ -14626,11 +14796,12 @@
       "isTopInning": true,
       "inning": 4,
       "startTime": "2026-10-06T23:17:21.835Z",
-      "endTime": "2026-10-06T23:17:29.619Z",
-      "isComplete": false,
-      "isScoringPlay": false,
+      "endTime": "2026-10-06T23:18:02.568Z",
+      "isComplete": true,
+      "isScoringPlay": true,
+      "hasReview": false,
       "hasOut": false,
-      "captivatingIndex": 0
+      "captivatingIndex": 75
     },
     "count": {
       "balls": 1,
@@ -14655,11 +14826,6 @@
       "pitchHand": {
         "code": "L",
         "description": "Left"
-      },
-      "postOnFirst": {
-        "id": 681624,
-        "fullName": "Andy Pages",
-        "link": "/api/v1/people/681624"
       },
       "batterHotColdZoneStats": {
         "stats": [
@@ -14714,9 +14880,9 @@
                     },
                     {
                       "zone": "07",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
+                      "color": "rgba(214, 41, 52, .55)",
+                      "temp": "hot",
+                      "value": "106.76"
                     },
                     {
                       "zone": "08",
@@ -14799,9 +14965,9 @@
                     },
                     {
                       "zone": "07",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
+                      "color": "rgba(214, 41, 52, .55)",
+                      "temp": "hot",
+                      "value": "1.000"
                     },
                     {
                       "zone": "08",
@@ -14884,9 +15050,9 @@
                     },
                     {
                       "zone": "07",
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": "-"
+                      "color": "rgba(214, 41, 52, .55)",
+                      "temp": "hot",
+                      "value": "5.000"
                     },
                     {
                       "zone": "08",
@@ -14970,9 +15136,9 @@
         },
         {
           "zone": "07",
-          "color": "rgba(255, 255, 255, 0.55)",
-          "temp": "lukewarm",
-          "value": "-"
+          "color": "rgba(214, 41, 52, .55)",
+          "temp": "hot",
+          "value": "5.000"
         },
         {
           "zone": "08",
@@ -15015,15 +15181,80 @@
       "splits": {
         "batter": "vs_LHP",
         "pitcher": "vs_RHB",
-        "menOnBase": "Men_On"
+        "menOnBase": "Empty"
       }
     },
     "pitchIndex": [
-      0
+      0,
+      1
     ],
     "actionIndex": [],
-    "runnerIndex": [],
-    "runners": [],
+    "runnerIndex": [
+      0,
+      1
+    ],
+    "runners": [
+      {
+        "movement": {
+          "originBase": null,
+          "start": null,
+          "end": "score",
+          "outBase": null,
+          "isOut": false,
+          "outNumber": null
+        },
+        "details": {
+          "event": "Home Run",
+          "eventType": "home_run",
+          "movementReason": null,
+          "runner": {
+            "id": 571771,
+            "fullName": "Enrique Hernández",
+            "link": "/api/v1/people/571771"
+          },
+          "responsiblePitcher": {
+            "id": 519242,
+            "link": "/api/v1/people/519242"
+          },
+          "isScoringEvent": true,
+          "rbi": true,
+          "earned": true,
+          "teamUnearned": false,
+          "playIndex": 1
+        },
+        "credits": []
+      },
+      {
+        "movement": {
+          "originBase": "1B",
+          "start": "1B",
+          "end": "score",
+          "outBase": null,
+          "isOut": false,
+          "outNumber": null
+        },
+        "details": {
+          "event": "Home Run",
+          "eventType": "home_run",
+          "movementReason": "r_adv_force",
+          "runner": {
+            "id": 681624,
+            "fullName": "Andy Pages",
+            "link": "/api/v1/people/681624"
+          },
+          "responsiblePitcher": {
+            "id": 519242,
+            "link": "/api/v1/people/519242"
+          },
+          "isScoringEvent": true,
+          "rbi": true,
+          "earned": true,
+          "teamUnearned": false,
+          "playIndex": 1
+        },
+        "credits": []
+      }
+    ],
     "playEvents": [
       {
         "details": {
@@ -15084,6 +15315,7 @@
           },
           "zone": 13,
           "plateTime": 0.4096174784018678,
+          "extension": 7.045285195530014,
           "strikeZoneInfo": {
             "depthInches": 8.5,
             "strikeZoneTop": 3.131,
@@ -15111,15 +15343,119 @@
         "playId": "3371658e-713c-3cd1-b637-58cfcfff1f8d",
         "pitchNumber": 1,
         "startTime": "2026-10-06T23:17:28.908Z",
-        "endTime": "2026-10-06T23:17:29.619Z",
+        "endTime": "2026-10-06T23:17:48.642Z",
+        "isPitch": true,
+        "type": "pitch"
+      },
+      {
+        "details": {
+          "call": {
+            "code": "E",
+            "description": "In play, run(s)"
+          },
+          "description": "In play, run(s)",
+          "code": "E",
+          "ballColor": "rgba(26, 86, 190, 1.0)",
+          "trailColor": "rgba(0, 85, 254, 1.0)",
+          "isInPlay": true,
+          "isStrike": false,
+          "isBall": false,
+          "type": {
+            "code": "CH",
+            "description": "Changeup"
+          },
+          "isOut": false,
+          "hasReview": false
+        },
+        "count": {
+          "balls": 1,
+          "strikes": 0,
+          "outs": 1
+        },
+        "pitchData": {
+          "startSpeed": 88.9,
+          "endSpeed": 81.7,
+          "strikeZoneTop": 3.131,
+          "strikeZoneBottom": 1.58,
+          "strikeZoneWidth": 17.0,
+          "strikeZoneDepth": 8.5,
+          "coordinates": {
+            "aY": 25.803256910251424,
+            "aZ": -32.15200183540877,
+            "pfxX": 9.424430807118416,
+            "pfxZ": 0.012579259947351318,
+            "pX": -0.4511335423209453,
+            "pZ": 1.7735955260271579,
+            "vX0": -11.150663358385103,
+            "vY0": -129.08007520995847,
+            "vZ0": -0.8552684656539887,
+            "x": 134.2,
+            "y": 190.89,
+            "x0": 2.6916917427016087,
+            "y0": 50.00363407847245,
+            "z0": 4.575580367833776,
+            "aX": 15.972997476917413
+          },
+          "breaks": {
+            "breakAngle": 28.8,
+            "breakVertical": -34.6,
+            "breakVerticalInduced": 0.1,
+            "breakHorizontal": -14.8,
+            "spinRate": 1934,
+            "spinDirection": 92
+          },
+          "zone": 7,
+          "plateTime": 0.42366006066961504,
+          "strikeZoneInfo": {
+            "depthInches": 8.5,
+            "strikeZoneTop": 3.131,
+            "baseballDiameterInches": 2.9,
+            "edgeDistance": 0.23352258852405527,
+            "widthInches": 17.0,
+            "edgePositionZone": {
+              "x": -0.4797702562005828,
+              "y": 0.7083333333333334,
+              "z": 1.58
+            },
+            "plateZ": 1.692689255190722,
+            "plateX": -0.4797702562005828,
+            "plateY": 0.7083333333333334,
+            "strikeZoneBottom": 1.58,
+            "isStrike": true,
+            "edgePositionBall": {
+              "x": -0.4797702562005828,
+              "y": 0.7083333333333334,
+              "z": 1.8135225885240553
+            }
+          }
+        },
+        "hitData": {
+          "launchSpeed": 106.8,
+          "launchAngle": 33.0,
+          "totalDistance": 406.0,
+          "trajectory": "fly_ball",
+          "hardness": "medium",
+          "location": "7",
+          "coordinates": {
+            "coordX": 30.57,
+            "coordY": 64.56
+          }
+        },
+        "index": 1,
+        "playId": "693641cb-47b7-37c3-afb9-7ac1868950f1",
+        "pitchNumber": 2,
+        "startTime": "2026-10-06T23:17:48.642Z",
+        "endTime": "2026-10-06T23:18:02.568Z",
         "isPitch": true,
         "type": "pitch"
       }
     ],
-    "playEndTime": "2026-10-06T23:17:29.619Z",
+    "playEndTime": "2026-10-06T23:18:02.568Z",
     "atBatIndex": 27
   },
-  "scoringPlays": [],
+  "scoringPlays": [
+    27
+  ],
   "playsByInning": [
     {
       "startIndex": 0,
@@ -15632,6 +15968,37 @@
             },
             "type": "O",
             "description": "Lineout"
+          },
+          {
+            "team": {
+              "springLeague": {
+                "id": 114,
+                "name": "Cactus League",
+                "link": "/api/v1/league/114",
+                "abbreviation": "CL"
+              },
+              "allStarStatus": "N",
+              "id": 119,
+              "name": "Los Angeles Dodgers",
+              "link": "/api/v1/teams/119"
+            },
+            "inning": 4,
+            "pitcher": {
+              "id": 519242,
+              "fullName": "Chris Sale",
+              "link": "/api/v1/people/519242"
+            },
+            "batter": {
+              "id": 571771,
+              "fullName": "Enrique Hernández",
+              "link": "/api/v1/people/571771"
+            },
+            "coordinates": {
+              "x": 30.57,
+              "y": 64.56
+            },
+            "type": "H",
+            "description": "Home Run"
           }
         ],
         "home": []

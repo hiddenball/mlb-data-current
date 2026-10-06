@@ -4,13 +4,15 @@
   "link": "/api/v1.1/game/849819/feed/live",
   "metaData": {
     "wait": 10,
-    "timeStamp": "20261006_231728",
+    "timeStamp": "20261006_231802",
     "gameEvents": [
-      "ball"
+      "home_run"
     ],
     "logicalEvents": [
       "countChange",
-      "count10"
+      "count10",
+      "newRightHandedHit",
+      "basesEmpty"
     ]
   },
   "gameData": {
@@ -14502,8 +14504,11 @@
         {
           "result": {
             "type": "atBat",
-            "rbi": 0,
-            "awayScore": 0,
+            "event": "Home Run",
+            "eventType": "home_run",
+            "description": "Enrique Hernández homers (1) on a fly ball to left field. Andy Pages scores.",
+            "rbi": 2,
+            "awayScore": 2,
             "homeScore": 0,
             "isOut": false
           },
@@ -14513,11 +14518,12 @@
             "isTopInning": true,
             "inning": 4,
             "startTime": "2026-10-06T23:17:21.835Z",
-            "endTime": "2026-10-06T23:17:29.619Z",
-            "isComplete": false,
-            "isScoringPlay": false,
+            "endTime": "2026-10-06T23:18:02.568Z",
+            "isComplete": true,
+            "isScoringPlay": true,
+            "hasReview": false,
             "hasOut": false,
-            "captivatingIndex": 0
+            "captivatingIndex": 75
           },
           "count": {
             "balls": 1,
@@ -14542,11 +14548,6 @@
             "pitchHand": {
               "code": "L",
               "description": "Left"
-            },
-            "postOnFirst": {
-              "id": 681624,
-              "fullName": "Andy Pages",
-              "link": "/api/v1/people/681624"
             },
             "batterHotColdZoneStats": {
               "stats": [
@@ -14601,9 +14602,9 @@
                           },
                           {
                             "zone": "07",
-                            "color": "rgba(255, 255, 255, 0.55)",
-                            "temp": "lukewarm",
-                            "value": "-"
+                            "color": "rgba(214, 41, 52, .55)",
+                            "temp": "hot",
+                            "value": "106.76"
                           },
                           {
                             "zone": "08",
@@ -14686,9 +14687,9 @@
                           },
                           {
                             "zone": "07",
-                            "color": "rgba(255, 255, 255, 0.55)",
-                            "temp": "lukewarm",
-                            "value": "-"
+                            "color": "rgba(214, 41, 52, .55)",
+                            "temp": "hot",
+                            "value": "1.000"
                           },
                           {
                             "zone": "08",
@@ -14771,9 +14772,9 @@
                           },
                           {
                             "zone": "07",
-                            "color": "rgba(255, 255, 255, 0.55)",
-                            "temp": "lukewarm",
-                            "value": "-"
+                            "color": "rgba(214, 41, 52, .55)",
+                            "temp": "hot",
+                            "value": "5.000"
                           },
                           {
                             "zone": "08",
@@ -14857,9 +14858,9 @@
               },
               {
                 "zone": "07",
-                "color": "rgba(255, 255, 255, 0.55)",
-                "temp": "lukewarm",
-                "value": "-"
+                "color": "rgba(214, 41, 52, .55)",
+                "temp": "hot",
+                "value": "5.000"
               },
               {
                 "zone": "08",
@@ -14902,15 +14903,80 @@
             "splits": {
               "batter": "vs_LHP",
               "pitcher": "vs_RHB",
-              "menOnBase": "Men_On"
+              "menOnBase": "Empty"
             }
           },
           "pitchIndex": [
-            0
+            0,
+            1
           ],
           "actionIndex": [],
-          "runnerIndex": [],
-          "runners": [],
+          "runnerIndex": [
+            0,
+            1
+          ],
+          "runners": [
+            {
+              "movement": {
+                "originBase": null,
+                "start": null,
+                "end": "score",
+                "outBase": null,
+                "isOut": false,
+                "outNumber": null
+              },
+              "details": {
+                "event": "Home Run",
+                "eventType": "home_run",
+                "movementReason": null,
+                "runner": {
+                  "id": 571771,
+                  "fullName": "Enrique Hernández",
+                  "link": "/api/v1/people/571771"
+                },
+                "responsiblePitcher": {
+                  "id": 519242,
+                  "link": "/api/v1/people/519242"
+                },
+                "isScoringEvent": true,
+                "rbi": true,
+                "earned": true,
+                "teamUnearned": false,
+                "playIndex": 1
+              },
+              "credits": []
+            },
+            {
+              "movement": {
+                "originBase": "1B",
+                "start": "1B",
+                "end": "score",
+                "outBase": null,
+                "isOut": false,
+                "outNumber": null
+              },
+              "details": {
+                "event": "Home Run",
+                "eventType": "home_run",
+                "movementReason": "r_adv_force",
+                "runner": {
+                  "id": 681624,
+                  "fullName": "Andy Pages",
+                  "link": "/api/v1/people/681624"
+                },
+                "responsiblePitcher": {
+                  "id": 519242,
+                  "link": "/api/v1/people/519242"
+                },
+                "isScoringEvent": true,
+                "rbi": true,
+                "earned": true,
+                "teamUnearned": false,
+                "playIndex": 1
+              },
+              "credits": []
+            }
+          ],
           "playEvents": [
             {
               "details": {
@@ -14970,26 +15036,110 @@
                   "spinDirection": 92
                 },
                 "zone": 13,
-                "plateTime": 0.4096174784018678
+                "plateTime": 0.4096174784018678,
+                "extension": 7.045285195530014
               },
               "index": 0,
               "playId": "3371658e-713c-3cd1-b637-58cfcfff1f8d",
               "pitchNumber": 1,
               "startTime": "2026-10-06T23:17:28.908Z",
-              "endTime": "2026-10-06T23:17:29.619Z",
+              "endTime": "2026-10-06T23:17:48.642Z",
+              "isPitch": true,
+              "type": "pitch"
+            },
+            {
+              "details": {
+                "call": {
+                  "code": "E",
+                  "description": "In play, run(s)"
+                },
+                "description": "In play, run(s)",
+                "code": "E",
+                "ballColor": "rgba(26, 86, 190, 1.0)",
+                "trailColor": "rgba(0, 85, 254, 1.0)",
+                "isInPlay": true,
+                "isStrike": false,
+                "isBall": false,
+                "type": {
+                  "code": "CH",
+                  "description": "Changeup"
+                },
+                "isOut": false,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 1,
+                "strikes": 0,
+                "outs": 1
+              },
+              "pitchData": {
+                "startSpeed": 88.9,
+                "endSpeed": 81.7,
+                "strikeZoneTop": 3.131,
+                "strikeZoneBottom": 1.58,
+                "strikeZoneWidth": 17.0,
+                "strikeZoneDepth": 8.5,
+                "coordinates": {
+                  "aY": 25.803256910251424,
+                  "aZ": -32.15200183540877,
+                  "pfxX": 9.424430807118416,
+                  "pfxZ": 0.012579259947351318,
+                  "pX": -0.4511335423209453,
+                  "pZ": 1.7735955260271579,
+                  "vX0": -11.150663358385103,
+                  "vY0": -129.08007520995847,
+                  "vZ0": -0.8552684656539887,
+                  "x": 134.2,
+                  "y": 190.89,
+                  "x0": 2.6916917427016087,
+                  "y0": 50.00363407847245,
+                  "z0": 4.575580367833776,
+                  "aX": 15.972997476917413
+                },
+                "breaks": {
+                  "breakAngle": 28.8,
+                  "breakVertical": -34.6,
+                  "breakVerticalInduced": 0.1,
+                  "breakHorizontal": -14.8,
+                  "spinRate": 1934,
+                  "spinDirection": 92
+                },
+                "zone": 7,
+                "plateTime": 0.42366006066961504
+              },
+              "hitData": {
+                "launchSpeed": 106.8,
+                "launchAngle": 33.0,
+                "totalDistance": 406.0,
+                "trajectory": "fly_ball",
+                "hardness": "medium",
+                "location": "7",
+                "coordinates": {
+                  "coordX": 30.57,
+                  "coordY": 64.56
+                }
+              },
+              "index": 1,
+              "playId": "693641cb-47b7-37c3-afb9-7ac1868950f1",
+              "pitchNumber": 2,
+              "startTime": "2026-10-06T23:17:48.642Z",
+              "endTime": "2026-10-06T23:18:02.568Z",
               "isPitch": true,
               "type": "pitch"
             }
           ],
-          "playEndTime": "2026-10-06T23:17:29.619Z",
+          "playEndTime": "2026-10-06T23:18:02.568Z",
           "atBatIndex": 27
         }
       ],
       "currentPlay": {
         "result": {
           "type": "atBat",
-          "rbi": 0,
-          "awayScore": 0,
+          "event": "Home Run",
+          "eventType": "home_run",
+          "description": "Enrique Hernández homers (1) on a fly ball to left field. Andy Pages scores.",
+          "rbi": 2,
+          "awayScore": 2,
           "homeScore": 0,
           "isOut": false
         },
@@ -14999,11 +15149,12 @@
           "isTopInning": true,
           "inning": 4,
           "startTime": "2026-10-06T23:17:21.835Z",
-          "endTime": "2026-10-06T23:17:29.619Z",
-          "isComplete": false,
-          "isScoringPlay": false,
+          "endTime": "2026-10-06T23:18:02.568Z",
+          "isComplete": true,
+          "isScoringPlay": true,
+          "hasReview": false,
           "hasOut": false,
-          "captivatingIndex": 0
+          "captivatingIndex": 75
         },
         "count": {
           "balls": 1,
@@ -15028,11 +15179,6 @@
           "pitchHand": {
             "code": "L",
             "description": "Left"
-          },
-          "postOnFirst": {
-            "id": 681624,
-            "fullName": "Andy Pages",
-            "link": "/api/v1/people/681624"
           },
           "batterHotColdZoneStats": {
             "stats": [
@@ -15087,9 +15233,9 @@
                         },
                         {
                           "zone": "07",
-                          "color": "rgba(255, 255, 255, 0.55)",
-                          "temp": "lukewarm",
-                          "value": "-"
+                          "color": "rgba(214, 41, 52, .55)",
+                          "temp": "hot",
+                          "value": "106.76"
                         },
                         {
                           "zone": "08",
@@ -15172,9 +15318,9 @@
                         },
                         {
                           "zone": "07",
-                          "color": "rgba(255, 255, 255, 0.55)",
-                          "temp": "lukewarm",
-                          "value": "-"
+                          "color": "rgba(214, 41, 52, .55)",
+                          "temp": "hot",
+                          "value": "1.000"
                         },
                         {
                           "zone": "08",
@@ -15257,9 +15403,9 @@
                         },
                         {
                           "zone": "07",
-                          "color": "rgba(255, 255, 255, 0.55)",
-                          "temp": "lukewarm",
-                          "value": "-"
+                          "color": "rgba(214, 41, 52, .55)",
+                          "temp": "hot",
+                          "value": "5.000"
                         },
                         {
                           "zone": "08",
@@ -15343,9 +15489,9 @@
             },
             {
               "zone": "07",
-              "color": "rgba(255, 255, 255, 0.55)",
-              "temp": "lukewarm",
-              "value": "-"
+              "color": "rgba(214, 41, 52, .55)",
+              "temp": "hot",
+              "value": "5.000"
             },
             {
               "zone": "08",
@@ -15388,15 +15534,80 @@
           "splits": {
             "batter": "vs_LHP",
             "pitcher": "vs_RHB",
-            "menOnBase": "Men_On"
+            "menOnBase": "Empty"
           }
         },
         "pitchIndex": [
-          0
+          0,
+          1
         ],
         "actionIndex": [],
-        "runnerIndex": [],
-        "runners": [],
+        "runnerIndex": [
+          0,
+          1
+        ],
+        "runners": [
+          {
+            "movement": {
+              "originBase": null,
+              "start": null,
+              "end": "score",
+              "outBase": null,
+              "isOut": false,
+              "outNumber": null
+            },
+            "details": {
+              "event": "Home Run",
+              "eventType": "home_run",
+              "movementReason": null,
+              "runner": {
+                "id": 571771,
+                "fullName": "Enrique Hernández",
+                "link": "/api/v1/people/571771"
+              },
+              "responsiblePitcher": {
+                "id": 519242,
+                "link": "/api/v1/people/519242"
+              },
+              "isScoringEvent": true,
+              "rbi": true,
+              "earned": true,
+              "teamUnearned": false,
+              "playIndex": 1
+            },
+            "credits": []
+          },
+          {
+            "movement": {
+              "originBase": "1B",
+              "start": "1B",
+              "end": "score",
+              "outBase": null,
+              "isOut": false,
+              "outNumber": null
+            },
+            "details": {
+              "event": "Home Run",
+              "eventType": "home_run",
+              "movementReason": "r_adv_force",
+              "runner": {
+                "id": 681624,
+                "fullName": "Andy Pages",
+                "link": "/api/v1/people/681624"
+              },
+              "responsiblePitcher": {
+                "id": 519242,
+                "link": "/api/v1/people/519242"
+              },
+              "isScoringEvent": true,
+              "rbi": true,
+              "earned": true,
+              "teamUnearned": false,
+              "playIndex": 1
+            },
+            "credits": []
+          }
+        ],
         "playEvents": [
           {
             "details": {
@@ -15456,21 +15667,104 @@
                 "spinDirection": 92
               },
               "zone": 13,
-              "plateTime": 0.4096174784018678
+              "plateTime": 0.4096174784018678,
+              "extension": 7.045285195530014
             },
             "index": 0,
             "playId": "3371658e-713c-3cd1-b637-58cfcfff1f8d",
             "pitchNumber": 1,
             "startTime": "2026-10-06T23:17:28.908Z",
-            "endTime": "2026-10-06T23:17:29.619Z",
+            "endTime": "2026-10-06T23:17:48.642Z",
+            "isPitch": true,
+            "type": "pitch"
+          },
+          {
+            "details": {
+              "call": {
+                "code": "E",
+                "description": "In play, run(s)"
+              },
+              "description": "In play, run(s)",
+              "code": "E",
+              "ballColor": "rgba(26, 86, 190, 1.0)",
+              "trailColor": "rgba(0, 85, 254, 1.0)",
+              "isInPlay": true,
+              "isStrike": false,
+              "isBall": false,
+              "type": {
+                "code": "CH",
+                "description": "Changeup"
+              },
+              "isOut": false,
+              "hasReview": false
+            },
+            "count": {
+              "balls": 1,
+              "strikes": 0,
+              "outs": 1
+            },
+            "pitchData": {
+              "startSpeed": 88.9,
+              "endSpeed": 81.7,
+              "strikeZoneTop": 3.131,
+              "strikeZoneBottom": 1.58,
+              "strikeZoneWidth": 17.0,
+              "strikeZoneDepth": 8.5,
+              "coordinates": {
+                "aY": 25.803256910251424,
+                "aZ": -32.15200183540877,
+                "pfxX": 9.424430807118416,
+                "pfxZ": 0.012579259947351318,
+                "pX": -0.4511335423209453,
+                "pZ": 1.7735955260271579,
+                "vX0": -11.150663358385103,
+                "vY0": -129.08007520995847,
+                "vZ0": -0.8552684656539887,
+                "x": 134.2,
+                "y": 190.89,
+                "x0": 2.6916917427016087,
+                "y0": 50.00363407847245,
+                "z0": 4.575580367833776,
+                "aX": 15.972997476917413
+              },
+              "breaks": {
+                "breakAngle": 28.8,
+                "breakVertical": -34.6,
+                "breakVerticalInduced": 0.1,
+                "breakHorizontal": -14.8,
+                "spinRate": 1934,
+                "spinDirection": 92
+              },
+              "zone": 7,
+              "plateTime": 0.42366006066961504
+            },
+            "hitData": {
+              "launchSpeed": 106.8,
+              "launchAngle": 33.0,
+              "totalDistance": 406.0,
+              "trajectory": "fly_ball",
+              "hardness": "medium",
+              "location": "7",
+              "coordinates": {
+                "coordX": 30.57,
+                "coordY": 64.56
+              }
+            },
+            "index": 1,
+            "playId": "693641cb-47b7-37c3-afb9-7ac1868950f1",
+            "pitchNumber": 2,
+            "startTime": "2026-10-06T23:17:48.642Z",
+            "endTime": "2026-10-06T23:18:02.568Z",
             "isPitch": true,
             "type": "pitch"
           }
         ],
-        "playEndTime": "2026-10-06T23:17:29.619Z",
+        "playEndTime": "2026-10-06T23:18:02.568Z",
         "atBatIndex": 27
       },
-      "scoringPlays": [],
+      "scoringPlays": [
+        27
+      ],
       "playsByInning": [
         {
           "startIndex": 0,
@@ -15983,6 +16277,37 @@
                 },
                 "type": "O",
                 "description": "Lineout"
+              },
+              {
+                "team": {
+                  "springLeague": {
+                    "id": 114,
+                    "name": "Cactus League",
+                    "link": "/api/v1/league/114",
+                    "abbreviation": "CL"
+                  },
+                  "allStarStatus": "N",
+                  "id": 119,
+                  "name": "Los Angeles Dodgers",
+                  "link": "/api/v1/teams/119"
+                },
+                "inning": 4,
+                "pitcher": {
+                  "id": 519242,
+                  "fullName": "Chris Sale",
+                  "link": "/api/v1/people/519242"
+                },
+                "batter": {
+                  "id": 571771,
+                  "fullName": "Enrique Hernández",
+                  "link": "/api/v1/people/571771"
+                },
+                "coordinates": {
+                  "x": 30.57,
+                  "y": 64.56
+                },
+                "type": "H",
+                "description": "Home Run"
               }
             ],
             "home": []
@@ -16055,7 +16380,8 @@
             "leftOnBase": 0
           },
           "away": {
-            "hits": 1,
+            "runs": 2,
+            "hits": 2,
             "errors": 0,
             "leftOnBase": 0
           }
@@ -16069,8 +16395,8 @@
           "leftOnBase": 1
         },
         "away": {
-          "runs": 0,
-          "hits": 5,
+          "runs": 2,
+          "hits": 6,
           "errors": 0,
           "leftOnBase": 6
         }
@@ -16159,11 +16485,6 @@
           "fullName": "Freddie Freeman",
           "link": "/api/v1/people/518692"
         },
-        "first": {
-          "id": 681624,
-          "fullName": "Andy Pages",
-          "link": "/api/v1/people/681624"
-        },
         "pitcher": {
           "id": 808967,
           "fullName": "Yoshinobu Yamamoto",
@@ -16200,34 +16521,34 @@
               "flyOuts": 2,
               "groundOuts": 1,
               "airOuts": 4,
-              "runs": 0,
+              "runs": 2,
               "doubles": 0,
               "triples": 0,
-              "homeRuns": 0,
+              "homeRuns": 1,
               "strikeOuts": 6,
               "baseOnBalls": 0,
               "intentionalWalks": 0,
-              "hits": 5,
+              "hits": 6,
               "hitByPitch": 0,
-              "avg": ".235",
-              "atBats": 16,
-              "obp": ".287",
-              "slg": ".432",
-              "ops": ".719",
+              "avg": ".244",
+              "atBats": 17,
+              "obp": ".295",
+              "slg": ".476",
+              "ops": ".771",
               "caughtStealing": 0,
               "stolenBases": 1,
               "stolenBasePercentage": "1.000",
               "groundIntoDoublePlay": 0,
               "groundIntoTriplePlay": 0,
-              "plateAppearances": 17,
-              "totalBases": 5,
-              "rbi": 0,
+              "plateAppearances": 18,
+              "totalBases": 9,
+              "rbi": 2,
               "leftOnBase": 13,
               "sacBunts": 0,
               "sacFlies": 0,
               "catchersInterference": 1,
               "pickoffs": 0,
-              "atBatsPerHomeRun": "-.--",
+              "atBatsPerHomeRun": "17.00",
               "popOuts": 0,
               "lineOuts": 2
             },
@@ -17169,35 +17490,35 @@
               "battingOrder": "900",
               "stats": {
                 "batting": {
-                  "summary": "0-1 | K",
+                  "summary": "1-2 | HR, K, 2 RBI",
                   "gamesPlayed": 1,
                   "flyOuts": 0,
                   "groundOuts": 0,
                   "airOuts": 0,
-                  "runs": 0,
+                  "runs": 1,
                   "doubles": 0,
                   "triples": 0,
-                  "homeRuns": 0,
+                  "homeRuns": 1,
                   "strikeOuts": 1,
                   "baseOnBalls": 0,
                   "intentionalWalks": 0,
-                  "hits": 0,
+                  "hits": 1,
                   "hitByPitch": 0,
-                  "atBats": 1,
+                  "atBats": 2,
                   "caughtStealing": 0,
                   "stolenBases": 0,
                   "stolenBasePercentage": ".---",
                   "groundIntoDoublePlay": 0,
                   "groundIntoTriplePlay": 0,
-                  "plateAppearances": 1,
-                  "totalBases": 0,
-                  "rbi": 0,
+                  "plateAppearances": 2,
+                  "totalBases": 4,
+                  "rbi": 2,
                   "leftOnBase": 1,
                   "sacBunts": 0,
                   "sacFlies": 0,
                   "catchersInterference": 0,
                   "pickoffs": 0,
-                  "atBatsPerHomeRun": "-.--",
+                  "atBatsPerHomeRun": "2.00",
                   "popOuts": 0,
                   "lineOuts": 0
                 },
@@ -17223,29 +17544,29 @@
                   "flyOuts": 0,
                   "groundOuts": 0,
                   "airOuts": 0,
-                  "runs": 0,
+                  "runs": 1,
                   "doubles": 0,
                   "triples": 0,
-                  "homeRuns": 0,
+                  "homeRuns": 1,
                   "strikeOuts": 1,
                   "baseOnBalls": 0,
                   "intentionalWalks": 0,
-                  "hits": 0,
+                  "hits": 1,
                   "hitByPitch": 0,
-                  "avg": ".000",
-                  "atBats": 1,
-                  "obp": ".000",
-                  "slg": ".000",
-                  "ops": ".000",
+                  "avg": ".500",
+                  "atBats": 2,
+                  "obp": ".500",
+                  "slg": "2.000",
+                  "ops": "2.500",
                   "caughtStealing": 0,
                   "stolenBases": 0,
                   "stolenBasePercentage": ".---",
                   "caughtStealingPercentage": ".---",
                   "groundIntoDoublePlay": 0,
                   "groundIntoTriplePlay": 0,
-                  "plateAppearances": 1,
-                  "totalBases": 0,
-                  "rbi": 0,
+                  "plateAppearances": 2,
+                  "totalBases": 4,
+                  "rbi": 2,
                   "leftOnBase": 1,
                   "sacBunts": 0,
                   "sacFlies": 0,
@@ -17253,7 +17574,7 @@
                   "groundOutsToAirouts": "-.--",
                   "catchersInterference": 0,
                   "pickoffs": 0,
-                  "atBatsPerHomeRun": "-.--",
+                  "atBatsPerHomeRun": "2.00",
                   "popOuts": 0,
                   "lineOuts": 0
                 },
@@ -19018,12 +19339,12 @@
               "battingOrder": "700",
               "stats": {
                 "batting": {
-                  "summary": "1-2 | K",
+                  "summary": "1-2 | K, R",
                   "gamesPlayed": 1,
                   "flyOuts": 0,
                   "groundOuts": 0,
                   "airOuts": 0,
-                  "runs": 0,
+                  "runs": 1,
                   "doubles": 0,
                   "triples": 0,
                   "homeRuns": 0,
@@ -19072,7 +19393,7 @@
                   "flyOuts": 0,
                   "groundOuts": 2,
                   "airOuts": 1,
-                  "runs": 0,
+                  "runs": 1,
                   "doubles": 0,
                   "triples": 0,
                   "homeRuns": 0,
@@ -20776,8 +21097,16 @@
               "title": "BATTING",
               "fieldList": [
                 {
+                  "label": "HR",
+                  "value": "Hernández, E (1, 4th inning off Sale, 1 on, 1 out)."
+                },
+                {
                   "label": "TB",
-                  "value": "Betts 2; Pages, A; Smith, W; Tucker."
+                  "value": "Betts 2; Hernández, E 4; Pages, A; Smith, W; Tucker."
+                },
+                {
+                  "label": "RBI",
+                  "value": "Hernández, E 2 (2)."
                 },
                 {
                   "label": "Runners left in scoring position, 2 out",
@@ -20858,44 +21187,44 @@
               "flyOuts": 2,
               "groundOuts": 1,
               "airOuts": 4,
-              "runs": 0,
+              "runs": 2,
               "doubles": 0,
               "triples": 0,
-              "homeRuns": 0,
+              "homeRuns": 1,
               "strikeOuts": 6,
               "baseOnBalls": 0,
               "intentionalWalks": 0,
-              "hits": 5,
+              "hits": 6,
               "hitByPitch": 0,
-              "atBats": 16,
-              "obp": ".313",
+              "atBats": 17,
+              "obp": ".353",
               "caughtStealing": 0,
               "stolenBases": 1,
               "stolenBasePercentage": "1.000",
               "caughtStealingPercentage": ".000",
-              "numberOfPitches": 69,
-              "era": "3.10",
+              "numberOfPitches": 70,
+              "era": "3.98",
               "inningsPitched": "3.1",
               "saveOpportunities": 0,
-              "earnedRuns": 0,
-              "whip": "1.23",
-              "battersFaced": 17,
+              "earnedRuns": 2,
+              "whip": "1.28",
+              "battersFaced": 18,
               "outs": 10,
               "completeGames": 0,
               "shutouts": 0,
-              "pitchesThrown": 69,
+              "pitchesThrown": 70,
               "balls": 25,
-              "strikes": 44,
+              "strikes": 45,
               "strikePercentage": ".640",
               "hitBatsmen": 0,
               "balks": 0,
               "wildPitches": 0,
               "pickoffs": 0,
               "groundOutsToAirouts": "0.25",
-              "rbi": 0,
-              "pitchesPerInning": "20.70",
-              "runsScoredPer9": "0.00",
-              "homeRunsPer9": "0.00",
+              "rbi": 2,
+              "pitchesPerInning": "21.00",
+              "runsScoredPer9": "5.40",
+              "homeRunsPer9": "2.70",
               "inheritedRunners": 0,
               "inheritedRunnersScored": 0,
               "catchersInterference": 1,
@@ -22888,26 +23217,26 @@
               "stats": {
                 "batting": {},
                 "pitching": {
-                  "summary": "3.1 IP, 0 ER, 6 K, 0 BB",
+                  "summary": "3.1 IP, 2 ER, 6 K, 0 BB",
                   "gamesPlayed": 1,
                   "gamesStarted": 1,
                   "flyOuts": 2,
                   "groundOuts": 1,
                   "airOuts": 4,
-                  "runs": 0,
+                  "runs": 2,
                   "doubles": 0,
                   "triples": 0,
-                  "homeRuns": 0,
+                  "homeRuns": 1,
                   "strikeOuts": 6,
                   "baseOnBalls": 0,
                   "intentionalWalks": 0,
-                  "hits": 5,
+                  "hits": 6,
                   "hitByPitch": 0,
-                  "atBats": 16,
+                  "atBats": 17,
                   "caughtStealing": 0,
                   "stolenBases": 1,
                   "stolenBasePercentage": "1.000",
-                  "numberOfPitches": 69,
+                  "numberOfPitches": 70,
                   "inningsPitched": "3.1",
                   "wins": 0,
                   "losses": 0,
@@ -22915,24 +23244,24 @@
                   "saveOpportunities": 0,
                   "holds": 0,
                   "blownSaves": 0,
-                  "earnedRuns": 0,
-                  "battersFaced": 17,
+                  "earnedRuns": 2,
+                  "battersFaced": 18,
                   "outs": 10,
                   "gamesPitched": 1,
                   "completeGames": 0,
                   "shutouts": 0,
-                  "pitchesThrown": 69,
+                  "pitchesThrown": 70,
                   "balls": 25,
-                  "strikes": 44,
+                  "strikes": 45,
                   "strikePercentage": ".640",
                   "hitBatsmen": 0,
                   "balks": 0,
                   "wildPitches": 0,
                   "pickoffs": 0,
-                  "rbi": 0,
+                  "rbi": 2,
                   "gamesFinished": 0,
-                  "runsScoredPer9": "0.00",
-                  "homeRunsPer9": "0.00",
+                  "runsScoredPer9": "5.40",
+                  "homeRunsPer9": "2.70",
                   "inheritedRunners": 0,
                   "inheritedRunnersScored": 0,
                   "catchersInterference": 1,
@@ -23003,23 +23332,23 @@
                   "flyOuts": 5,
                   "groundOuts": 5,
                   "airOuts": 10,
-                  "runs": 3,
+                  "runs": 5,
                   "doubles": 2,
                   "triples": 0,
-                  "homeRuns": 0,
+                  "homeRuns": 1,
                   "strikeOuts": 18,
                   "baseOnBalls": 1,
                   "intentionalWalks": 0,
-                  "hits": 10,
+                  "hits": 11,
                   "hitByPitch": 2,
-                  "atBats": 43,
-                  "obp": ".283",
+                  "atBats": 44,
+                  "obp": ".298",
                   "caughtStealing": 1,
                   "stolenBases": 1,
                   "stolenBasePercentage": ".500",
                   "caughtStealingPercentage": ".500",
-                  "numberOfPitches": 185,
-                  "era": "2.45",
+                  "numberOfPitches": 186,
+                  "era": "4.09",
                   "inningsPitched": "11.0",
                   "wins": 0,
                   "losses": 0,
@@ -23027,32 +23356,32 @@
                   "saveOpportunities": 0,
                   "holds": 0,
                   "blownSaves": 0,
-                  "earnedRuns": 3,
-                  "whip": "1.00",
-                  "battersFaced": 47,
+                  "earnedRuns": 5,
+                  "whip": "1.09",
+                  "battersFaced": 48,
                   "outs": 33,
                   "gamesPitched": 3,
                   "completeGames": 0,
                   "shutouts": 0,
-                  "pitchesThrown": 185,
+                  "pitchesThrown": 186,
                   "balls": 62,
-                  "strikes": 123,
-                  "strikePercentage": ".660",
+                  "strikes": 124,
+                  "strikePercentage": ".670",
                   "hitBatsmen": 2,
                   "balks": 0,
                   "wildPitches": 0,
                   "pickoffs": 1,
                   "groundOutsToAirouts": "0.50",
-                  "rbi": 0,
+                  "rbi": 2,
                   "winPercentage": ".---",
-                  "pitchesPerInning": "16.82",
+                  "pitchesPerInning": "16.91",
                   "gamesFinished": 1,
                   "strikeoutWalkRatio": "18.00",
                   "strikeoutsPer9Inn": "14.73",
                   "walksPer9Inn": "0.82",
-                  "hitsPer9Inn": "8.18",
-                  "runsScoredPer9": "2.45",
-                  "homeRunsPer9": "0.00",
+                  "hitsPer9Inn": "9.00",
+                  "runsScoredPer9": "4.09",
+                  "homeRunsPer9": "0.82",
                   "inheritedRunners": 0,
                   "inheritedRunnersScored": 0,
                   "catchersInterference": 1,
@@ -25479,7 +25808,7 @@
         },
         {
           "label": "Pitches-strikes",
-          "value": "Yamamoto 44-27; Sale 69-44."
+          "value": "Yamamoto 44-27; Sale 70-45."
         },
         {
           "label": "Groundouts-flyouts",
@@ -25487,7 +25816,7 @@
         },
         {
           "label": "Batters faced",
-          "value": "Yamamoto 10; Sale 17."
+          "value": "Yamamoto 10; Sale 18."
         },
         {
           "label": "Umpires",
@@ -25749,80 +26078,59 @@
         {
           "player": {
             "person": {
-              "id": 519242,
-              "fullName": "Chris Sale",
-              "link": "/api/v1/people/519242",
-              "boxscoreName": "Sale"
+              "id": 571771,
+              "fullName": "Enrique Hernández",
+              "link": "/api/v1/people/571771",
+              "boxscoreName": "Hernández, E"
             },
-            "jerseyNumber": "51",
+            "jerseyNumber": "8",
             "position": {
-              "code": "1",
-              "name": "Pitcher",
-              "type": "Pitcher",
-              "abbreviation": "P"
+              "code": "5",
+              "name": "Third Base",
+              "type": "Infielder",
+              "abbreviation": "3B"
             },
             "status": {
               "code": "A",
               "description": "Active"
             },
-            "parentTeamId": 144,
+            "parentTeamId": 119,
+            "battingOrder": "900",
             "stats": {
-              "batting": {},
-              "pitching": {
-                "summary": "3.1 IP, 0 ER, 6 K, 0 BB",
+              "batting": {
+                "summary": "1-2 | HR, K, 2 RBI",
                 "gamesPlayed": 1,
-                "gamesStarted": 1,
-                "flyOuts": 2,
-                "groundOuts": 1,
-                "airOuts": 4,
-                "runs": 0,
+                "flyOuts": 0,
+                "groundOuts": 0,
+                "airOuts": 0,
+                "runs": 1,
                 "doubles": 0,
                 "triples": 0,
-                "homeRuns": 0,
-                "strikeOuts": 6,
+                "homeRuns": 1,
+                "strikeOuts": 1,
                 "baseOnBalls": 0,
                 "intentionalWalks": 0,
-                "hits": 5,
+                "hits": 1,
                 "hitByPitch": 0,
-                "atBats": 16,
+                "atBats": 2,
                 "caughtStealing": 0,
-                "stolenBases": 1,
-                "stolenBasePercentage": "1.000",
-                "numberOfPitches": 69,
-                "inningsPitched": "3.1",
-                "wins": 0,
-                "losses": 0,
-                "saves": 0,
-                "saveOpportunities": 0,
-                "holds": 0,
-                "blownSaves": 0,
-                "earnedRuns": 0,
-                "battersFaced": 17,
-                "outs": 10,
-                "gamesPitched": 1,
-                "completeGames": 0,
-                "shutouts": 0,
-                "pitchesThrown": 69,
-                "balls": 25,
-                "strikes": 44,
-                "strikePercentage": ".640",
-                "hitBatsmen": 0,
-                "balks": 0,
-                "wildPitches": 0,
-                "pickoffs": 0,
-                "rbi": 0,
-                "gamesFinished": 0,
-                "runsScoredPer9": "0.00",
-                "homeRunsPer9": "0.00",
-                "inheritedRunners": 0,
-                "inheritedRunnersScored": 0,
-                "catchersInterference": 1,
+                "stolenBases": 0,
+                "stolenBasePercentage": ".---",
+                "groundIntoDoublePlay": 0,
+                "groundIntoTriplePlay": 0,
+                "plateAppearances": 2,
+                "totalBases": 4,
+                "rbi": 2,
+                "leftOnBase": 1,
                 "sacBunts": 0,
                 "sacFlies": 0,
-                "passedBall": 0,
+                "catchersInterference": 0,
+                "pickoffs": 0,
+                "atBatsPerHomeRun": "2.00",
                 "popOuts": 0,
-                "lineOuts": 2
+                "lineOuts": 0
               },
+              "pitching": {},
               "fielding": {
                 "gamesStarted": 1,
                 "caughtStealing": 0,
@@ -25840,7 +26148,47 @@
             },
             "seasonStats": {
               "batting": {
+                "gamesPlayed": 2,
+                "flyOuts": 0,
+                "groundOuts": 0,
+                "airOuts": 0,
+                "runs": 1,
+                "doubles": 0,
+                "triples": 0,
+                "homeRuns": 1,
+                "strikeOuts": 1,
+                "baseOnBalls": 0,
+                "intentionalWalks": 0,
+                "hits": 1,
+                "hitByPitch": 0,
+                "avg": ".500",
+                "atBats": 2,
+                "obp": ".500",
+                "slg": "2.000",
+                "ops": "2.500",
+                "caughtStealing": 0,
+                "stolenBases": 0,
+                "stolenBasePercentage": ".---",
+                "caughtStealingPercentage": ".---",
+                "groundIntoDoublePlay": 0,
+                "groundIntoTriplePlay": 0,
+                "plateAppearances": 2,
+                "totalBases": 4,
+                "rbi": 2,
+                "leftOnBase": 1,
+                "sacBunts": 0,
+                "sacFlies": 0,
+                "babip": ".---",
+                "groundOutsToAirouts": "-.--",
+                "catchersInterference": 0,
+                "pickoffs": 0,
+                "atBatsPerHomeRun": "2.00",
+                "popOuts": 0,
+                "lineOuts": 0
+              },
+              "pitching": {
                 "gamesPlayed": 0,
+                "gamesStarted": 0,
                 "flyOuts": 0,
                 "groundOuts": 0,
                 "airOuts": 0,
@@ -25853,95 +26201,54 @@
                 "intentionalWalks": 0,
                 "hits": 0,
                 "hitByPitch": 0,
-                "avg": ".000",
                 "atBats": 0,
                 "obp": ".000",
-                "slg": ".000",
-                "ops": ".000",
                 "caughtStealing": 0,
                 "stolenBases": 0,
                 "stolenBasePercentage": ".---",
                 "caughtStealingPercentage": ".---",
-                "groundIntoDoublePlay": 0,
-                "groundIntoTriplePlay": 0,
-                "plateAppearances": 0,
-                "totalBases": 0,
-                "rbi": 0,
-                "leftOnBase": 0,
-                "sacBunts": 0,
-                "sacFlies": 0,
-                "babip": ".---",
-                "groundOutsToAirouts": "-.--",
-                "catchersInterference": 0,
-                "pickoffs": 0,
-                "atBatsPerHomeRun": "-.--",
-                "popOuts": 0,
-                "lineOuts": 0
-              },
-              "pitching": {
-                "gamesPlayed": 3,
-                "gamesStarted": 2,
-                "flyOuts": 5,
-                "groundOuts": 5,
-                "airOuts": 10,
-                "runs": 3,
-                "doubles": 2,
-                "triples": 0,
-                "homeRuns": 0,
-                "strikeOuts": 18,
-                "baseOnBalls": 1,
-                "intentionalWalks": 0,
-                "hits": 10,
-                "hitByPitch": 2,
-                "atBats": 43,
-                "obp": ".283",
-                "caughtStealing": 1,
-                "stolenBases": 1,
-                "stolenBasePercentage": ".500",
-                "caughtStealingPercentage": ".500",
-                "numberOfPitches": 185,
-                "era": "2.45",
-                "inningsPitched": "11.0",
+                "numberOfPitches": 0,
+                "era": "-.--",
+                "inningsPitched": "0.0",
                 "wins": 0,
                 "losses": 0,
                 "saves": 0,
                 "saveOpportunities": 0,
                 "holds": 0,
                 "blownSaves": 0,
-                "earnedRuns": 3,
-                "whip": "1.00",
-                "battersFaced": 47,
-                "outs": 33,
-                "gamesPitched": 3,
+                "earnedRuns": 0,
+                "whip": "-",
+                "battersFaced": 0,
+                "outs": 0,
+                "gamesPitched": 0,
                 "completeGames": 0,
                 "shutouts": 0,
-                "pitchesThrown": 185,
-                "balls": 62,
-                "strikes": 123,
-                "strikePercentage": ".660",
-                "hitBatsmen": 2,
+                "balls": 0,
+                "strikes": 0,
+                "strikePercentage": "-.--",
+                "hitBatsmen": 0,
                 "balks": 0,
                 "wildPitches": 0,
-                "pickoffs": 1,
-                "groundOutsToAirouts": "0.50",
+                "pickoffs": 0,
+                "groundOutsToAirouts": "-.--",
                 "rbi": 0,
                 "winPercentage": ".---",
-                "pitchesPerInning": "16.82",
-                "gamesFinished": 1,
-                "strikeoutWalkRatio": "18.00",
-                "strikeoutsPer9Inn": "14.73",
-                "walksPer9Inn": "0.82",
-                "hitsPer9Inn": "8.18",
-                "runsScoredPer9": "2.45",
-                "homeRunsPer9": "0.00",
+                "pitchesPerInning": "-.--",
+                "gamesFinished": 0,
+                "strikeoutWalkRatio": "-.--",
+                "strikeoutsPer9Inn": "-.--",
+                "walksPer9Inn": "-.--",
+                "hitsPer9Inn": "-.--",
+                "runsScoredPer9": "-.--",
+                "homeRunsPer9": "-.--",
                 "inheritedRunners": 0,
                 "inheritedRunnersScored": 0,
-                "catchersInterference": 1,
+                "catchersInterference": 0,
                 "sacBunts": 0,
                 "sacFlies": 0,
                 "passedBall": 0,
-                "popOuts": 3,
-                "lineOuts": 2
+                "popOuts": 0,
+                "lineOuts": 0
               },
               "fielding": {
                 "gamesStarted": 1,
@@ -25949,33 +26256,33 @@
                 "stolenBases": 0,
                 "stolenBasePercentage": ".---",
                 "caughtStealingPercentage": ".---",
-                "assists": 2,
+                "assists": 0,
                 "putOuts": 0,
                 "errors": 0,
-                "chances": 2,
-                "fielding": "1.000",
+                "chances": 0,
+                "fielding": ".000",
                 "passedBall": 0,
                 "pickoffs": 0
               }
             },
             "gameStatus": {
-              "isCurrentBatter": false,
-              "isCurrentPitcher": true,
+              "isCurrentBatter": true,
+              "isCurrentPitcher": false,
               "isOnBench": false,
               "isSubstitute": false
             },
             "allPositions": [
               {
-                "code": "1",
-                "name": "Pitcher",
-                "type": "Pitcher",
-                "abbreviation": "P"
+                "code": "5",
+                "name": "Third Base",
+                "type": "Infielder",
+                "abbreviation": "3B"
               }
             ]
           },
-          "type": "starter",
+          "type": "hitter",
           "gameScore": 56,
-          "pitchingGameScore": 56
+          "hittingGameScore": 56
         },
         {
           "player": {
