@@ -4,15 +4,12 @@
   "link": "/api/v1.1/game/849819/feed/live",
   "metaData": {
     "wait": 10,
-    "timeStamp": "20261006_235053",
+    "timeStamp": "20261006_235402",
     "gameEvents": [
-      "at_bat_start"
+      "pitching_substitution"
     ],
     "logicalEvents": [
-      "countChange",
-      "count00",
-      "newBatter",
-      "batterSwitchedToLeftHanded"
+      "pitcherChange"
     ]
   },
   "gameData": {
@@ -20593,8 +20590,13 @@
         {
           "result": {
             "type": "atBat",
+            "event": "Groundout",
+            "eventType": "field_out",
+            "description": "Ronald Acuña Jr. grounds out, second baseman Miguel Rojas to first baseman Freddie Freeman.",
+            "rbi": 0,
             "awayScore": 3,
-            "homeScore": 1
+            "homeScore": 1,
+            "isOut": true
           },
           "about": {
             "atBatIndex": 43,
@@ -20602,14 +20604,17 @@
             "isTopInning": false,
             "inning": 5,
             "startTime": "2026-10-06T23:50:53.338Z",
-            "endTime": "2026-10-06T23:50:53.338Z",
-            "isComplete": false,
+            "endTime": "2026-10-06T23:52:35.267Z",
+            "isComplete": true,
+            "isScoringPlay": false,
+            "hasReview": false,
+            "hasOut": true,
             "captivatingIndex": 0
           },
           "count": {
-            "balls": 0,
-            "strikes": 0,
-            "outs": 2
+            "balls": 3,
+            "strikes": 1,
+            "outs": 3
           },
           "matchup": {
             "batter": {
@@ -20630,15 +20635,489 @@
               "code": "R",
               "description": "Right"
             },
-            "postOnSecond": {
-              "id": 676551,
-              "fullName": "Brewer Hicklen",
-              "link": "/api/v1/people/676551"
+            "batterHotColdZones": [],
+            "pitcherHotColdZones": [],
+            "splits": {
+              "batter": "vs_RHP",
+              "pitcher": "vs_RHB",
+              "menOnBase": "Empty"
+            }
+          },
+          "pitchIndex": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "actionIndex": [],
+          "runnerIndex": [
+            0
+          ],
+          "runners": [
+            {
+              "movement": {
+                "originBase": null,
+                "start": null,
+                "end": null,
+                "outBase": "1B",
+                "isOut": true,
+                "outNumber": 3
+              },
+              "details": {
+                "event": "Groundout",
+                "eventType": "field_out",
+                "movementReason": null,
+                "runner": {
+                  "id": 660670,
+                  "fullName": "Ronald Acuña Jr.",
+                  "link": "/api/v1/people/660670"
+                },
+                "responsiblePitcher": null,
+                "isScoringEvent": false,
+                "rbi": false,
+                "earned": false,
+                "teamUnearned": false,
+                "playIndex": 4
+              },
+              "credits": [
+                {
+                  "player": {
+                    "id": 500743,
+                    "link": "/api/v1/people/500743"
+                  },
+                  "position": {
+                    "code": "4",
+                    "name": "Second Base",
+                    "type": "Infielder",
+                    "abbreviation": "2B"
+                  },
+                  "credit": "f_assist"
+                },
+                {
+                  "player": {
+                    "id": 518692,
+                    "link": "/api/v1/people/518692"
+                  },
+                  "position": {
+                    "code": "3",
+                    "name": "First Base",
+                    "type": "Infielder",
+                    "abbreviation": "1B"
+                  },
+                  "credit": "f_putout"
+                }
+              ]
+            }
+          ],
+          "playEvents": [
+            {
+              "details": {
+                "call": {
+                  "code": "B",
+                  "description": "Ball"
+                },
+                "description": "Ball",
+                "code": "B",
+                "ballColor": "rgba(39, 161, 39, 1.0)",
+                "trailColor": "rgba(119, 0, 152, 1.0)",
+                "isInPlay": false,
+                "isStrike": false,
+                "isBall": true,
+                "type": {
+                  "code": "FS",
+                  "description": "Splitter"
+                },
+                "isOut": false,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 1,
+                "strikes": 0,
+                "outs": 2
+              },
+              "pitchData": {
+                "startSpeed": 91.3,
+                "endSpeed": 84.4,
+                "strikeZoneTop": 3.201,
+                "strikeZoneBottom": 1.615,
+                "strikeZoneWidth": 17.0,
+                "strikeZoneDepth": 8.5,
+                "coordinates": {
+                  "aY": 25.78601809332803,
+                  "aZ": -29.64348643451971,
+                  "pfxX": -3.0778198956444527,
+                  "pfxZ": 1.394516808261784,
+                  "pX": -0.9771127057162737,
+                  "pZ": 3.3395394082052894,
+                  "vX0": 3.2053088398441067,
+                  "vY0": -133.10036182289997,
+                  "vZ0": 0.25448221343278987,
+                  "x": 154.25,
+                  "y": 148.61,
+                  "x0": -1.7911569598090866,
+                  "y0": 50.00251653976173,
+                  "z0": 5.371375328094627,
+                  "aX": -5.579978203258441
+                },
+                "breaks": {
+                  "breakAngle": 6.0,
+                  "breakVertical": -29.6,
+                  "breakVerticalInduced": 2.8,
+                  "breakHorizontal": 4.9,
+                  "spinRate": 1201,
+                  "spinDirection": 249
+                },
+                "zone": 11,
+                "plateTime": 0.40990328232095186,
+                "extension": 6.394322439511249
+              },
+              "index": 0,
+              "playId": "8374dde0-0c1e-3f07-a1f3-350e66c2960d",
+              "pitchNumber": 1,
+              "startTime": "2026-10-06T23:50:57.895Z",
+              "endTime": "2026-10-06T23:51:17.314Z",
+              "isPitch": true,
+              "type": "pitch"
             },
-            "postOnThird": {
-              "id": 657041,
-              "fullName": "Lane Thomas",
-              "link": "/api/v1/people/657041"
+            {
+              "details": {
+                "call": {
+                  "code": "C",
+                  "description": "Called Strike"
+                },
+                "description": "Called Strike",
+                "code": "C",
+                "ballColor": "rgba(170, 21, 11, 1.0)",
+                "trailColor": "rgba(152, 0, 101, 1.0)",
+                "isInPlay": false,
+                "isStrike": true,
+                "isBall": false,
+                "type": {
+                  "code": "FC",
+                  "description": "Cutter"
+                },
+                "isOut": false,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 1,
+                "strikes": 1,
+                "outs": 2
+              },
+              "pitchData": {
+                "startSpeed": 92.1,
+                "endSpeed": 85.3,
+                "strikeZoneTop": 3.201,
+                "strikeZoneBottom": 1.615,
+                "strikeZoneWidth": 17.0,
+                "strikeZoneDepth": 8.5,
+                "coordinates": {
+                  "aY": 26.220144503701782,
+                  "aZ": -24.205295095699874,
+                  "pfxX": 2.2268605973949303,
+                  "pfxZ": 4.319093746153589,
+                  "pX": -0.19472184638938236,
+                  "pZ": 2.3604402384716123,
+                  "vX0": 3.7690082086317878,
+                  "vY0": -134.23831428557386,
+                  "vZ0": -3.0065780249138085,
+                  "x": 124.42,
+                  "y": 175.05,
+                  "x0": -1.9005035391913794,
+                  "y0": 50.000128615184465,
+                  "z0": 5.19839285004944,
+                  "aX": 4.105192175224417
+                },
+                "breaks": {
+                  "breakAngle": 28.8,
+                  "breakVertical": -24.5,
+                  "breakVerticalInduced": 7.4,
+                  "breakHorizontal": -4.8,
+                  "spinRate": 2401,
+                  "spinDirection": 186
+                },
+                "zone": 5,
+                "plateTime": 0.40640787804687895,
+                "extension": 6.535154450114518
+              },
+              "index": 1,
+              "playId": "09af0650-4708-3038-a318-4f3202657d1e",
+              "pitchNumber": 2,
+              "startTime": "2026-10-06T23:51:17.314Z",
+              "endTime": "2026-10-06T23:51:37.622Z",
+              "isPitch": true,
+              "type": "pitch"
+            },
+            {
+              "details": {
+                "call": {
+                  "code": "B",
+                  "description": "Ball"
+                },
+                "description": "Ball",
+                "code": "B",
+                "ballColor": "rgba(39, 161, 39, 1.0)",
+                "trailColor": "rgba(188, 0, 33, 1.0)",
+                "isInPlay": false,
+                "isStrike": false,
+                "isBall": true,
+                "type": {
+                  "code": "FF",
+                  "description": "Four-Seam Fastball"
+                },
+                "isOut": false,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 2,
+                "strikes": 1,
+                "outs": 2
+              },
+              "pitchData": {
+                "startSpeed": 96.2,
+                "endSpeed": 87.7,
+                "strikeZoneTop": 3.201,
+                "strikeZoneBottom": 1.615,
+                "strikeZoneWidth": 17.0,
+                "strikeZoneDepth": 8.5,
+                "coordinates": {
+                  "aY": 32.08780446711978,
+                  "aZ": -15.637740017688015,
+                  "pfxX": -5.051346085488353,
+                  "pfxZ": 8.337672273116167,
+                  "pX": -1.053656010570783,
+                  "pZ": 3.5568927572149636,
+                  "vX0": 3.6664413776000537,
+                  "vY0": -140.05054810714017,
+                  "vZ0": -2.1539304697262756,
+                  "x": 157.16,
+                  "y": 142.74,
+                  "x0": -1.724518925710139,
+                  "y0": 50.00283846923627,
+                  "z0": 5.36054268389216,
+                  "aX": -10.018916074273513
+                },
+                "breaks": {
+                  "breakAngle": 0.0,
+                  "breakVertical": -14.8,
+                  "breakVerticalInduced": 14.9,
+                  "breakHorizontal": 8.4,
+                  "spinRate": 2241,
+                  "spinDirection": 218
+                },
+                "zone": 11,
+                "plateTime": 0.3913265189344415,
+                "extension": 6.650451370040196
+              },
+              "index": 2,
+              "playId": "ee2d3bd1-0420-35ff-9d4d-1c6f6b1b1cd1",
+              "pitchNumber": 3,
+              "startTime": "2026-10-06T23:51:37.622Z",
+              "endTime": "2026-10-06T23:51:58.087Z",
+              "isPitch": true,
+              "type": "pitch"
+            },
+            {
+              "details": {
+                "call": {
+                  "code": "B",
+                  "description": "Ball"
+                },
+                "description": "Ball",
+                "code": "B",
+                "ballColor": "rgba(39, 161, 39, 1.0)",
+                "trailColor": "rgba(188, 0, 33, 1.0)",
+                "isInPlay": false,
+                "isStrike": false,
+                "isBall": true,
+                "type": {
+                  "code": "FF",
+                  "description": "Four-Seam Fastball"
+                },
+                "isOut": false,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 3,
+                "strikes": 1,
+                "outs": 2
+              },
+              "pitchData": {
+                "startSpeed": 97.0,
+                "endSpeed": 88.2,
+                "strikeZoneTop": 3.201,
+                "strikeZoneBottom": 1.615,
+                "strikeZoneWidth": 17.0,
+                "strikeZoneDepth": 8.5,
+                "coordinates": {
+                  "aY": 33.45277634114024,
+                  "aZ": -12.59972898050296,
+                  "pfxX": -4.742582197509927,
+                  "pfxZ": 9.746532207200998,
+                  "pX": -0.875873284115322,
+                  "pZ": 3.5405228404846008,
+                  "vX0": 3.7163814906818446,
+                  "vY0": -141.1434627297264,
+                  "vZ0": -2.779533710892489,
+                  "x": 150.39,
+                  "y": 143.19,
+                  "x0": -1.596378897077094,
+                  "y0": 50.00506717429515,
+                  "z0": 5.354290360052996,
+                  "aX": -9.527621477162224
+                },
+                "breaks": {
+                  "breakAngle": 1.2,
+                  "breakVertical": -12.0,
+                  "breakVerticalInduced": 17.3,
+                  "breakHorizontal": 7.8,
+                  "spinRate": 2253,
+                  "spinDirection": 218
+                },
+                "zone": 11,
+                "plateTime": 0.38871727289463953,
+                "extension": 6.483263086991427
+              },
+              "index": 3,
+              "playId": "90ebe8b7-c0a8-370c-9bc5-db49448d3a2d",
+              "pitchNumber": 4,
+              "startTime": "2026-10-06T23:51:58.087Z",
+              "endTime": "2026-10-06T23:52:20.335Z",
+              "isPitch": true,
+              "type": "pitch"
+            },
+            {
+              "details": {
+                "call": {
+                  "code": "X",
+                  "description": "In play, out(s)"
+                },
+                "description": "In play, out(s)",
+                "code": "X",
+                "ballColor": "rgba(26, 86, 190, 1.0)",
+                "trailColor": "rgba(119, 0, 152, 1.0)",
+                "isInPlay": true,
+                "isStrike": false,
+                "isBall": false,
+                "type": {
+                  "code": "FS",
+                  "description": "Splitter"
+                },
+                "isOut": true,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 3,
+                "strikes": 1,
+                "outs": 2
+              },
+              "pitchData": {
+                "startSpeed": 91.7,
+                "endSpeed": 84.8,
+                "strikeZoneTop": 3.201,
+                "strikeZoneBottom": 1.615,
+                "strikeZoneWidth": 17.0,
+                "strikeZoneDepth": 8.5,
+                "coordinates": {
+                  "aY": 26.66754906895255,
+                  "aZ": -30.606745446029258,
+                  "pfxX": -4.608452234321721,
+                  "pfxZ": 0.8672164921105816,
+                  "pX": 0.5894534370127119,
+                  "pZ": 1.6157095578903893,
+                  "vX0": 7.485735856667573,
+                  "vY0": -133.408179824059,
+                  "vZ0": -4.138285980545621,
+                  "x": 94.53,
+                  "y": 195.16,
+                  "x0": -1.644547949134381,
+                  "y0": 50.00642688300217,
+                  "z0": 5.37451406485556,
+                  "aX": -8.371697536940848
+                },
+                "breaks": {
+                  "breakAngle": 24.0,
+                  "breakVertical": -31.4,
+                  "breakVerticalInduced": 1.0,
+                  "breakHorizontal": 6.8,
+                  "spinRate": 1288,
+                  "spinDirection": 241
+                },
+                "zone": 9,
+                "plateTime": 0.4093897999374283,
+                "extension": 6.67429848086782
+              },
+              "hitData": {
+                "launchSpeed": 70.6,
+                "launchAngle": -23.0,
+                "totalDistance": 6.0,
+                "trajectory": "ground_ball",
+                "hardness": "medium",
+                "location": "4",
+                "coordinates": {
+                  "coordX": 157.98,
+                  "coordY": 153.38
+                }
+              },
+              "index": 4,
+              "playId": "40b967dc-cdc8-30f1-8ee2-74b1f4ca3c51",
+              "pitchNumber": 5,
+              "startTime": "2026-10-06T23:52:20.335Z",
+              "endTime": "2026-10-06T23:52:35.267Z",
+              "isPitch": true,
+              "type": "pitch"
+            }
+          ],
+          "playEndTime": "2026-10-06T23:52:35.267Z",
+          "atBatIndex": 43
+        },
+        {
+          "result": {
+            "type": "atBat",
+            "event": "Pitching Substitution",
+            "eventType": "pitching_substitution",
+            "description": "Pitching Change: Dylan Dodd replaces Chris Sale.",
+            "rbi": 0,
+            "awayScore": 3,
+            "homeScore": 1,
+            "isOut": false
+          },
+          "about": {
+            "atBatIndex": 44,
+            "halfInning": "top",
+            "isTopInning": true,
+            "inning": 6,
+            "startTime": "2026-10-06T23:54:02.881Z",
+            "endTime": "2026-10-06T23:54:02.894Z",
+            "isComplete": false,
+            "isScoringPlay": false,
+            "hasOut": false,
+            "captivatingIndex": 0
+          },
+          "count": {
+            "balls": 0,
+            "strikes": 0,
+            "outs": 0
+          },
+          "matchup": {
+            "batter": {
+              "id": 681624,
+              "fullName": "Andy Pages",
+              "link": "/api/v1/people/681624"
+            },
+            "batSide": {
+              "code": "R",
+              "description": "Right"
+            },
+            "pitcher": {
+              "id": 689266,
+              "fullName": "Dylan Dodd",
+              "link": "/api/v1/people/689266"
+            },
+            "pitchHand": {
+              "code": "L",
+              "description": "Left"
             },
             "batterHotColdZoneStats": {
               "stats": [
@@ -20653,6 +21132,91 @@
                   "splits": [
                     {
                       "stat": {
+                        "name": "onBasePlusSlugging",
+                        "zones": [
+                          {
+                            "zone": "01",
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
+                          },
+                          {
+                            "zone": "02",
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
+                          },
+                          {
+                            "zone": "03",
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
+                          },
+                          {
+                            "zone": "04",
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
+                          },
+                          {
+                            "zone": "05",
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
+                          },
+                          {
+                            "zone": "06",
+                            "color": "rgba(6, 90, 238, .55)",
+                            "temp": "cold",
+                            "value": ".000"
+                          },
+                          {
+                            "zone": "07",
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
+                          },
+                          {
+                            "zone": "08",
+                            "color": "rgba(6, 90, 238, .55)",
+                            "temp": "cold",
+                            "value": ".000"
+                          },
+                          {
+                            "zone": "09",
+                            "color": "rgba(214, 41, 52, .55)",
+                            "temp": "hot",
+                            "value": "1.000"
+                          },
+                          {
+                            "zone": "11",
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
+                          },
+                          {
+                            "zone": "12",
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
+                          },
+                          {
+                            "zone": "13",
+                            "color": "rgba(6, 90, 238, .55)",
+                            "temp": "cold",
+                            "value": ".000"
+                          },
+                          {
+                            "zone": "14",
+                            "color": "rgba(214, 41, 52, .55)",
+                            "temp": "hot",
+                            "value": "1.000"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "stat": {
                         "name": "exitVelocity",
                         "zones": [
                           {
@@ -20663,9 +21227,9 @@
                           },
                           {
                             "zone": "02",
-                            "color": "rgba(214, 41, 52, .55)",
-                            "temp": "hot",
-                            "value": "96.11"
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
                           },
                           {
                             "zone": "03",
@@ -20675,39 +21239,39 @@
                           },
                           {
                             "zone": "04",
-                            "color": "rgba(214, 41, 52, .55)",
-                            "temp": "hot",
-                            "value": "95.17"
-                          },
-                          {
-                            "zone": "05",
-                            "color": "rgba(214, 41, 52, .55)",
-                            "temp": "hot",
-                            "value": "108.14"
-                          },
-                          {
-                            "zone": "06",
                             "color": "rgba(255, 255, 255, 0.55)",
                             "temp": "lukewarm",
                             "value": "-"
                           },
                           {
-                            "zone": "07",
+                            "zone": "05",
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
+                          },
+                          {
+                            "zone": "06",
                             "color": "rgba(214, 41, 52, .55)",
                             "temp": "hot",
-                            "value": "96.99"
+                            "value": "97.57"
+                          },
+                          {
+                            "zone": "07",
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
                           },
                           {
                             "zone": "08",
-                            "color": "rgba(214, 41, 52, .55)",
-                            "temp": "hot",
-                            "value": "94.50"
+                            "color": "rgba(6, 90, 238, .55)",
+                            "temp": "cold",
+                            "value": "85.89"
                           },
                           {
                             "zone": "09",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": "77.67"
+                            "color": "rgba(214, 41, 52, .55)",
+                            "temp": "hot",
+                            "value": "99.65"
                           },
                           {
                             "zone": "11",
@@ -20723,100 +21287,15 @@
                           },
                           {
                             "zone": "13",
-                            "color": "rgba(214, 41, 52, .55)",
-                            "temp": "hot",
-                            "value": "91.87"
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
                           },
                           {
                             "zone": "14",
                             "color": "rgba(255, 255, 255, 0.55)",
                             "temp": "lukewarm",
                             "value": "-"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "stat": {
-                        "name": "onBasePlusSlugging",
-                        "zones": [
-                          {
-                            "zone": "01",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
-                          },
-                          {
-                            "zone": "02",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
-                          },
-                          {
-                            "zone": "03",
-                            "color": "rgba(255, 255, 255, 0.55)",
-                            "temp": "lukewarm",
-                            "value": "-"
-                          },
-                          {
-                            "zone": "04",
-                            "color": "rgba(214, 41, 52, .55)",
-                            "temp": "hot",
-                            "value": "2.000"
-                          },
-                          {
-                            "zone": "05",
-                            "color": "rgba(214, 41, 52, .55)",
-                            "temp": "hot",
-                            "value": "2.000"
-                          },
-                          {
-                            "zone": "06",
-                            "color": "rgba(255, 255, 255, 0.55)",
-                            "temp": "lukewarm",
-                            "value": "-"
-                          },
-                          {
-                            "zone": "07",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
-                          },
-                          {
-                            "zone": "08",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
-                          },
-                          {
-                            "zone": "09",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
-                          },
-                          {
-                            "zone": "11",
-                            "color": "rgba(255, 255, 255, 0.55)",
-                            "temp": "lukewarm",
-                            "value": "-"
-                          },
-                          {
-                            "zone": "12",
-                            "color": "rgba(255, 255, 255, 0.55)",
-                            "temp": "lukewarm",
-                            "value": "-"
-                          },
-                          {
-                            "zone": "13",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
-                          },
-                          {
-                            "zone": "14",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
                           }
                         ]
                       }
@@ -20827,15 +21306,15 @@
                         "zones": [
                           {
                             "zone": "01",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
                           },
                           {
                             "zone": "02",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
                           },
                           {
                             "zone": "03",
@@ -20845,27 +21324,27 @@
                           },
                           {
                             "zone": "04",
-                            "color": "rgba(214, 41, 52, .55)",
-                            "temp": "hot",
-                            "value": "1.000"
-                          },
-                          {
-                            "zone": "05",
-                            "color": "rgba(214, 41, 52, .55)",
-                            "temp": "hot",
-                            "value": "1.000"
-                          },
-                          {
-                            "zone": "06",
                             "color": "rgba(255, 255, 255, 0.55)",
                             "temp": "lukewarm",
                             "value": "-"
                           },
                           {
-                            "zone": "07",
+                            "zone": "05",
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
+                          },
+                          {
+                            "zone": "06",
                             "color": "rgba(6, 90, 238, .55)",
                             "temp": "cold",
                             "value": ".000"
+                          },
+                          {
+                            "zone": "07",
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
                           },
                           {
                             "zone": "08",
@@ -20875,9 +21354,9 @@
                           },
                           {
                             "zone": "09",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
+                            "color": "rgba(214, 41, 52, .55)",
+                            "temp": "hot",
+                            "value": ".500"
                           },
                           {
                             "zone": "11",
@@ -20899,9 +21378,9 @@
                           },
                           {
                             "zone": "14",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
                           }
                         ]
                       }
@@ -20913,15 +21392,15 @@
             "batterHotColdZones": [
               {
                 "zone": "01",
-                "color": "rgba(6, 90, 238, .55)",
-                "temp": "cold",
-                "value": ".000"
+                "color": "rgba(255, 255, 255, 0.55)",
+                "temp": "lukewarm",
+                "value": "-"
               },
               {
                 "zone": "02",
-                "color": "rgba(6, 90, 238, .55)",
-                "temp": "cold",
-                "value": ".000"
+                "color": "rgba(255, 255, 255, 0.55)",
+                "temp": "lukewarm",
+                "value": "-"
               },
               {
                 "zone": "03",
@@ -20931,27 +21410,27 @@
               },
               {
                 "zone": "04",
-                "color": "rgba(214, 41, 52, .55)",
-                "temp": "hot",
-                "value": "2.000"
-              },
-              {
-                "zone": "05",
-                "color": "rgba(214, 41, 52, .55)",
-                "temp": "hot",
-                "value": "2.000"
-              },
-              {
-                "zone": "06",
                 "color": "rgba(255, 255, 255, 0.55)",
                 "temp": "lukewarm",
                 "value": "-"
               },
               {
-                "zone": "07",
+                "zone": "05",
+                "color": "rgba(255, 255, 255, 0.55)",
+                "temp": "lukewarm",
+                "value": "-"
+              },
+              {
+                "zone": "06",
                 "color": "rgba(6, 90, 238, .55)",
                 "temp": "cold",
                 "value": ".000"
+              },
+              {
+                "zone": "07",
+                "color": "rgba(255, 255, 255, 0.55)",
+                "temp": "lukewarm",
+                "value": "-"
               },
               {
                 "zone": "08",
@@ -20961,9 +21440,9 @@
               },
               {
                 "zone": "09",
-                "color": "rgba(6, 90, 238, .55)",
-                "temp": "cold",
-                "value": ".000"
+                "color": "rgba(214, 41, 52, .55)",
+                "temp": "hot",
+                "value": "1.000"
               },
               {
                 "zone": "11",
@@ -20985,76 +21464,183 @@
               },
               {
                 "zone": "14",
-                "color": "rgba(6, 90, 238, .55)",
-                "temp": "cold",
-                "value": ".000"
+                "color": "rgba(214, 41, 52, .55)",
+                "temp": "hot",
+                "value": "1.000"
               }
             ],
             "pitcherHotColdZones": [],
             "splits": {
-              "batter": "vs_RHP",
+              "batter": "vs_LHP",
               "pitcher": "vs_RHB",
-              "menOnBase": "RISP"
+              "menOnBase": "Empty"
             }
           },
           "pitchIndex": [],
-          "actionIndex": [],
+          "actionIndex": [
+            0,
+            1,
+            2
+          ],
           "runnerIndex": [],
           "runners": [],
-          "playEvents": [],
-          "playEndTime": "2026-10-06T23:50:53.338Z",
-          "atBatIndex": 43
+          "playEvents": [
+            {
+              "details": {
+                "description": "Defensive switch from left field to shortstop for Mauricio Dubón.",
+                "event": "Defensive Switch",
+                "eventType": "defensive_switch",
+                "awayScore": 3,
+                "homeScore": 1,
+                "isScoringPlay": false,
+                "isOut": false,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 0,
+                "strikes": 0,
+                "outs": 0
+              },
+              "index": 0,
+              "startTime": "2026-10-06T23:54:02.881Z",
+              "endTime": "2026-10-06T23:54:02.892Z",
+              "isPitch": false,
+              "isSubstitution": true,
+              "type": "action",
+              "player": {
+                "id": 643289,
+                "link": "/api/v1/people/643289"
+              },
+              "position": {
+                "code": "6",
+                "name": "Shortstop",
+                "type": "Infielder",
+                "abbreviation": "SS"
+              },
+              "battingOrder": "600"
+            },
+            {
+              "details": {
+                "description": "Brewer Hicklen remains in the game as the left fielder.",
+                "event": "Defensive Switch",
+                "eventType": "defensive_switch",
+                "awayScore": 3,
+                "homeScore": 1,
+                "isScoringPlay": false,
+                "isOut": false,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 0,
+                "strikes": 0,
+                "outs": 0
+              },
+              "index": 1,
+              "startTime": "2026-10-06T23:54:02.892Z",
+              "endTime": "2026-10-06T23:54:02.894Z",
+              "isPitch": false,
+              "isSubstitution": true,
+              "type": "action",
+              "player": {
+                "id": 676551,
+                "link": "/api/v1/people/676551"
+              },
+              "position": {
+                "code": "7",
+                "name": "Outfielder",
+                "type": "Outfielder",
+                "abbreviation": "LF"
+              },
+              "battingOrder": "902",
+              "replacedPlayer": {
+                "id": 642133,
+                "link": "/api/v1/people/642133"
+              }
+            },
+            {
+              "details": {
+                "description": "Pitching Change: Dylan Dodd replaces Chris Sale.",
+                "event": "Pitching Substitution",
+                "eventType": "pitching_substitution",
+                "awayScore": 3,
+                "homeScore": 1,
+                "isScoringPlay": false,
+                "isOut": false,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 0,
+                "strikes": 0,
+                "outs": 0
+              },
+              "index": 2,
+              "startTime": "2026-10-06T23:54:02.894Z",
+              "endTime": "2026-10-06T23:54:02.894Z",
+              "isPitch": false,
+              "isSubstitution": true,
+              "type": "action",
+              "player": {
+                "id": 689266,
+                "link": "/api/v1/people/689266"
+              },
+              "position": {
+                "code": "1",
+                "name": "Pitcher",
+                "type": "Pitcher",
+                "abbreviation": "P"
+              }
+            }
+          ],
+          "playEndTime": "2026-10-06T23:54:02.894Z",
+          "atBatIndex": 44
         }
       ],
       "currentPlay": {
         "result": {
           "type": "atBat",
+          "event": "Pitching Substitution",
+          "eventType": "pitching_substitution",
+          "description": "Pitching Change: Dylan Dodd replaces Chris Sale.",
+          "rbi": 0,
           "awayScore": 3,
-          "homeScore": 1
+          "homeScore": 1,
+          "isOut": false
         },
         "about": {
-          "atBatIndex": 43,
-          "halfInning": "bottom",
-          "isTopInning": false,
-          "inning": 5,
-          "startTime": "2026-10-06T23:50:53.338Z",
-          "endTime": "2026-10-06T23:50:53.338Z",
+          "atBatIndex": 44,
+          "halfInning": "top",
+          "isTopInning": true,
+          "inning": 6,
+          "startTime": "2026-10-06T23:54:02.881Z",
+          "endTime": "2026-10-06T23:54:02.894Z",
           "isComplete": false,
+          "isScoringPlay": false,
+          "hasOut": false,
           "captivatingIndex": 0
         },
         "count": {
           "balls": 0,
           "strikes": 0,
-          "outs": 2
+          "outs": 0
         },
         "matchup": {
           "batter": {
-            "id": 660670,
-            "fullName": "Ronald Acuña Jr.",
-            "link": "/api/v1/people/660670"
+            "id": 681624,
+            "fullName": "Andy Pages",
+            "link": "/api/v1/people/681624"
           },
           "batSide": {
             "code": "R",
             "description": "Right"
           },
           "pitcher": {
-            "id": 808967,
-            "fullName": "Yoshinobu Yamamoto",
-            "link": "/api/v1/people/808967"
+            "id": 689266,
+            "fullName": "Dylan Dodd",
+            "link": "/api/v1/people/689266"
           },
           "pitchHand": {
-            "code": "R",
-            "description": "Right"
-          },
-          "postOnSecond": {
-            "id": 676551,
-            "fullName": "Brewer Hicklen",
-            "link": "/api/v1/people/676551"
-          },
-          "postOnThird": {
-            "id": 657041,
-            "fullName": "Lane Thomas",
-            "link": "/api/v1/people/657041"
+            "code": "L",
+            "description": "Left"
           },
           "batterHotColdZoneStats": {
             "stats": [
@@ -21069,6 +21655,91 @@
                 "splits": [
                   {
                     "stat": {
+                      "name": "onBasePlusSlugging",
+                      "zones": [
+                        {
+                          "zone": "01",
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
+                        },
+                        {
+                          "zone": "02",
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
+                        },
+                        {
+                          "zone": "03",
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
+                        },
+                        {
+                          "zone": "04",
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
+                        },
+                        {
+                          "zone": "05",
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
+                        },
+                        {
+                          "zone": "06",
+                          "color": "rgba(6, 90, 238, .55)",
+                          "temp": "cold",
+                          "value": ".000"
+                        },
+                        {
+                          "zone": "07",
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
+                        },
+                        {
+                          "zone": "08",
+                          "color": "rgba(6, 90, 238, .55)",
+                          "temp": "cold",
+                          "value": ".000"
+                        },
+                        {
+                          "zone": "09",
+                          "color": "rgba(214, 41, 52, .55)",
+                          "temp": "hot",
+                          "value": "1.000"
+                        },
+                        {
+                          "zone": "11",
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
+                        },
+                        {
+                          "zone": "12",
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
+                        },
+                        {
+                          "zone": "13",
+                          "color": "rgba(6, 90, 238, .55)",
+                          "temp": "cold",
+                          "value": ".000"
+                        },
+                        {
+                          "zone": "14",
+                          "color": "rgba(214, 41, 52, .55)",
+                          "temp": "hot",
+                          "value": "1.000"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "stat": {
                       "name": "exitVelocity",
                       "zones": [
                         {
@@ -21079,9 +21750,9 @@
                         },
                         {
                           "zone": "02",
-                          "color": "rgba(214, 41, 52, .55)",
-                          "temp": "hot",
-                          "value": "96.11"
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
                         },
                         {
                           "zone": "03",
@@ -21091,39 +21762,39 @@
                         },
                         {
                           "zone": "04",
-                          "color": "rgba(214, 41, 52, .55)",
-                          "temp": "hot",
-                          "value": "95.17"
-                        },
-                        {
-                          "zone": "05",
-                          "color": "rgba(214, 41, 52, .55)",
-                          "temp": "hot",
-                          "value": "108.14"
-                        },
-                        {
-                          "zone": "06",
                           "color": "rgba(255, 255, 255, 0.55)",
                           "temp": "lukewarm",
                           "value": "-"
                         },
                         {
-                          "zone": "07",
+                          "zone": "05",
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
+                        },
+                        {
+                          "zone": "06",
                           "color": "rgba(214, 41, 52, .55)",
                           "temp": "hot",
-                          "value": "96.99"
+                          "value": "97.57"
+                        },
+                        {
+                          "zone": "07",
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
                         },
                         {
                           "zone": "08",
-                          "color": "rgba(214, 41, 52, .55)",
-                          "temp": "hot",
-                          "value": "94.50"
+                          "color": "rgba(6, 90, 238, .55)",
+                          "temp": "cold",
+                          "value": "85.89"
                         },
                         {
                           "zone": "09",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": "77.67"
+                          "color": "rgba(214, 41, 52, .55)",
+                          "temp": "hot",
+                          "value": "99.65"
                         },
                         {
                           "zone": "11",
@@ -21139,100 +21810,15 @@
                         },
                         {
                           "zone": "13",
-                          "color": "rgba(214, 41, 52, .55)",
-                          "temp": "hot",
-                          "value": "91.87"
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
                         },
                         {
                           "zone": "14",
                           "color": "rgba(255, 255, 255, 0.55)",
                           "temp": "lukewarm",
                           "value": "-"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "stat": {
-                      "name": "onBasePlusSlugging",
-                      "zones": [
-                        {
-                          "zone": "01",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
-                        },
-                        {
-                          "zone": "02",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
-                        },
-                        {
-                          "zone": "03",
-                          "color": "rgba(255, 255, 255, 0.55)",
-                          "temp": "lukewarm",
-                          "value": "-"
-                        },
-                        {
-                          "zone": "04",
-                          "color": "rgba(214, 41, 52, .55)",
-                          "temp": "hot",
-                          "value": "2.000"
-                        },
-                        {
-                          "zone": "05",
-                          "color": "rgba(214, 41, 52, .55)",
-                          "temp": "hot",
-                          "value": "2.000"
-                        },
-                        {
-                          "zone": "06",
-                          "color": "rgba(255, 255, 255, 0.55)",
-                          "temp": "lukewarm",
-                          "value": "-"
-                        },
-                        {
-                          "zone": "07",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
-                        },
-                        {
-                          "zone": "08",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
-                        },
-                        {
-                          "zone": "09",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
-                        },
-                        {
-                          "zone": "11",
-                          "color": "rgba(255, 255, 255, 0.55)",
-                          "temp": "lukewarm",
-                          "value": "-"
-                        },
-                        {
-                          "zone": "12",
-                          "color": "rgba(255, 255, 255, 0.55)",
-                          "temp": "lukewarm",
-                          "value": "-"
-                        },
-                        {
-                          "zone": "13",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
-                        },
-                        {
-                          "zone": "14",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
                         }
                       ]
                     }
@@ -21243,15 +21829,15 @@
                       "zones": [
                         {
                           "zone": "01",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
                         },
                         {
                           "zone": "02",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
                         },
                         {
                           "zone": "03",
@@ -21261,27 +21847,27 @@
                         },
                         {
                           "zone": "04",
-                          "color": "rgba(214, 41, 52, .55)",
-                          "temp": "hot",
-                          "value": "1.000"
-                        },
-                        {
-                          "zone": "05",
-                          "color": "rgba(214, 41, 52, .55)",
-                          "temp": "hot",
-                          "value": "1.000"
-                        },
-                        {
-                          "zone": "06",
                           "color": "rgba(255, 255, 255, 0.55)",
                           "temp": "lukewarm",
                           "value": "-"
                         },
                         {
-                          "zone": "07",
+                          "zone": "05",
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
+                        },
+                        {
+                          "zone": "06",
                           "color": "rgba(6, 90, 238, .55)",
                           "temp": "cold",
                           "value": ".000"
+                        },
+                        {
+                          "zone": "07",
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
                         },
                         {
                           "zone": "08",
@@ -21291,9 +21877,9 @@
                         },
                         {
                           "zone": "09",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
+                          "color": "rgba(214, 41, 52, .55)",
+                          "temp": "hot",
+                          "value": ".500"
                         },
                         {
                           "zone": "11",
@@ -21315,9 +21901,9 @@
                         },
                         {
                           "zone": "14",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
                         }
                       ]
                     }
@@ -21329,15 +21915,15 @@
           "batterHotColdZones": [
             {
               "zone": "01",
-              "color": "rgba(6, 90, 238, .55)",
-              "temp": "cold",
-              "value": ".000"
+              "color": "rgba(255, 255, 255, 0.55)",
+              "temp": "lukewarm",
+              "value": "-"
             },
             {
               "zone": "02",
-              "color": "rgba(6, 90, 238, .55)",
-              "temp": "cold",
-              "value": ".000"
+              "color": "rgba(255, 255, 255, 0.55)",
+              "temp": "lukewarm",
+              "value": "-"
             },
             {
               "zone": "03",
@@ -21347,27 +21933,27 @@
             },
             {
               "zone": "04",
-              "color": "rgba(214, 41, 52, .55)",
-              "temp": "hot",
-              "value": "2.000"
-            },
-            {
-              "zone": "05",
-              "color": "rgba(214, 41, 52, .55)",
-              "temp": "hot",
-              "value": "2.000"
-            },
-            {
-              "zone": "06",
               "color": "rgba(255, 255, 255, 0.55)",
               "temp": "lukewarm",
               "value": "-"
             },
             {
-              "zone": "07",
+              "zone": "05",
+              "color": "rgba(255, 255, 255, 0.55)",
+              "temp": "lukewarm",
+              "value": "-"
+            },
+            {
+              "zone": "06",
               "color": "rgba(6, 90, 238, .55)",
               "temp": "cold",
               "value": ".000"
+            },
+            {
+              "zone": "07",
+              "color": "rgba(255, 255, 255, 0.55)",
+              "temp": "lukewarm",
+              "value": "-"
             },
             {
               "zone": "08",
@@ -21377,9 +21963,9 @@
             },
             {
               "zone": "09",
-              "color": "rgba(6, 90, 238, .55)",
-              "temp": "cold",
-              "value": ".000"
+              "color": "rgba(214, 41, 52, .55)",
+              "temp": "hot",
+              "value": "1.000"
             },
             {
               "zone": "11",
@@ -21401,25 +21987,135 @@
             },
             {
               "zone": "14",
-              "color": "rgba(6, 90, 238, .55)",
-              "temp": "cold",
-              "value": ".000"
+              "color": "rgba(214, 41, 52, .55)",
+              "temp": "hot",
+              "value": "1.000"
             }
           ],
           "pitcherHotColdZones": [],
           "splits": {
-            "batter": "vs_RHP",
+            "batter": "vs_LHP",
             "pitcher": "vs_RHB",
-            "menOnBase": "RISP"
+            "menOnBase": "Empty"
           }
         },
         "pitchIndex": [],
-        "actionIndex": [],
+        "actionIndex": [
+          0,
+          1,
+          2
+        ],
         "runnerIndex": [],
         "runners": [],
-        "playEvents": [],
-        "playEndTime": "2026-10-06T23:50:53.338Z",
-        "atBatIndex": 43
+        "playEvents": [
+          {
+            "details": {
+              "description": "Defensive switch from left field to shortstop for Mauricio Dubón.",
+              "event": "Defensive Switch",
+              "eventType": "defensive_switch",
+              "awayScore": 3,
+              "homeScore": 1,
+              "isScoringPlay": false,
+              "isOut": false,
+              "hasReview": false
+            },
+            "count": {
+              "balls": 0,
+              "strikes": 0,
+              "outs": 0
+            },
+            "index": 0,
+            "startTime": "2026-10-06T23:54:02.881Z",
+            "endTime": "2026-10-06T23:54:02.892Z",
+            "isPitch": false,
+            "isSubstitution": true,
+            "type": "action",
+            "player": {
+              "id": 643289,
+              "link": "/api/v1/people/643289"
+            },
+            "position": {
+              "code": "6",
+              "name": "Shortstop",
+              "type": "Infielder",
+              "abbreviation": "SS"
+            },
+            "battingOrder": "600"
+          },
+          {
+            "details": {
+              "description": "Brewer Hicklen remains in the game as the left fielder.",
+              "event": "Defensive Switch",
+              "eventType": "defensive_switch",
+              "awayScore": 3,
+              "homeScore": 1,
+              "isScoringPlay": false,
+              "isOut": false,
+              "hasReview": false
+            },
+            "count": {
+              "balls": 0,
+              "strikes": 0,
+              "outs": 0
+            },
+            "index": 1,
+            "startTime": "2026-10-06T23:54:02.892Z",
+            "endTime": "2026-10-06T23:54:02.894Z",
+            "isPitch": false,
+            "isSubstitution": true,
+            "type": "action",
+            "player": {
+              "id": 676551,
+              "link": "/api/v1/people/676551"
+            },
+            "position": {
+              "code": "7",
+              "name": "Outfielder",
+              "type": "Outfielder",
+              "abbreviation": "LF"
+            },
+            "battingOrder": "902",
+            "replacedPlayer": {
+              "id": 642133,
+              "link": "/api/v1/people/642133"
+            }
+          },
+          {
+            "details": {
+              "description": "Pitching Change: Dylan Dodd replaces Chris Sale.",
+              "event": "Pitching Substitution",
+              "eventType": "pitching_substitution",
+              "awayScore": 3,
+              "homeScore": 1,
+              "isScoringPlay": false,
+              "isOut": false,
+              "hasReview": false
+            },
+            "count": {
+              "balls": 0,
+              "strikes": 0,
+              "outs": 0
+            },
+            "index": 2,
+            "startTime": "2026-10-06T23:54:02.894Z",
+            "endTime": "2026-10-06T23:54:02.894Z",
+            "isPitch": false,
+            "isSubstitution": true,
+            "type": "action",
+            "player": {
+              "id": 689266,
+              "link": "/api/v1/people/689266"
+            },
+            "position": {
+              "code": "1",
+              "name": "Pitcher",
+              "type": "Pitcher",
+              "abbreviation": "P"
+            }
+          }
+        ],
+        "playEndTime": "2026-10-06T23:54:02.894Z",
+        "atBatIndex": 44
       },
       "scoringPlays": [
         27,
@@ -22374,18 +23070,61 @@
                 },
                 "type": "O",
                 "description": "Groundout"
+              },
+              {
+                "team": {
+                  "springLeague": {
+                    "id": 115,
+                    "name": "Grapefruit League",
+                    "link": "/api/v1/league/115",
+                    "abbreviation": "GL"
+                  },
+                  "allStarStatus": "N",
+                  "id": 144,
+                  "name": "Atlanta Braves",
+                  "link": "/api/v1/teams/144"
+                },
+                "inning": 5,
+                "pitcher": {
+                  "id": 808967,
+                  "fullName": "Yoshinobu Yamamoto",
+                  "link": "/api/v1/people/808967"
+                },
+                "batter": {
+                  "id": 660670,
+                  "fullName": "Ronald Acuña Jr.",
+                  "link": "/api/v1/people/660670"
+                },
+                "coordinates": {
+                  "x": 157.98,
+                  "y": 153.38
+                },
+                "type": "O",
+                "description": "Groundout"
               }
             ]
+          }
+        },
+        {
+          "startIndex": 44,
+          "endIndex": 44,
+          "top": [
+            44
+          ],
+          "bottom": [],
+          "hits": {
+            "away": [],
+            "home": []
           }
         }
       ]
     },
     "linescore": {
-      "currentInning": 5,
-      "currentInningOrdinal": "5th",
-      "inningState": "Bottom",
-      "inningHalf": "Bottom",
-      "isTopInning": false,
+      "currentInning": 6,
+      "currentInningOrdinal": "6th",
+      "inningState": "Top",
+      "inningHalf": "Top",
+      "isTopInning": true,
       "scheduledInnings": 9,
       "innings": [
         {
@@ -22459,10 +23198,24 @@
             "runs": 1,
             "hits": 2,
             "errors": 0,
-            "leftOnBase": 0
+            "leftOnBase": 2
           },
           "away": {
             "runs": 0,
+            "hits": 0,
+            "errors": 0,
+            "leftOnBase": 0
+          }
+        },
+        {
+          "num": 6,
+          "ordinalNum": "6th",
+          "home": {
+            "hits": 0,
+            "errors": 0,
+            "leftOnBase": 0
+          },
+          "away": {
             "hits": 0,
             "errors": 0,
             "leftOnBase": 0
@@ -22474,7 +23227,7 @@
           "runs": 1,
           "hits": 4,
           "errors": 2,
-          "leftOnBase": 2
+          "leftOnBase": 4
         },
         "away": {
           "runs": 3,
@@ -22485,50 +23238,73 @@
       },
       "defense": {
         "pitcher": {
-          "id": 808967,
-          "fullName": "Yoshinobu Yamamoto",
-          "link": "/api/v1/people/808967"
+          "id": 689266,
+          "fullName": "Dylan Dodd",
+          "link": "/api/v1/people/689266"
         },
         "catcher": {
-          "id": 669257,
-          "fullName": "Will Smith",
-          "link": "/api/v1/people/669257"
+          "id": 686948,
+          "fullName": "Drake Baldwin",
+          "link": "/api/v1/people/686948"
         },
         "first": {
-          "id": 518692,
-          "fullName": "Freddie Freeman",
-          "link": "/api/v1/people/518692"
+          "id": 621566,
+          "fullName": "Matt Olson",
+          "link": "/api/v1/people/621566"
         },
         "second": {
-          "id": 500743,
-          "fullName": "Miguel Rojas",
-          "link": "/api/v1/people/500743"
+          "id": 645277,
+          "fullName": "Ozzie Albies",
+          "link": "/api/v1/people/645277"
         },
         "third": {
-          "id": 571771,
-          "fullName": "Enrique Hernández",
-          "link": "/api/v1/people/571771"
+          "id": 663586,
+          "fullName": "Austin Riley",
+          "link": "/api/v1/people/663586"
         },
         "shortstop": {
-          "id": 605141,
-          "fullName": "Mookie Betts",
-          "link": "/api/v1/people/605141"
+          "id": 643289,
+          "fullName": "Mauricio Dubón",
+          "link": "/api/v1/people/643289"
         },
         "left": {
-          "id": 606192,
-          "fullName": "Teoscar Hernández",
-          "link": "/api/v1/people/606192"
+          "id": 676551,
+          "fullName": "Brewer Hicklen",
+          "link": "/api/v1/people/676551"
         },
         "center": {
-          "id": 681624,
-          "fullName": "Andy Pages",
-          "link": "/api/v1/people/681624"
+          "id": 671739,
+          "fullName": "Michael Harris II",
+          "link": "/api/v1/people/671739"
         },
         "right": {
-          "id": 663656,
-          "fullName": "Kyle Tucker",
-          "link": "/api/v1/people/663656"
+          "id": 657041,
+          "fullName": "Lane Thomas",
+          "link": "/api/v1/people/657041"
         },
+        "batter": {
+          "id": 621566,
+          "fullName": "Matt Olson",
+          "link": "/api/v1/people/621566"
+        },
+        "onDeck": {
+          "id": 645277,
+          "fullName": "Ozzie Albies",
+          "link": "/api/v1/people/645277"
+        },
+        "inHole": {
+          "id": 671739,
+          "fullName": "Michael Harris II",
+          "link": "/api/v1/people/671739"
+        },
+        "battingOrder": 3,
+        "team": {
+          "id": 144,
+          "name": "Atlanta Braves",
+          "link": "/api/v1/teams/144"
+        }
+      },
+      "offense": {
         "batter": {
           "id": 681624,
           "fullName": "Andy Pages",
@@ -22543,6 +23319,11 @@
           "id": 571771,
           "fullName": "Enrique Hernández",
           "link": "/api/v1/people/571771"
+        },
+        "pitcher": {
+          "id": 808967,
+          "fullName": "Yoshinobu Yamamoto",
+          "link": "/api/v1/people/808967"
         },
         "battingOrder": 7,
         "team": {
@@ -22551,47 +23332,9 @@
           "link": "/api/v1/teams/119"
         }
       },
-      "offense": {
-        "batter": {
-          "id": 660670,
-          "fullName": "Ronald Acuña Jr.",
-          "link": "/api/v1/people/660670"
-        },
-        "onDeck": {
-          "id": 621566,
-          "fullName": "Matt Olson",
-          "link": "/api/v1/people/621566"
-        },
-        "inHole": {
-          "id": 645277,
-          "fullName": "Ozzie Albies",
-          "link": "/api/v1/people/645277"
-        },
-        "second": {
-          "id": 676551,
-          "fullName": "Brewer Hicklen",
-          "link": "/api/v1/people/676551"
-        },
-        "third": {
-          "id": 657041,
-          "fullName": "Lane Thomas",
-          "link": "/api/v1/people/657041"
-        },
-        "pitcher": {
-          "id": 519242,
-          "fullName": "Chris Sale",
-          "link": "/api/v1/people/519242"
-        },
-        "battingOrder": 2,
-        "team": {
-          "id": 144,
-          "name": "Atlanta Braves",
-          "link": "/api/v1/teams/144"
-        }
-      },
       "balls": 0,
       "strikes": 0,
-      "outs": 2
+      "outs": 0
     },
     "boxscore": {
       "teams": {
@@ -22646,7 +23389,7 @@
             },
             "pitching": {
               "flyOuts": 2,
-              "groundOuts": 4,
+              "groundOuts": 5,
               "airOuts": 3,
               "runs": 1,
               "doubles": 0,
@@ -22657,34 +23400,34 @@
               "intentionalWalks": 0,
               "hits": 4,
               "hitByPitch": 0,
-              "atBats": 18,
-              "obp": ".263",
+              "atBats": 19,
+              "obp": ".250",
               "caughtStealing": 0,
               "stolenBases": 0,
               "stolenBasePercentage": ".---",
               "caughtStealingPercentage": ".---",
-              "numberOfPitches": 70,
-              "era": "2.78",
-              "inningsPitched": "4.2",
+              "numberOfPitches": 75,
+              "era": "2.74",
+              "inningsPitched": "5.0",
               "saveOpportunities": 0,
               "earnedRuns": 1,
-              "whip": "1.15",
-              "battersFaced": 19,
-              "outs": 14,
+              "whip": "1.13",
+              "battersFaced": 20,
+              "outs": 15,
               "completeGames": 0,
               "shutouts": 0,
-              "pitchesThrown": 70,
-              "balls": 27,
-              "strikes": 43,
-              "strikePercentage": ".610",
+              "pitchesThrown": 75,
+              "balls": 30,
+              "strikes": 45,
+              "strikePercentage": ".600",
               "hitBatsmen": 0,
               "balks": 0,
               "wildPitches": 0,
               "pickoffs": 0,
-              "groundOutsToAirouts": "1.33",
+              "groundOutsToAirouts": "1.67",
               "rbi": 1,
               "pitchesPerInning": "15.00",
-              "runsScoredPer9": "1.93",
+              "runsScoredPer9": "1.80",
               "homeRunsPer9": "0.00",
               "inheritedRunners": 0,
               "inheritedRunnersScored": 0,
@@ -22700,10 +23443,10 @@
               "stolenBases": 0,
               "stolenBasePercentage": ".---",
               "caughtStealingPercentage": ".---",
-              "assists": 3,
-              "putOuts": 14,
+              "assists": 4,
+              "putOuts": 15,
               "errors": 0,
-              "chances": 17,
+              "chances": 19,
               "passedBall": 0,
               "pickoffs": 0
             }
@@ -23973,9 +24716,9 @@
                   "stolenBasePercentage": ".---",
                   "caughtStealingPercentage": ".---",
                   "assists": 0,
-                  "putOuts": 4,
+                  "putOuts": 5,
                   "errors": 0,
-                  "chances": 4,
+                  "chances": 5,
                   "fielding": ".000",
                   "passedBall": 0,
                   "pickoffs": 0
@@ -24092,9 +24835,9 @@
                   "stolenBasePercentage": ".---",
                   "caughtStealingPercentage": ".---",
                   "assists": 0,
-                  "putOuts": 22,
+                  "putOuts": 23,
                   "errors": 0,
-                  "chances": 22,
+                  "chances": 23,
                   "fielding": "1.000",
                   "passedBall": 0,
                   "pickoffs": 0
@@ -25599,7 +26342,7 @@
                 }
               },
               "gameStatus": {
-                "isCurrentBatter": false,
+                "isCurrentBatter": true,
                 "isCurrentPitcher": false,
                 "isOnBench": false,
                 "isSubstitute": false
@@ -26620,10 +27363,10 @@
                   "stolenBases": 0,
                   "stolenBasePercentage": ".---",
                   "caughtStealingPercentage": ".---",
-                  "assists": 1,
+                  "assists": 2,
                   "putOuts": 1,
                   "errors": 0,
-                  "chances": 2,
+                  "chances": 3,
                   "fielding": ".000",
                   "passedBall": 0,
                   "pickoffs": 0
@@ -26739,10 +27482,10 @@
                   "stolenBases": 0,
                   "stolenBasePercentage": ".---",
                   "caughtStealingPercentage": ".---",
-                  "assists": 3,
+                  "assists": 4,
                   "putOuts": 2,
                   "errors": 0,
-                  "chances": 5,
+                  "chances": 6,
                   "fielding": "1.000",
                   "passedBall": 0,
                   "pickoffs": 0
@@ -26933,11 +27676,11 @@
               "stats": {
                 "batting": {},
                 "pitching": {
-                  "summary": "4.2 IP, ER, 7 K, BB",
+                  "summary": "5.0 IP, ER, 7 K, BB",
                   "gamesPlayed": 1,
                   "gamesStarted": 1,
                   "flyOuts": 2,
-                  "groundOuts": 4,
+                  "groundOuts": 5,
                   "airOuts": 3,
                   "runs": 1,
                   "doubles": 0,
@@ -26948,12 +27691,12 @@
                   "intentionalWalks": 0,
                   "hits": 4,
                   "hitByPitch": 0,
-                  "atBats": 18,
+                  "atBats": 19,
                   "caughtStealing": 0,
                   "stolenBases": 0,
                   "stolenBasePercentage": ".---",
-                  "numberOfPitches": 70,
-                  "inningsPitched": "4.2",
+                  "numberOfPitches": 75,
+                  "inningsPitched": "5.0",
                   "wins": 0,
                   "losses": 0,
                   "saves": 0,
@@ -26961,22 +27704,22 @@
                   "holds": 0,
                   "blownSaves": 0,
                   "earnedRuns": 1,
-                  "battersFaced": 19,
-                  "outs": 14,
+                  "battersFaced": 20,
+                  "outs": 15,
                   "gamesPitched": 1,
                   "completeGames": 0,
                   "shutouts": 0,
-                  "pitchesThrown": 70,
-                  "balls": 27,
-                  "strikes": 43,
-                  "strikePercentage": ".610",
+                  "pitchesThrown": 75,
+                  "balls": 30,
+                  "strikes": 45,
+                  "strikePercentage": ".600",
                   "hitBatsmen": 0,
                   "balks": 0,
                   "wildPitches": 0,
                   "pickoffs": 0,
                   "rbi": 1,
                   "gamesFinished": 0,
-                  "runsScoredPer9": "1.93",
+                  "runsScoredPer9": "1.80",
                   "homeRunsPer9": "0.00",
                   "inheritedRunners": 0,
                   "inheritedRunnersScored": 0,
@@ -27046,7 +27789,7 @@
                   "gamesPlayed": 1,
                   "gamesStarted": 1,
                   "flyOuts": 2,
-                  "groundOuts": 4,
+                  "groundOuts": 5,
                   "airOuts": 3,
                   "runs": 1,
                   "doubles": 0,
@@ -27057,15 +27800,15 @@
                   "intentionalWalks": 0,
                   "hits": 4,
                   "hitByPitch": 0,
-                  "atBats": 18,
-                  "obp": ".263",
+                  "atBats": 19,
+                  "obp": ".250",
                   "caughtStealing": 0,
                   "stolenBases": 0,
                   "stolenBasePercentage": ".---",
                   "caughtStealingPercentage": ".---",
-                  "numberOfPitches": 70,
-                  "era": "1.93",
-                  "inningsPitched": "4.2",
+                  "numberOfPitches": 75,
+                  "era": "1.80",
+                  "inningsPitched": "5.0",
                   "wins": 0,
                   "losses": 0,
                   "saves": 0,
@@ -27073,30 +27816,30 @@
                   "holds": 0,
                   "blownSaves": 0,
                   "earnedRuns": 1,
-                  "whip": "1.07",
-                  "battersFaced": 19,
-                  "outs": 14,
+                  "whip": "1.00",
+                  "battersFaced": 20,
+                  "outs": 15,
                   "gamesPitched": 1,
                   "completeGames": 0,
                   "shutouts": 0,
-                  "pitchesThrown": 70,
-                  "balls": 27,
-                  "strikes": 43,
-                  "strikePercentage": ".610",
+                  "pitchesThrown": 75,
+                  "balls": 30,
+                  "strikes": 45,
+                  "strikePercentage": ".600",
                   "hitBatsmen": 0,
                   "balks": 0,
                   "wildPitches": 0,
                   "pickoffs": 0,
-                  "groundOutsToAirouts": "1.33",
+                  "groundOutsToAirouts": "1.67",
                   "rbi": 1,
                   "winPercentage": ".---",
                   "pitchesPerInning": "15.00",
                   "gamesFinished": 0,
                   "strikeoutWalkRatio": "7.00",
-                  "strikeoutsPer9Inn": "13.50",
-                  "walksPer9Inn": "1.93",
-                  "hitsPer9Inn": "7.71",
-                  "runsScoredPer9": "1.93",
+                  "strikeoutsPer9Inn": "12.60",
+                  "walksPer9Inn": "1.80",
+                  "hitsPer9Inn": "7.20",
+                  "runsScoredPer9": "1.80",
                   "homeRunsPer9": "0.00",
                   "inheritedRunners": 0,
                   "inheritedRunnersScored": 0,
@@ -27124,7 +27867,7 @@
               },
               "gameStatus": {
                 "isCurrentBatter": false,
-                "isCurrentPitcher": true,
+                "isCurrentPitcher": false,
                 "isOnBench": false,
                 "isSubstitute": false
               },
@@ -27246,7 +27989,7 @@
           "teamStats": {
             "batting": {
               "flyOuts": 2,
-              "groundOuts": 4,
+              "groundOuts": 5,
               "airOuts": 3,
               "runs": 1,
               "doubles": 0,
@@ -27257,20 +28000,20 @@
               "intentionalWalks": 0,
               "hits": 4,
               "hitByPitch": 0,
-              "avg": ".175",
-              "atBats": 18,
-              "obp": ".290",
-              "slg": ".288",
-              "ops": ".578",
+              "avg": ".173",
+              "atBats": 19,
+              "obp": ".287",
+              "slg": ".284",
+              "ops": ".571",
               "caughtStealing": 0,
               "stolenBases": 0,
               "stolenBasePercentage": ".---",
               "groundIntoDoublePlay": 0,
               "groundIntoTriplePlay": 0,
-              "plateAppearances": 19,
+              "plateAppearances": 20,
               "totalBases": 4,
               "rbi": 1,
-              "leftOnBase": 8,
+              "leftOnBase": 10,
               "sacBunts": 0,
               "sacFlies": 0,
               "catchersInterference": 0,
@@ -27363,13 +28106,110 @@
               },
               "parentTeamId": 144,
               "stats": {
-                "batting": {},
-                "pitching": {},
-                "fielding": {}
+                "batting": {
+                  "summary": "0-0",
+                  "gamesPlayed": 1,
+                  "flyOuts": 0,
+                  "groundOuts": 0,
+                  "airOuts": 0,
+                  "runs": 0,
+                  "doubles": 0,
+                  "triples": 0,
+                  "homeRuns": 0,
+                  "strikeOuts": 0,
+                  "baseOnBalls": 0,
+                  "intentionalWalks": 0,
+                  "hits": 0,
+                  "hitByPitch": 0,
+                  "atBats": 0,
+                  "caughtStealing": 0,
+                  "stolenBases": 0,
+                  "stolenBasePercentage": ".---",
+                  "groundIntoDoublePlay": 0,
+                  "groundIntoTriplePlay": 0,
+                  "plateAppearances": 0,
+                  "totalBases": 0,
+                  "rbi": 0,
+                  "leftOnBase": 0,
+                  "sacBunts": 0,
+                  "sacFlies": 0,
+                  "catchersInterference": 0,
+                  "pickoffs": 0,
+                  "atBatsPerHomeRun": "-.--",
+                  "popOuts": 0,
+                  "lineOuts": 0
+                },
+                "pitching": {
+                  "summary": "0.0 IP, 0 ER, 0 K, 0 BB",
+                  "gamesPlayed": 0,
+                  "gamesStarted": 0,
+                  "flyOuts": 0,
+                  "groundOuts": 0,
+                  "airOuts": 0,
+                  "runs": 0,
+                  "doubles": 0,
+                  "triples": 0,
+                  "homeRuns": 0,
+                  "strikeOuts": 0,
+                  "baseOnBalls": 0,
+                  "intentionalWalks": 0,
+                  "hits": 0,
+                  "hitByPitch": 0,
+                  "atBats": 0,
+                  "caughtStealing": 0,
+                  "stolenBases": 0,
+                  "stolenBasePercentage": ".---",
+                  "numberOfPitches": 0,
+                  "inningsPitched": "0.0",
+                  "wins": 0,
+                  "losses": 0,
+                  "saves": 0,
+                  "saveOpportunities": 0,
+                  "holds": 0,
+                  "blownSaves": 0,
+                  "earnedRuns": 0,
+                  "battersFaced": 0,
+                  "outs": 0,
+                  "gamesPitched": 0,
+                  "completeGames": 0,
+                  "shutouts": 0,
+                  "balls": 0,
+                  "strikes": 0,
+                  "strikePercentage": "-.--",
+                  "hitBatsmen": 0,
+                  "balks": 0,
+                  "wildPitches": 0,
+                  "pickoffs": 0,
+                  "rbi": 0,
+                  "gamesFinished": 0,
+                  "runsScoredPer9": "-.--",
+                  "homeRunsPer9": "-.--",
+                  "inheritedRunners": 0,
+                  "inheritedRunnersScored": 0,
+                  "catchersInterference": 0,
+                  "sacBunts": 0,
+                  "sacFlies": 0,
+                  "passedBall": 0,
+                  "popOuts": 0,
+                  "lineOuts": 0
+                },
+                "fielding": {
+                  "caughtStealing": 0,
+                  "stolenBases": 0,
+                  "stolenBasePercentage": ".---",
+                  "caughtStealingPercentage": ".---",
+                  "assists": 0,
+                  "putOuts": 0,
+                  "errors": 0,
+                  "chances": 0,
+                  "fielding": ".000",
+                  "passedBall": 0,
+                  "pickoffs": 0
+                }
               },
               "seasonStats": {
                 "batting": {
-                  "gamesPlayed": 0,
+                  "gamesPlayed": 1,
                   "flyOuts": 0,
                   "groundOuts": 0,
                   "airOuts": 0,
@@ -27488,10 +28328,18 @@
               },
               "gameStatus": {
                 "isCurrentBatter": false,
-                "isCurrentPitcher": false,
-                "isOnBench": true,
+                "isCurrentPitcher": true,
+                "isOnBench": false,
                 "isSubstitute": false
-              }
+              },
+              "allPositions": [
+                {
+                  "code": "1",
+                  "name": "Pitcher",
+                  "type": "Pitcher",
+                  "abbreviation": "P"
+                }
+              ]
             },
             "ID669276": {
               "person": {
@@ -28300,10 +29148,10 @@
               },
               "jerseyNumber": "14",
               "position": {
-                "code": "7",
-                "name": "Outfielder",
-                "type": "Outfielder",
-                "abbreviation": "LF"
+                "code": "6",
+                "name": "Shortstop",
+                "type": "Infielder",
+                "abbreviation": "SS"
               },
               "status": {
                 "code": "A",
@@ -28492,6 +29340,12 @@
                   "name": "Outfielder",
                   "type": "Outfielder",
                   "abbreviation": "LF"
+                },
+                {
+                  "code": "6",
+                  "name": "Shortstop",
+                  "type": "Infielder",
+                  "abbreviation": "SS"
                 }
               ]
             },
@@ -29003,10 +29857,10 @@
               },
               "jerseyNumber": "53",
               "position": {
-                "code": "12",
-                "name": "Pinch Runner",
-                "type": "Runner",
-                "abbreviation": "PR"
+                "code": "7",
+                "name": "Outfielder",
+                "type": "Outfielder",
+                "abbreviation": "LF"
               },
               "status": {
                 "code": "A",
@@ -29194,6 +30048,12 @@
                   "name": "Pinch Runner",
                   "type": "Runner",
                   "abbreviation": "PR"
+                },
+                {
+                  "code": "7",
+                  "name": "Outfielder",
+                  "type": "Outfielder",
+                  "abbreviation": "LF"
                 }
               ]
             },
@@ -30145,10 +31005,10 @@
               "battingOrder": "200",
               "stats": {
                 "batting": {
-                  "summary": "0-2 | K",
+                  "summary": "0-3 | K",
                   "gamesPlayed": 1,
                   "flyOuts": 0,
-                  "groundOuts": 1,
+                  "groundOuts": 2,
                   "airOuts": 0,
                   "runs": 0,
                   "doubles": 0,
@@ -30159,16 +31019,16 @@
                   "intentionalWalks": 0,
                   "hits": 0,
                   "hitByPitch": 0,
-                  "atBats": 2,
+                  "atBats": 3,
                   "caughtStealing": 0,
                   "stolenBases": 0,
                   "stolenBasePercentage": ".---",
                   "groundIntoDoublePlay": 0,
                   "groundIntoTriplePlay": 0,
-                  "plateAppearances": 2,
+                  "plateAppearances": 3,
                   "totalBases": 0,
                   "rbi": 0,
-                  "leftOnBase": 0,
+                  "leftOnBase": 2,
                   "sacBunts": 0,
                   "sacFlies": 0,
                   "catchersInterference": 0,
@@ -30196,7 +31056,7 @@
                 "batting": {
                   "gamesPlayed": 6,
                   "flyOuts": 2,
-                  "groundOuts": 8,
+                  "groundOuts": 9,
                   "airOuts": 5,
                   "runs": 4,
                   "doubles": 0,
@@ -30207,25 +31067,25 @@
                   "intentionalWalks": 1,
                   "hits": 3,
                   "hitByPitch": 1,
-                  "avg": ".150",
-                  "atBats": 20,
-                  "obp": ".292",
-                  "slg": ".150",
-                  "ops": ".442",
+                  "avg": ".143",
+                  "atBats": 21,
+                  "obp": ".280",
+                  "slg": ".143",
+                  "ops": ".423",
                   "caughtStealing": 0,
                   "stolenBases": 3,
                   "stolenBasePercentage": "1.000",
                   "caughtStealingPercentage": ".000",
                   "groundIntoDoublePlay": 1,
                   "groundIntoTriplePlay": 0,
-                  "plateAppearances": 24,
+                  "plateAppearances": 25,
                   "totalBases": 3,
                   "rbi": 0,
-                  "leftOnBase": 11,
+                  "leftOnBase": 13,
                   "sacBunts": 0,
                   "sacFlies": 0,
-                  "babip": ".188",
-                  "groundOutsToAirouts": "1.60",
+                  "babip": ".176",
+                  "groundOutsToAirouts": "1.80",
                   "catchersInterference": 0,
                   "pickoffs": 0,
                   "atBatsPerHomeRun": "-.--",
@@ -30311,7 +31171,7 @@
                 }
               },
               "gameStatus": {
-                "isCurrentBatter": true,
+                "isCurrentBatter": false,
                 "isCurrentPitcher": false,
                 "isOnBench": false,
                 "isSubstitute": false
@@ -31894,17 +32754,18 @@
             673490,
             642133,
             676551,
-            519242
+            519242,
+            689266
           ],
           "pitchers": [
-            519242
+            519242,
+            689266
           ],
           "bench": [
             669221,
             573262
           ],
           "bullpen": [
-            689266,
             800311,
             656550,
             628452,
@@ -31941,12 +32802,16 @@
                   "value": "Baldwin, D (2)."
                 },
                 {
+                  "label": "Runners left in scoring position, 2 out",
+                  "value": "Acuña Jr. 2."
+                },
+                {
                   "label": "Team RISP",
-                  "value": "0-for-2."
+                  "value": "0-for-3."
                 },
                 {
                   "label": "Team LOB",
-                  "value": "2."
+                  "value": "4."
                 }
               ]
             },
@@ -32029,15 +32894,15 @@
         },
         {
           "label": "Pitches-strikes",
-          "value": "Yamamoto 70-43; Sale 95-62."
+          "value": "Yamamoto 75-45; Sale 95-62; Dodd 0-0."
         },
         {
           "label": "Groundouts-flyouts",
-          "value": "Yamamoto 4-2; Sale 3-4."
+          "value": "Yamamoto 5-2; Sale 3-4; Dodd 0-0."
         },
         {
           "label": "Batters faced",
-          "value": "Yamamoto 19; Sale 24."
+          "value": "Yamamoto 20; Sale 24."
         },
         {
           "label": "Umpires",
@@ -32088,11 +32953,11 @@
             "stats": {
               "batting": {},
               "pitching": {
-                "summary": "4.2 IP, ER, 7 K, BB",
+                "summary": "5.0 IP, ER, 7 K, BB",
                 "gamesPlayed": 1,
                 "gamesStarted": 1,
                 "flyOuts": 2,
-                "groundOuts": 4,
+                "groundOuts": 5,
                 "airOuts": 3,
                 "runs": 1,
                 "doubles": 0,
@@ -32103,12 +32968,12 @@
                 "intentionalWalks": 0,
                 "hits": 4,
                 "hitByPitch": 0,
-                "atBats": 18,
+                "atBats": 19,
                 "caughtStealing": 0,
                 "stolenBases": 0,
                 "stolenBasePercentage": ".---",
-                "numberOfPitches": 70,
-                "inningsPitched": "4.2",
+                "numberOfPitches": 75,
+                "inningsPitched": "5.0",
                 "wins": 0,
                 "losses": 0,
                 "saves": 0,
@@ -32116,22 +32981,22 @@
                 "holds": 0,
                 "blownSaves": 0,
                 "earnedRuns": 1,
-                "battersFaced": 19,
-                "outs": 14,
+                "battersFaced": 20,
+                "outs": 15,
                 "gamesPitched": 1,
                 "completeGames": 0,
                 "shutouts": 0,
-                "pitchesThrown": 70,
-                "balls": 27,
-                "strikes": 43,
-                "strikePercentage": ".610",
+                "pitchesThrown": 75,
+                "balls": 30,
+                "strikes": 45,
+                "strikePercentage": ".600",
                 "hitBatsmen": 0,
                 "balks": 0,
                 "wildPitches": 0,
                 "pickoffs": 0,
                 "rbi": 1,
                 "gamesFinished": 0,
-                "runsScoredPer9": "1.93",
+                "runsScoredPer9": "1.80",
                 "homeRunsPer9": "0.00",
                 "inheritedRunners": 0,
                 "inheritedRunnersScored": 0,
@@ -32201,7 +33066,7 @@
                 "gamesPlayed": 1,
                 "gamesStarted": 1,
                 "flyOuts": 2,
-                "groundOuts": 4,
+                "groundOuts": 5,
                 "airOuts": 3,
                 "runs": 1,
                 "doubles": 0,
@@ -32212,15 +33077,15 @@
                 "intentionalWalks": 0,
                 "hits": 4,
                 "hitByPitch": 0,
-                "atBats": 18,
-                "obp": ".263",
+                "atBats": 19,
+                "obp": ".250",
                 "caughtStealing": 0,
                 "stolenBases": 0,
                 "stolenBasePercentage": ".---",
                 "caughtStealingPercentage": ".---",
-                "numberOfPitches": 70,
-                "era": "1.93",
-                "inningsPitched": "4.2",
+                "numberOfPitches": 75,
+                "era": "1.80",
+                "inningsPitched": "5.0",
                 "wins": 0,
                 "losses": 0,
                 "saves": 0,
@@ -32228,30 +33093,30 @@
                 "holds": 0,
                 "blownSaves": 0,
                 "earnedRuns": 1,
-                "whip": "1.07",
-                "battersFaced": 19,
-                "outs": 14,
+                "whip": "1.00",
+                "battersFaced": 20,
+                "outs": 15,
                 "gamesPitched": 1,
                 "completeGames": 0,
                 "shutouts": 0,
-                "pitchesThrown": 70,
-                "balls": 27,
-                "strikes": 43,
-                "strikePercentage": ".610",
+                "pitchesThrown": 75,
+                "balls": 30,
+                "strikes": 45,
+                "strikePercentage": ".600",
                 "hitBatsmen": 0,
                 "balks": 0,
                 "wildPitches": 0,
                 "pickoffs": 0,
-                "groundOutsToAirouts": "1.33",
+                "groundOutsToAirouts": "1.67",
                 "rbi": 1,
                 "winPercentage": ".---",
                 "pitchesPerInning": "15.00",
                 "gamesFinished": 0,
                 "strikeoutWalkRatio": "7.00",
-                "strikeoutsPer9Inn": "13.50",
-                "walksPer9Inn": "1.93",
-                "hitsPer9Inn": "7.71",
-                "runsScoredPer9": "1.93",
+                "strikeoutsPer9Inn": "12.60",
+                "walksPer9Inn": "1.80",
+                "hitsPer9Inn": "7.20",
+                "runsScoredPer9": "1.80",
                 "homeRunsPer9": "0.00",
                 "inheritedRunners": 0,
                 "inheritedRunnersScored": 0,
@@ -32279,7 +33144,7 @@
             },
             "gameStatus": {
               "isCurrentBatter": false,
-              "isCurrentPitcher": true,
+              "isCurrentPitcher": false,
               "isOnBench": false,
               "isSubstitute": false
             },
@@ -32293,8 +33158,8 @@
             ]
           },
           "type": "starter",
-          "gameScore": 62,
-          "pitchingGameScore": 62
+          "gameScore": 64,
+          "pitchingGameScore": 64
         },
         {
           "player": {
@@ -32568,9 +33433,9 @@
                 "stolenBasePercentage": ".---",
                 "caughtStealingPercentage": ".---",
                 "assists": 0,
-                "putOuts": 4,
+                "putOuts": 5,
                 "errors": 0,
-                "chances": 4,
+                "chances": 5,
                 "fielding": ".000",
                 "passedBall": 0,
                 "pickoffs": 0
@@ -32687,9 +33552,9 @@
                 "stolenBasePercentage": ".---",
                 "caughtStealingPercentage": ".---",
                 "assists": 0,
-                "putOuts": 22,
+                "putOuts": 23,
                 "errors": 0,
-                "chances": 22,
+                "chances": 23,
                 "fielding": "1.000",
                 "passedBall": 0,
                 "pickoffs": 0
