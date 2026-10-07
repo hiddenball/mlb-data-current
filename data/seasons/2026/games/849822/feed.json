@@ -4,16 +4,13 @@
   "link": "/api/v1.1/game/849822/feed/live",
   "metaData": {
     "wait": 10,
-    "timeStamp": "20261007_225437",
+    "timeStamp": "20261007_225520",
     "gameEvents": [
-      "at_bat_start"
+      "called_strike"
     ],
     "logicalEvents": [
-      "newHalfInning",
       "countChange",
-      "count00",
-      "newBatter",
-      "batterSwitchedToLeftHanded"
+      "count12"
     ]
   },
   "gameData": {
@@ -10582,8 +10579,10 @@
         {
           "result": {
             "type": "atBat",
+            "rbi": 0,
             "awayScore": 1,
-            "homeScore": 1
+            "homeScore": 1,
+            "isOut": false
           },
           "about": {
             "atBatIndex": 19,
@@ -10591,13 +10590,15 @@
             "isTopInning": false,
             "inning": 3,
             "startTime": "2026-10-07T22:54:37.064Z",
-            "endTime": "2026-10-07T22:54:37.064Z",
+            "endTime": "2026-10-07T22:55:20.729Z",
             "isComplete": false,
+            "isScoringPlay": false,
+            "hasOut": false,
             "captivatingIndex": 0
           },
           "count": {
-            "balls": 0,
-            "strikes": 0,
+            "balls": 1,
+            "strikes": 2,
             "outs": 0
           },
           "matchup": {
@@ -10632,7 +10633,7 @@
                   "splits": [
                     {
                       "stat": {
-                        "name": "exitVelocity",
+                        "name": "battingAverage",
                         "zones": [
                           {
                             "zone": "01",
@@ -10650,7 +10651,7 @@
                             "zone": "03",
                             "color": "rgba(214, 41, 52, .55)",
                             "temp": "hot",
-                            "value": "104.84"
+                            "value": "1.000"
                           },
                           {
                             "zone": "04",
@@ -10660,9 +10661,9 @@
                           },
                           {
                             "zone": "05",
-                            "color": "rgba(214, 41, 52, .55)",
-                            "temp": "hot",
-                            "value": "103.10"
+                            "color": "rgba(6, 90, 238, .55)",
+                            "temp": "cold",
+                            "value": ".000"
                           },
                           {
                             "zone": "06",
@@ -10684,9 +10685,9 @@
                           },
                           {
                             "zone": "09",
-                            "color": "rgba(255, 255, 255, 0.55)",
-                            "temp": "lukewarm",
-                            "value": "-"
+                            "color": "rgba(6, 90, 238, .55)",
+                            "temp": "cold",
+                            "value": ".000"
                           },
                           {
                             "zone": "11",
@@ -10702,9 +10703,9 @@
                           },
                           {
                             "zone": "13",
-                            "color": "rgba(255, 255, 255, 0.55)",
-                            "temp": "lukewarm",
-                            "value": "-"
+                            "color": "rgba(6, 90, 238, .55)",
+                            "temp": "cold",
+                            "value": ".000"
                           },
                           {
                             "zone": "14",
@@ -10802,7 +10803,7 @@
                     },
                     {
                       "stat": {
-                        "name": "battingAverage",
+                        "name": "exitVelocity",
                         "zones": [
                           {
                             "zone": "01",
@@ -10820,7 +10821,7 @@
                             "zone": "03",
                             "color": "rgba(214, 41, 52, .55)",
                             "temp": "hot",
-                            "value": "1.000"
+                            "value": "104.84"
                           },
                           {
                             "zone": "04",
@@ -10830,9 +10831,9 @@
                           },
                           {
                             "zone": "05",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
+                            "color": "rgba(214, 41, 52, .55)",
+                            "temp": "hot",
+                            "value": "103.10"
                           },
                           {
                             "zone": "06",
@@ -10854,9 +10855,9 @@
                           },
                           {
                             "zone": "09",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
                           },
                           {
                             "zone": "11",
@@ -10872,9 +10873,9 @@
                           },
                           {
                             "zone": "13",
-                            "color": "rgba(6, 90, 238, .55)",
-                            "temp": "cold",
-                            "value": ".000"
+                            "color": "rgba(255, 255, 255, 0.55)",
+                            "temp": "lukewarm",
+                            "value": "-"
                           },
                           {
                             "zone": "14",
@@ -10976,20 +10977,233 @@
               "menOnBase": "Empty"
             }
           },
-          "pitchIndex": [],
+          "pitchIndex": [
+            0,
+            1,
+            2
+          ],
           "actionIndex": [],
           "runnerIndex": [],
           "runners": [],
-          "playEvents": [],
-          "playEndTime": "2026-10-07T22:54:37.064Z",
+          "playEvents": [
+            {
+              "details": {
+                "call": {
+                  "code": "B",
+                  "description": "Ball"
+                },
+                "description": "Ball",
+                "code": "B",
+                "ballColor": "rgba(39, 161, 39, 1.0)",
+                "trailColor": "rgba(0, 0, 254, 1.0)",
+                "isInPlay": false,
+                "isStrike": false,
+                "isBall": true,
+                "type": {
+                  "code": "SL",
+                  "description": "Slider"
+                },
+                "isOut": false,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 1,
+                "strikes": 0,
+                "outs": 0
+              },
+              "pitchData": {
+                "startSpeed": 89.8,
+                "endSpeed": 83.4,
+                "strikeZoneTop": 3.326,
+                "strikeZoneBottom": 1.679,
+                "strikeZoneWidth": 17.0,
+                "strikeZoneDepth": 8.5,
+                "coordinates": {
+                  "aY": 23.264543943470052,
+                  "aZ": -25.353997604998757,
+                  "pfxX": 3.3272490465352824,
+                  "pfxZ": 3.8675039574352112,
+                  "pX": -0.36477081912901665,
+                  "pZ": 4.655811901714226,
+                  "vX0": 3.0325087263718418,
+                  "vY0": -130.89973908679718,
+                  "vZ0": 1.7043602898458827,
+                  "x": 130.9,
+                  "y": 113.07,
+                  "x0": -1.9637551643056455,
+                  "y0": 50.005440145165146,
+                  "z0": 5.872796451161297,
+                  "aX": 5.871679954460905
+                },
+                "breaks": {
+                  "breakAngle": 30.0,
+                  "breakVertical": -25.8,
+                  "breakVerticalInduced": 7.6,
+                  "breakHorizontal": -6.6,
+                  "spinRate": 2624,
+                  "spinDirection": 147
+                },
+                "zone": 11,
+                "plateTime": 0.41576911935799643,
+                "extension": 7.36329874165378
+              },
+              "index": 0,
+              "playId": "eb284676-d93b-38ba-bf80-235d118bdb9d",
+              "pitchNumber": 1,
+              "startTime": "2026-10-07T22:54:46.704Z",
+              "endTime": "2026-10-07T22:55:02.438Z",
+              "isPitch": true,
+              "type": "pitch"
+            },
+            {
+              "details": {
+                "call": {
+                  "code": "C",
+                  "description": "Called Strike"
+                },
+                "description": "Called Strike",
+                "code": "C",
+                "ballColor": "rgba(170, 21, 11, 1.0)",
+                "trailColor": "rgba(188, 0, 33, 1.0)",
+                "isInPlay": false,
+                "isStrike": true,
+                "isBall": false,
+                "type": {
+                  "code": "FF",
+                  "description": "Four-Seam Fastball"
+                },
+                "isOut": false,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 1,
+                "strikes": 1,
+                "outs": 0
+              },
+              "pitchData": {
+                "startSpeed": 97.1,
+                "endSpeed": 89.0,
+                "strikeZoneTop": 3.326,
+                "strikeZoneBottom": 1.679,
+                "strikeZoneWidth": 17.0,
+                "strikeZoneDepth": 8.5,
+                "coordinates": {
+                  "aY": 31.297575277158174,
+                  "aZ": -9.52677519878249,
+                  "pfxX": -3.4217124143353472,
+                  "pfxZ": 11.177203092681246,
+                  "pX": -0.7771881039072392,
+                  "pZ": 2.2677198308402047,
+                  "vX0": 3.42512354349795,
+                  "vY0": -141.2440600003299,
+                  "vZ0": -8.1756161174568,
+                  "x": 146.62,
+                  "y": 177.55,
+                  "x0": -1.559300563204172,
+                  "y0": 50.0030780819219,
+                  "z0": 5.80735465528216,
+                  "aX": -6.933717272580507
+                },
+                "breaks": {
+                  "breakAngle": 4.8,
+                  "breakVertical": -10.2,
+                  "breakVerticalInduced": 18.8,
+                  "breakHorizontal": 5.5,
+                  "spinRate": 2581,
+                  "spinDirection": 197
+                },
+                "zone": 4,
+                "plateTime": 0.38735227670644257,
+                "extension": 7.702118028375239
+              },
+              "index": 1,
+              "playId": "7229c184-1fa8-3a37-8a5d-1caa4a83d799",
+              "pitchNumber": 2,
+              "startTime": "2026-10-07T22:55:02.438Z",
+              "endTime": "2026-10-07T22:55:20.091Z",
+              "isPitch": true,
+              "type": "pitch"
+            },
+            {
+              "details": {
+                "call": {
+                  "code": "C",
+                  "description": "Called Strike"
+                },
+                "description": "Called Strike",
+                "code": "C",
+                "ballColor": "rgba(170, 21, 11, 1.0)",
+                "trailColor": "rgba(188, 0, 33, 1.0)",
+                "isInPlay": false,
+                "isStrike": true,
+                "isBall": false,
+                "type": {
+                  "code": "FF",
+                  "description": "Four-Seam Fastball"
+                },
+                "isOut": false,
+                "hasReview": false
+              },
+              "count": {
+                "balls": 1,
+                "strikes": 2,
+                "outs": 0
+              },
+              "pitchData": {
+                "startSpeed": 97.7,
+                "endSpeed": 89.9,
+                "strikeZoneTop": 3.326,
+                "strikeZoneBottom": 1.679,
+                "strikeZoneWidth": 17.0,
+                "strikeZoneDepth": 8.5,
+                "coordinates": {
+                  "aY": 30.548927792056574,
+                  "aZ": -9.850094566011544,
+                  "pfxX": -2.902612871057631,
+                  "pfxZ": 10.850226196001756,
+                  "pX": 0.4884219033925968,
+                  "pZ": 2.1803788343227617,
+                  "vX0": 6.2794345085360455,
+                  "vY0": -142.05685996773687,
+                  "vZ0": -8.36886367593829,
+                  "x": 98.38,
+                  "y": 179.91,
+                  "x0": -1.3670341396452732,
+                  "y0": 50.00066644627612,
+                  "z0": 5.779206479379249,
+                  "aX": -5.9715430089952
+                },
+                "breaks": {
+                  "breakAngle": 21.6,
+                  "breakVertical": -10.3,
+                  "breakVerticalInduced": 18.2,
+                  "breakHorizontal": 4.1,
+                  "spinRate": 2677,
+                  "spinDirection": 193
+                },
+                "zone": 9,
+                "plateTime": 0.3846081899522118
+              },
+              "index": 2,
+              "playId": "06ff5f69-3b1f-3b58-b368-76a6e70c710e",
+              "pitchNumber": 3,
+              "startTime": "2026-10-07T22:55:20.091Z",
+              "endTime": "2026-10-07T22:55:20.729Z",
+              "isPitch": true,
+              "type": "pitch"
+            }
+          ],
+          "playEndTime": "2026-10-07T22:55:20.729Z",
           "atBatIndex": 19
         }
       ],
       "currentPlay": {
         "result": {
           "type": "atBat",
+          "rbi": 0,
           "awayScore": 1,
-          "homeScore": 1
+          "homeScore": 1,
+          "isOut": false
         },
         "about": {
           "atBatIndex": 19,
@@ -10997,13 +11211,15 @@
           "isTopInning": false,
           "inning": 3,
           "startTime": "2026-10-07T22:54:37.064Z",
-          "endTime": "2026-10-07T22:54:37.064Z",
+          "endTime": "2026-10-07T22:55:20.729Z",
           "isComplete": false,
+          "isScoringPlay": false,
+          "hasOut": false,
           "captivatingIndex": 0
         },
         "count": {
-          "balls": 0,
-          "strikes": 0,
+          "balls": 1,
+          "strikes": 2,
           "outs": 0
         },
         "matchup": {
@@ -11038,7 +11254,7 @@
                 "splits": [
                   {
                     "stat": {
-                      "name": "exitVelocity",
+                      "name": "battingAverage",
                       "zones": [
                         {
                           "zone": "01",
@@ -11056,7 +11272,7 @@
                           "zone": "03",
                           "color": "rgba(214, 41, 52, .55)",
                           "temp": "hot",
-                          "value": "104.84"
+                          "value": "1.000"
                         },
                         {
                           "zone": "04",
@@ -11066,9 +11282,9 @@
                         },
                         {
                           "zone": "05",
-                          "color": "rgba(214, 41, 52, .55)",
-                          "temp": "hot",
-                          "value": "103.10"
+                          "color": "rgba(6, 90, 238, .55)",
+                          "temp": "cold",
+                          "value": ".000"
                         },
                         {
                           "zone": "06",
@@ -11090,9 +11306,9 @@
                         },
                         {
                           "zone": "09",
-                          "color": "rgba(255, 255, 255, 0.55)",
-                          "temp": "lukewarm",
-                          "value": "-"
+                          "color": "rgba(6, 90, 238, .55)",
+                          "temp": "cold",
+                          "value": ".000"
                         },
                         {
                           "zone": "11",
@@ -11108,9 +11324,9 @@
                         },
                         {
                           "zone": "13",
-                          "color": "rgba(255, 255, 255, 0.55)",
-                          "temp": "lukewarm",
-                          "value": "-"
+                          "color": "rgba(6, 90, 238, .55)",
+                          "temp": "cold",
+                          "value": ".000"
                         },
                         {
                           "zone": "14",
@@ -11208,7 +11424,7 @@
                   },
                   {
                     "stat": {
-                      "name": "battingAverage",
+                      "name": "exitVelocity",
                       "zones": [
                         {
                           "zone": "01",
@@ -11226,7 +11442,7 @@
                           "zone": "03",
                           "color": "rgba(214, 41, 52, .55)",
                           "temp": "hot",
-                          "value": "1.000"
+                          "value": "104.84"
                         },
                         {
                           "zone": "04",
@@ -11236,9 +11452,9 @@
                         },
                         {
                           "zone": "05",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
+                          "color": "rgba(214, 41, 52, .55)",
+                          "temp": "hot",
+                          "value": "103.10"
                         },
                         {
                           "zone": "06",
@@ -11260,9 +11476,9 @@
                         },
                         {
                           "zone": "09",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
                         },
                         {
                           "zone": "11",
@@ -11278,9 +11494,9 @@
                         },
                         {
                           "zone": "13",
-                          "color": "rgba(6, 90, 238, .55)",
-                          "temp": "cold",
-                          "value": ".000"
+                          "color": "rgba(255, 255, 255, 0.55)",
+                          "temp": "lukewarm",
+                          "value": "-"
                         },
                         {
                           "zone": "14",
@@ -11382,12 +11598,223 @@
             "menOnBase": "Empty"
           }
         },
-        "pitchIndex": [],
+        "pitchIndex": [
+          0,
+          1,
+          2
+        ],
         "actionIndex": [],
         "runnerIndex": [],
         "runners": [],
-        "playEvents": [],
-        "playEndTime": "2026-10-07T22:54:37.064Z",
+        "playEvents": [
+          {
+            "details": {
+              "call": {
+                "code": "B",
+                "description": "Ball"
+              },
+              "description": "Ball",
+              "code": "B",
+              "ballColor": "rgba(39, 161, 39, 1.0)",
+              "trailColor": "rgba(0, 0, 254, 1.0)",
+              "isInPlay": false,
+              "isStrike": false,
+              "isBall": true,
+              "type": {
+                "code": "SL",
+                "description": "Slider"
+              },
+              "isOut": false,
+              "hasReview": false
+            },
+            "count": {
+              "balls": 1,
+              "strikes": 0,
+              "outs": 0
+            },
+            "pitchData": {
+              "startSpeed": 89.8,
+              "endSpeed": 83.4,
+              "strikeZoneTop": 3.326,
+              "strikeZoneBottom": 1.679,
+              "strikeZoneWidth": 17.0,
+              "strikeZoneDepth": 8.5,
+              "coordinates": {
+                "aY": 23.264543943470052,
+                "aZ": -25.353997604998757,
+                "pfxX": 3.3272490465352824,
+                "pfxZ": 3.8675039574352112,
+                "pX": -0.36477081912901665,
+                "pZ": 4.655811901714226,
+                "vX0": 3.0325087263718418,
+                "vY0": -130.89973908679718,
+                "vZ0": 1.7043602898458827,
+                "x": 130.9,
+                "y": 113.07,
+                "x0": -1.9637551643056455,
+                "y0": 50.005440145165146,
+                "z0": 5.872796451161297,
+                "aX": 5.871679954460905
+              },
+              "breaks": {
+                "breakAngle": 30.0,
+                "breakVertical": -25.8,
+                "breakVerticalInduced": 7.6,
+                "breakHorizontal": -6.6,
+                "spinRate": 2624,
+                "spinDirection": 147
+              },
+              "zone": 11,
+              "plateTime": 0.41576911935799643,
+              "extension": 7.36329874165378
+            },
+            "index": 0,
+            "playId": "eb284676-d93b-38ba-bf80-235d118bdb9d",
+            "pitchNumber": 1,
+            "startTime": "2026-10-07T22:54:46.704Z",
+            "endTime": "2026-10-07T22:55:02.438Z",
+            "isPitch": true,
+            "type": "pitch"
+          },
+          {
+            "details": {
+              "call": {
+                "code": "C",
+                "description": "Called Strike"
+              },
+              "description": "Called Strike",
+              "code": "C",
+              "ballColor": "rgba(170, 21, 11, 1.0)",
+              "trailColor": "rgba(188, 0, 33, 1.0)",
+              "isInPlay": false,
+              "isStrike": true,
+              "isBall": false,
+              "type": {
+                "code": "FF",
+                "description": "Four-Seam Fastball"
+              },
+              "isOut": false,
+              "hasReview": false
+            },
+            "count": {
+              "balls": 1,
+              "strikes": 1,
+              "outs": 0
+            },
+            "pitchData": {
+              "startSpeed": 97.1,
+              "endSpeed": 89.0,
+              "strikeZoneTop": 3.326,
+              "strikeZoneBottom": 1.679,
+              "strikeZoneWidth": 17.0,
+              "strikeZoneDepth": 8.5,
+              "coordinates": {
+                "aY": 31.297575277158174,
+                "aZ": -9.52677519878249,
+                "pfxX": -3.4217124143353472,
+                "pfxZ": 11.177203092681246,
+                "pX": -0.7771881039072392,
+                "pZ": 2.2677198308402047,
+                "vX0": 3.42512354349795,
+                "vY0": -141.2440600003299,
+                "vZ0": -8.1756161174568,
+                "x": 146.62,
+                "y": 177.55,
+                "x0": -1.559300563204172,
+                "y0": 50.0030780819219,
+                "z0": 5.80735465528216,
+                "aX": -6.933717272580507
+              },
+              "breaks": {
+                "breakAngle": 4.8,
+                "breakVertical": -10.2,
+                "breakVerticalInduced": 18.8,
+                "breakHorizontal": 5.5,
+                "spinRate": 2581,
+                "spinDirection": 197
+              },
+              "zone": 4,
+              "plateTime": 0.38735227670644257,
+              "extension": 7.702118028375239
+            },
+            "index": 1,
+            "playId": "7229c184-1fa8-3a37-8a5d-1caa4a83d799",
+            "pitchNumber": 2,
+            "startTime": "2026-10-07T22:55:02.438Z",
+            "endTime": "2026-10-07T22:55:20.091Z",
+            "isPitch": true,
+            "type": "pitch"
+          },
+          {
+            "details": {
+              "call": {
+                "code": "C",
+                "description": "Called Strike"
+              },
+              "description": "Called Strike",
+              "code": "C",
+              "ballColor": "rgba(170, 21, 11, 1.0)",
+              "trailColor": "rgba(188, 0, 33, 1.0)",
+              "isInPlay": false,
+              "isStrike": true,
+              "isBall": false,
+              "type": {
+                "code": "FF",
+                "description": "Four-Seam Fastball"
+              },
+              "isOut": false,
+              "hasReview": false
+            },
+            "count": {
+              "balls": 1,
+              "strikes": 2,
+              "outs": 0
+            },
+            "pitchData": {
+              "startSpeed": 97.7,
+              "endSpeed": 89.9,
+              "strikeZoneTop": 3.326,
+              "strikeZoneBottom": 1.679,
+              "strikeZoneWidth": 17.0,
+              "strikeZoneDepth": 8.5,
+              "coordinates": {
+                "aY": 30.548927792056574,
+                "aZ": -9.850094566011544,
+                "pfxX": -2.902612871057631,
+                "pfxZ": 10.850226196001756,
+                "pX": 0.4884219033925968,
+                "pZ": 2.1803788343227617,
+                "vX0": 6.2794345085360455,
+                "vY0": -142.05685996773687,
+                "vZ0": -8.36886367593829,
+                "x": 98.38,
+                "y": 179.91,
+                "x0": -1.3670341396452732,
+                "y0": 50.00066644627612,
+                "z0": 5.779206479379249,
+                "aX": -5.9715430089952
+              },
+              "breaks": {
+                "breakAngle": 21.6,
+                "breakVertical": -10.3,
+                "breakVerticalInduced": 18.2,
+                "breakHorizontal": 4.1,
+                "spinRate": 2677,
+                "spinDirection": 193
+              },
+              "zone": 9,
+              "plateTime": 0.3846081899522118
+            },
+            "index": 2,
+            "playId": "06ff5f69-3b1f-3b58-b368-76a6e70c710e",
+            "pitchNumber": 3,
+            "startTime": "2026-10-07T22:55:20.091Z",
+            "endTime": "2026-10-07T22:55:20.729Z",
+            "isPitch": true,
+            "type": "pitch"
+          }
+        ],
+        "playEndTime": "2026-10-07T22:55:20.729Z",
         "atBatIndex": 19
       },
       "scoringPlays": [
@@ -12058,8 +12485,8 @@
           "link": "/api/v1/teams/144"
         }
       },
-      "balls": 0,
-      "strikes": 0,
+      "balls": 1,
+      "strikes": 2,
       "outs": 0
     },
     "boxscore": {
@@ -12132,7 +12559,7 @@
               "stolenBases": 1,
               "stolenBasePercentage": "1.000",
               "caughtStealingPercentage": ".000",
-              "numberOfPitches": 33,
+              "numberOfPitches": 36,
               "era": "2.48",
               "inningsPitched": "2.0",
               "saveOpportunities": 0,
@@ -12142,17 +12569,17 @@
               "outs": 6,
               "completeGames": 0,
               "shutouts": 0,
-              "pitchesThrown": 33,
-              "balls": 16,
-              "strikes": 17,
-              "strikePercentage": ".520",
+              "pitchesThrown": 36,
+              "balls": 17,
+              "strikes": 19,
+              "strikePercentage": ".530",
               "hitBatsmen": 0,
               "balks": 0,
               "wildPitches": 1,
               "pickoffs": 0,
               "groundOutsToAirouts": "3.00",
               "rbi": 0,
-              "pitchesPerInning": "16.50",
+              "pitchesPerInning": "18.00",
               "runsScoredPer9": "4.50",
               "homeRunsPer9": "0.00",
               "inheritedRunners": 0,
@@ -12570,7 +12997,7 @@
                   "caughtStealing": 0,
                   "stolenBases": 1,
                   "stolenBasePercentage": "1.000",
-                  "numberOfPitches": 33,
+                  "numberOfPitches": 36,
                   "inningsPitched": "2.0",
                   "wins": 0,
                   "losses": 0,
@@ -12584,10 +13011,10 @@
                   "gamesPitched": 1,
                   "completeGames": 0,
                   "shutouts": 0,
-                  "pitchesThrown": 33,
-                  "balls": 16,
-                  "strikes": 17,
-                  "strikePercentage": ".520",
+                  "pitchesThrown": 36,
+                  "balls": 17,
+                  "strikes": 19,
+                  "strikePercentage": ".530",
                   "hitBatsmen": 0,
                   "balks": 0,
                   "wildPitches": 1,
@@ -12681,7 +13108,7 @@
                   "stolenBases": 1,
                   "stolenBasePercentage": "1.000",
                   "caughtStealingPercentage": ".000",
-                  "numberOfPitches": 33,
+                  "numberOfPitches": 36,
                   "era": "4.50",
                   "inningsPitched": "2.0",
                   "wins": 0,
@@ -12697,10 +13124,10 @@
                   "gamesPitched": 1,
                   "completeGames": 0,
                   "shutouts": 0,
-                  "pitchesThrown": 33,
-                  "balls": 16,
-                  "strikes": 17,
-                  "strikePercentage": ".520",
+                  "pitchesThrown": 36,
+                  "balls": 17,
+                  "strikes": 19,
+                  "strikePercentage": ".530",
                   "hitBatsmen": 0,
                   "balks": 0,
                   "wildPitches": 1,
@@ -12708,7 +13135,7 @@
                   "groundOutsToAirouts": "3.00",
                   "rbi": 0,
                   "winPercentage": ".---",
-                  "pitchesPerInning": "16.50",
+                  "pitchesPerInning": "18.00",
                   "gamesFinished": 0,
                   "strikeoutWalkRatio": "2.00",
                   "strikeoutsPer9Inn": "9.00",
@@ -21379,7 +21806,7 @@
         },
         {
           "label": "Pitches-strikes",
-          "value": "Glasnow 33-17; Mahle 36-22."
+          "value": "Glasnow 36-19; Mahle 36-22."
         },
         {
           "label": "Groundouts-flyouts",
